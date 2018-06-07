@@ -1,0 +1,39 @@
+{
+    "users": [
+      {
+        "email": "rachael@rachael.com",
+        "password": "me",
+        "firstName": "Rachael",
+        "lastName": "Babcock",
+        "id": 1
+      }
+    ],
+    "continents": [
+      {
+        "id": 1,
+        "image": "",
+        "name": "",
+        "fact": "",
+        "url": ""
+      }
+    ],
+    "animals": [
+        {
+            "id": 1,
+            "continentId": 1,
+            "image": "",
+            "name": "",
+            "fact": "",
+            "diet": "",
+            "url": ""
+          }
+    ],
+    "scores": [
+      {
+        "id": 1,
+        "userId": 1,
+        "finalScore": 0,
+        "timeStamp": "2018-06-06T10:43:00"
+      }
+    ]
+  }
