@@ -7,4 +7,4 @@
 ##### The user drags the correct animal to the correct country and after dragging all the animals to a continent, the user will be presented with their score.
 
 
-This project was bootstrapped with Create React App.
+##### This project was bootstrapped with Create React App.
