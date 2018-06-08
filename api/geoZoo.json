@@ -1,126 +1,160 @@
 {
-    "users": [
-      {
-        "email": "rachael@rachael.com",
-        "password": "me",
-        "firstName": "Rachael",
-        "lastName": "Babcock",
-        "id": 1
-      }
-    ],
-    "scores": [
-        {
-          "id": 1,
-          "userId": 1,
-          "finalScore": 0,
-          "timeStamp": "2018-06-06T10:43:00"
-        }
-      ],
-    "continents": [
-      {
-        "id": 1,
-        "image": "https://www.flickr.com/photos/140772355@N02/28777824378/in/dateposted-public/",
-        "name": "Africa",
-        "fact": "Africa is known for its many magnificent animal species, and many people come to Africa for the very purpose of catching a glimpse of these amazing animals in their native habitat. Among the animals native to Africa are the African Wild Dog, Mountain Gorilla, and Black Rhinoceros. Many African animals have earned distinctions, among these, the African Elephant is the world’s largest land animal, the cheetah is the world’s fastest land animal and the giraffe is the tallest animal on land. There are several species of fish native to Africa, and Lake Malawi has more species of fish recorded than any other lake in the world.",
-        "url": "https://www.whatarethe7continents.com/africa-continent/"
-      },
-      {
-        "id": 2,
-        "image": "https://www.flickr.com/photos/140772355@N02/28777824508/in/dateposted-public/",
-        "name": "Asia",
-        "fact": "Asia is the largest of the 7 continents. There are 48 countries in Asia. Most people of Asia are Chinese, Japanese, Indian, or Arab. The main religions include Buddhism, Hinduism, Taoism, Jainism, Christianity, and Shintoism. The largest cities of Asia are Tokyo, Seoul, Jakarta, Dehli, Mumbai, Manila, and Shanghai. Asia is surrounded on three sides by oceans. The Pacific, Artic, and Indian oceans all surround Asia. The land of Asia is divided into six regions. These six regions are North Asia, Central Asia, Southwest Asia, South Asia, Southeast Asia, and East Asia. Each region has something unique to offer.",
-        "url": "https://www.whatarethe7continents.com/asia-continent/"
-      },
-      {
-        "id": 3,
-        "image": "https://www.flickr.com/photos/140772355@N02/28777824558/in/dateposted-public/",
-        "name": "North America",
-        "fact": "North America is divided into four main geographic regions: the Great Plains, Canadian Shield, East and the West. The Great Plains is a large area of grassland that stretched west of the Mississippi River and east of the Rocky Mountains in the central Canada and United States. The Canadian Shield, or the Laurentian Plateau, is a large plateau region made mostly from igneous (or lava) rock covered in soil. The East is characterized as everything east of the Appalachian Mountains, while the West is generally considered as everything west of the Rocky Mountains. The highest point of North America is Mount McKinley, Alaska, which reaches to 6,194 meters above sea level. The lowest point of North America is Death Valley, California, which sinks to 86 meters below sea level. North America is bordered by the Atlantic Ocean in the east, the Pacific Ocean in the west, the Arctic Ocean to the north, and both the Panama Canal and South America to the South. North America’s longest river is the Mississippi River, which runs from Northern Minnesota to the Gulf of Mexico. The largest freshwater lake in the world, Lake Superior, can be found in both Ontario and Minnesota.",
-        "url": "https://www.whatarethe7continents.com/north-american-continent/"
-      }
-    ],
-    "animals": [
-        {
-            "id": 1,
-            "continentId": 1,
-            "image": "https://www.flickr.com/photos/140772355@N02/28777824688/in/dateposted-public/",
-            "name": "Black Rhino",
-            "fact": "Black rhinos are the smaller of the two African rhino species. The most notable difference between white and black rhinos are their hooked upper lip. This distinguishes them from the white rhino, which has a square lip. Black rhinos are browsers rather than grazers, and their pointed lip helps them feed on leaves from bushes and trees. They have two horns, and occasionally a third, small posterior horn. Populations of black rhino declined dramatically in the 20th century at the hands of European hunters and settlers. Between 1960 and 1995, black rhino numbers dropped by a sobering 98%, to less than 2,500. Since then, the species has made a tremendous comeback from the brink of extinction. Thanks to persistent conservation efforts across Africa, black rhino numbers have doubled from their historic low 20 years ago to between 5,042 and 5,455 today. However, the black rhino is still considered critically endangered, and a lot of work remains to bring the numbers up to even a fraction of what it once was—and to ensure that it stays there. Wildlife crime—in this case, poaching and black-market trafficking of rhino horn—continues to plague the species and threaten its recovery.",
-            "diet": "Herbivore",
-            "url": "https://www.worldwildlife.org/species/black-rhino"
-          },
-          {
-            "id": 2,
-            "continentId": 1,
-            "image": "https://www.flickr.com/photos/140772355@N02/28777824738/in/dateposted-public/",
-            "name": "African Wild Dog",
-            "fact": "The wild dog is one of the world’s most endangered mammals. The largest populations remain in southern Africa and the southern part of East Africa (especially Tanzania and northern Mozambique). Wild dogs are social and gather in packs of around ten individuals, but some packs number more than 40. They are opportunistic predators that hunt medium-sized ruminants, such as gazelles. In a sprint, African wild dogs can reach speeds of more than 44 miles per hour.",
-            "diet": "Carnivore",
-            "url": "https://www.worldwildlife.org/species/african-wild-dog"
-          },
-          {
-            "id": 3,
-            "continentId": 1,
-            "image": "https://www.flickr.com/photos/140772355@N02/41751591535/in/dateposted-public/",
-            "name": "Mountain Gorilla",
-            "fact": "As their name implies, mountain gorillas live in forests high in the mountains, at elevations of 8,000 to 13,000 feet. They have thicker fur, and more of it, compared to other great apes. The fur helps them to survive in a habitat where temperatures often drop below freezing. But as humans have moved more and more into the gorillas’ territory, the gorillas have been pushed farther up into the mountains for longer periods, forcing them to endure dangerous and sometimes deadly conditions. What might have been a bleak outlook for the subspecies just a couple of decades ago has brightened in recent years due to conservation efforts. Despite ongoing civil conflict, poaching and an encroaching human population, both populations of mountain gorillas have increased in numbers",
-            "diet": "98% Herbivore, 2% Insects",
-            "url": "https://www.worldwildlife.org/species/mountain-gorilla"
-          },
-          {
-            "id": 4,
-            "continentId": 2,
-            "image": "https://www.flickr.com/photos/140772355@N02/28777825048/in/dateposted-public/",
-            "name": "Sumatran Tiger",
-            "fact": "Sumatran tigers are the smallest surviving tiger subspecies and are distinguished by heavy black stripes on their orange coats. The last of Indonesia’s tigers—as few as 400 today—are holding on for survival in the remaining patches of forests on the island of Sumatra. Accelerating deforestation and rampant poaching mean this noble creature could end up like its extinct Javan and Balinese relatives.In Indonesia, anyone caught hunting tigers could face jail time and steep fines. But despite increased efforts in tiger conservation—including strengthening law enforcement and antipoaching capacity—a substantial market remains in Sumatra and the rest of Asia for tiger parts and products. Sumatran tigers are losing their habitat and prey fast, and poaching shows no sign of decline.",
-            "diet": "Carnivore",
-            "url": "https://www.worldwildlife.org/species/sumatran-tiger"
-          },
-          {
-            "id": 5,
-            "continentId": 2,
-            "image": "https://www.flickr.com/photos/140772355@N02/28777825188/in/dateposted-public/",
-            "name": "Asian Elephant",
-            "fact": "Elephants are an important cultural icon in Asia. According to Hindu mythology, the gods (deva) and the demons (asura) churned the oceans in a search for the elixir of life so that they would become immortal. As they did so, nine jewels surfaced, one of which was the elephant. In Hinduism, the powerful deity honored before all sacred rituals is the elephant-headed Lord Ganesha, who is also called the Remover of Obstacles. Asian elephants are extremely sociable, forming groups of six to seven related females that are led by the oldest female, the matriarch. Like African elephants, these groups occasionally join others to form herds, although these associations are relatively transient. More than two thirds of an elephant’s day may be spent feeding on grasses, but large amounts of tree bark, roots, leaves and small stems are also eaten. Cultivated crops such as bananas, rice and sugarcane are favorite foods. Elephants are always close to a source of fresh water because they need to drink at least once a day.",
-            "diet": "Herbivore",
-            "url": "https://www.worldwildlife.org/species/asian-elephant"
-          },
-          {
-            "id": 6,
-            "continentId": 2,
-            "image": "https://www.flickr.com/photos/140772355@N02/28777825348/in/dateposted-public/",
-            "name": "Amur Leopard",
-            "fact": "People usually think of leopards in the savannas of Africa but in the Russian Far East, a rare subspecies has adapted to life in the temperate forests that make up the northern-most part of the species’ range. Similar to other leopards, the Amur leopard can run at speeds of up to 37 miles per hour. This incredible animal has been reported to leap more than 19 feet horizontally and up to 10 feet vertically. The Amur leopard is solitary. Nimble-footed and strong, it carries and hides unfinished kills so that they are not taken by other predators. It has been reported that some males stay with females after mating, and may even help with rearing the young. Several males sometimes follow and fight over a female. They live for 10-15 years, and in captivity up to 20 years. The Amur leopard is also known as the Far East leopard, the Manchurian leopard or the Korean leopard.",
-            "diet": "Carnivore",
-            "url": "https://www.worldwildlife.org/species/amur-leopard"
-          },
-          {
-            "id": 7,
-            "continentId": 2,
-            "image": "https://www.flickr.com/photos/140772355@N02/28777825438/in/dateposted-public/",
-            "name": "Bornean Orangutan",
-            "fact": "Bornean orangutan populations have declined by more than 50% over the past 60 years, and the species' habitat has been reduced by at least 55% over the past 20 years. The Bornean orangutan differs in appearance from the Sumatran orangutan, with a broader face and shorter beard and also slightly darker in color. Three subspecies are recognized, each localized to different parts of the island: Northwest Bornean orangutans are the most threatened subspecies. Its habitat has been seriously affected by logging and hunting, and a mere 1,500 individuals or so remain. Many habitat patches in the area are small and fragmented. Northeast Bornean orangutans are the smallest in size and found in Sabah and eastern Kalimantan as far as the Mahakam River. Central Bornean orangutans are the subspecies with the most animals, with at least 35,000 individuals.",
-            "diet": "98% Herbivore, 2% Insects",
-            "url": "https://www.worldwildlife.org/species/bornean-orangutan"
-          },
-          {
-            "id": 8,
-            "continentId": 3,
-            "image": "https://www.flickr.com/photos/140772355@N02/41751591965/in/dateposted-public/",
-            "name": "Hawksbill Turtle",
-            "fact": "Hawksbills are named for their narrow, pointed beak. They also have a distinctive pattern of overlapping scales on their shells that form a serrated-look on the edges. These colored and patterned shells make them highly-valuable and commonly sold as 'tortoiseshell' in markets. Hawksbills are found mainly throughout the world's tropical oceans, predominantly in coral reefs. They feed mainly on sponges by using their narrow pointed beaks to extract them from crevices on the reef, but also eat sea anemones and jellyfish. Sea turtles are the living representatives of a group of reptiles that has existed on Earth and travelled our seas for the last 100 million years. They are a fundamental link in marine ecosystems and help maintain the health of coral reefs and sea grass beds.",
-            "diet": "Herbivore",
-            "url": "https://www.worldwildlife.org/species/hawksbill-turtle"
-          },
-          {
-            "id": 9,
-            "continentId": 3,
-            "image": "https://www.flickr.com/photos/140772355@N02/42651475781/in/dateposted-public/",
-            "name": "Vaquita",
-            "fact": "Vaquita, the world’s most rare marine mammal, is on the edge of extinction. This little porpoise wasn't discovered until 1958 and a little over half a century later, we are on the brink of losing them forever. Vaquita are often caught and drowned in gillnets used by illegal fishing operations in marine protected areas within Mexico's Gulf of California. The population has dropped drastically in the last few years. The vaquita has a large dark ring around its eyes and dark patches on its lips that form a thin line from the mouth to the pectoral fins. Its dorsal surface is dark gray, sides pale gray and ventral surface white with long, light gray markings. Newborn vaquita have darker coloration and a wide gray fringe of color that runs from the head to the dorsal flukes, passing through the dorsal and pectoral fins. They are most often found close to shore in the Gulf's shallow waters, although they quickly swim away if a boat approaches. Dolphins and porpoises delight us with their playful antics and warm our hearts with their friendly faces. Marine species are the most well-known, but there are several species that live in freshwater rivers. All are air-breathing, warm-blooded mammals that nurse their young. The difference between a dolphin and a porpoise has to do with their appearance: dolphins have longer snouts, bigger mouths, more curved dorsal fins, and longer, leaner bodies than porpoises",
-            "diet": "Carnivore",
-            "url": "https://www.worldwildlife.org/species/dolphins-and-porpoises"
-          }
-
-    ]
-  }
+  "users": [
+    {
+      "email": "rachael@rachael.com",
+      "password": "me",
+      "firstName": "Rachael",
+      "lastName": "Babcock",
+      "id": 1
+    },
+    {
+      "email": "dude@dude.com",
+      "firstName": "dude",
+      "lastName": "dude",
+      "password": "dude",
+      "id": 2
+    },
+    {
+      "email": "poop@poop.com",
+      "firstName": "poop",
+      "lastName": "poop",
+      "password": "poop",
+      "id": 3
+    },
+    {
+      "email": "tinkkle@tinkle.com",
+      "firstName": "tinkkle@tinkle.com",
+      "lastName": "tinkkle@tinkle.com",
+      "password": "tinkkle@tinkle.com",
+      "id": 4
+    },
+    {
+      "email": "to@toad.com",
+      "firstName": "toad",
+      "lastName": "toad",
+      "password": "toad",
+      "id": 5
+    },
+    {
+      "email": "tiddlywinks@tiddle.com",
+      "firstName": "tiddle",
+      "lastName": "tiddle",
+      "password": "tiddle",
+      "id": 6
+    }
+  ],
+  "scores": [
+    {
+      "id": 1,
+      "userId": 1,
+      "finalScore": 0,
+      "timeStamp": "2018-06-06T10:43:00"
+    }
+  ],
+  "continents": [
+    {
+      "id": 1,
+      "image": "https://www.flickr.com/photos/140772355@N02/28777824378/in/dateposted-public/",
+      "name": "Africa",
+      "fact": "Africa is known for its many magnificent animal species, and many people come to Africa for the very purpose of catching a glimpse of these amazing animals in their native habitat. Among the animals native to Africa are the African Wild Dog, Mountain Gorilla, and Black Rhinoceros. Many African animals have earned distinctions, among these, the African Elephant is the world’s largest land animal, the cheetah is the world’s fastest land animal and the giraffe is the tallest animal on land. There are several species of fish native to Africa, and Lake Malawi has more species of fish recorded than any other lake in the world.",
+      "url": "https://www.whatarethe7continents.com/africa-continent/"
+    },
+    {
+      "id": 2,
+      "image": "https://www.flickr.com/photos/140772355@N02/28777824508/in/dateposted-public/",
+      "name": "Asia",
+      "fact": "Asia is the largest of the 7 continents. There are 48 countries in Asia. Most people of Asia are Chinese, Japanese, Indian, or Arab. The main religions include Buddhism, Hinduism, Taoism, Jainism, Christianity, and Shintoism. The largest cities of Asia are Tokyo, Seoul, Jakarta, Dehli, Mumbai, Manila, and Shanghai. Asia is surrounded on three sides by oceans. The Pacific, Artic, and Indian oceans all surround Asia. The land of Asia is divided into six regions. These six regions are North Asia, Central Asia, Southwest Asia, South Asia, Southeast Asia, and East Asia. Each region has something unique to offer.",
+      "url": "https://www.whatarethe7continents.com/asia-continent/"
+    },
+    {
+      "id": 3,
+      "image": "https://www.flickr.com/photos/140772355@N02/28777824558/in/dateposted-public/",
+      "name": "North America",
+      "fact": "North America is divided into four main geographic regions: the Great Plains, Canadian Shield, East and the West. The Great Plains is a large area of grassland that stretched west of the Mississippi River and east of the Rocky Mountains in the central Canada and United States. The Canadian Shield, or the Laurentian Plateau, is a large plateau region made mostly from igneous (or lava) rock covered in soil. The East is characterized as everything east of the Appalachian Mountains, while the West is generally considered as everything west of the Rocky Mountains. The highest point of North America is Mount McKinley, Alaska, which reaches to 6,194 meters above sea level. The lowest point of North America is Death Valley, California, which sinks to 86 meters below sea level. North America is bordered by the Atlantic Ocean in the east, the Pacific Ocean in the west, the Arctic Ocean to the north, and both the Panama Canal and South America to the South. North America’s longest river is the Mississippi River, which runs from Northern Minnesota to the Gulf of Mexico. The largest freshwater lake in the world, Lake Superior, can be found in both Ontario and Minnesota.",
+      "url": "https://www.whatarethe7continents.com/north-american-continent/"
+    }
+  ],
+  "animals": [
+    {
+      "id": 1,
+      "continentId": 1,
+      "image": "https://www.flickr.com/photos/140772355@N02/28777824688/in/dateposted-public/",
+      "name": "Black Rhino",
+      "fact": "Black rhinos are the smaller of the two African rhino species. The most notable difference between white and black rhinos are their hooked upper lip. This distinguishes them from the white rhino, which has a square lip. Black rhinos are browsers rather than grazers, and their pointed lip helps them feed on leaves from bushes and trees. They have two horns, and occasionally a third, small posterior horn. Populations of black rhino declined dramatically in the 20th century at the hands of European hunters and settlers. Between 1960 and 1995, black rhino numbers dropped by a sobering 98%, to less than 2,500. Since then, the species has made a tremendous comeback from the brink of extinction. Thanks to persistent conservation efforts across Africa, black rhino numbers have doubled from their historic low 20 years ago to between 5,042 and 5,455 today. However, the black rhino is still considered critically endangered, and a lot of work remains to bring the numbers up to even a fraction of what it once was—and to ensure that it stays there. Wildlife crime—in this case, poaching and black-market trafficking of rhino horn—continues to plague the species and threaten its recovery.",
+      "diet": "Herbivore",
+      "url": "https://www.worldwildlife.org/species/black-rhino"
+    },
+    {
+      "id": 2,
+      "continentId": 1,
+      "image": "https://www.flickr.com/photos/140772355@N02/28777824738/in/dateposted-public/",
+      "name": "African Wild Dog",
+      "fact": "The wild dog is one of the world’s most endangered mammals. The largest populations remain in southern Africa and the southern part of East Africa (especially Tanzania and northern Mozambique). Wild dogs are social and gather in packs of around ten individuals, but some packs number more than 40. They are opportunistic predators that hunt medium-sized ruminants, such as gazelles. In a sprint, African wild dogs can reach speeds of more than 44 miles per hour.",
+      "diet": "Carnivore",
+      "url": "https://www.worldwildlife.org/species/african-wild-dog"
+    },
+    {
+      "id": 3,
+      "continentId": 1,
+      "image": "https://www.flickr.com/photos/140772355@N02/41751591535/in/dateposted-public/",
+      "name": "Mountain Gorilla",
+      "fact": "As their name implies, mountain gorillas live in forests high in the mountains, at elevations of 8,000 to 13,000 feet. They have thicker fur, and more of it, compared to other great apes. The fur helps them to survive in a habitat where temperatures often drop below freezing. But as humans have moved more and more into the gorillas’ territory, the gorillas have been pushed farther up into the mountains for longer periods, forcing them to endure dangerous and sometimes deadly conditions. What might have been a bleak outlook for the subspecies just a couple of decades ago has brightened in recent years due to conservation efforts. Despite ongoing civil conflict, poaching and an encroaching human population, both populations of mountain gorillas have increased in numbers",
+      "diet": "98% Herbivore, 2% Insects",
+      "url": "https://www.worldwildlife.org/species/mountain-gorilla"
+    },
+    {
+      "id": 4,
+      "continentId": 2,
+      "image": "https://www.flickr.com/photos/140772355@N02/28777825048/in/dateposted-public/",
+      "name": "Sumatran Tiger",
+      "fact": "Sumatran tigers are the smallest surviving tiger subspecies and are distinguished by heavy black stripes on their orange coats. The last of Indonesia’s tigers—as few as 400 today—are holding on for survival in the remaining patches of forests on the island of Sumatra. Accelerating deforestation and rampant poaching mean this noble creature could end up like its extinct Javan and Balinese relatives.In Indonesia, anyone caught hunting tigers could face jail time and steep fines. But despite increased efforts in tiger conservation—including strengthening law enforcement and antipoaching capacity—a substantial market remains in Sumatra and the rest of Asia for tiger parts and products. Sumatran tigers are losing their habitat and prey fast, and poaching shows no sign of decline.",
+      "diet": "Carnivore",
+      "url": "https://www.worldwildlife.org/species/sumatran-tiger"
+    },
+    {
+      "id": 5,
+      "continentId": 2,
+      "image": "https://www.flickr.com/photos/140772355@N02/28777825188/in/dateposted-public/",
+      "name": "Asian Elephant",
+      "fact": "Elephants are an important cultural icon in Asia. According to Hindu mythology, the gods (deva) and the demons (asura) churned the oceans in a search for the elixir of life so that they would become immortal. As they did so, nine jewels surfaced, one of which was the elephant. In Hinduism, the powerful deity honored before all sacred rituals is the elephant-headed Lord Ganesha, who is also called the Remover of Obstacles. Asian elephants are extremely sociable, forming groups of six to seven related females that are led by the oldest female, the matriarch. Like African elephants, these groups occasionally join others to form herds, although these associations are relatively transient. More than two thirds of an elephant’s day may be spent feeding on grasses, but large amounts of tree bark, roots, leaves and small stems are also eaten. Cultivated crops such as bananas, rice and sugarcane are favorite foods. Elephants are always close to a source of fresh water because they need to drink at least once a day.",
+      "diet": "Herbivore",
+      "url": "https://www.worldwildlife.org/species/asian-elephant"
+    },
+    {
+      "id": 6,
+      "continentId": 2,
+      "image": "https://www.flickr.com/photos/140772355@N02/28777825348/in/dateposted-public/",
+      "name": "Amur Leopard",
+      "fact": "People usually think of leopards in the savannas of Africa but in the Russian Far East, a rare subspecies has adapted to life in the temperate forests that make up the northern-most part of the species’ range. Similar to other leopards, the Amur leopard can run at speeds of up to 37 miles per hour. This incredible animal has been reported to leap more than 19 feet horizontally and up to 10 feet vertically. The Amur leopard is solitary. Nimble-footed and strong, it carries and hides unfinished kills so that they are not taken by other predators. It has been reported that some males stay with females after mating, and may even help with rearing the young. Several males sometimes follow and fight over a female. They live for 10-15 years, and in captivity up to 20 years. The Amur leopard is also known as the Far East leopard, the Manchurian leopard or the Korean leopard.",
+      "diet": "Carnivore",
+      "url": "https://www.worldwildlife.org/species/amur-leopard"
+    },
+    {
+      "id": 7,
+      "continentId": 2,
+      "image": "https://www.flickr.com/photos/140772355@N02/28777825438/in/dateposted-public/",
+      "name": "Bornean Orangutan",
+      "fact": "Bornean orangutan populations have declined by more than 50% over the past 60 years, and the species' habitat has been reduced by at least 55% over the past 20 years. The Bornean orangutan differs in appearance from the Sumatran orangutan, with a broader face and shorter beard and also slightly darker in color. Three subspecies are recognized, each localized to different parts of the island: Northwest Bornean orangutans are the most threatened subspecies. Its habitat has been seriously affected by logging and hunting, and a mere 1,500 individuals or so remain. Many habitat patches in the area are small and fragmented. Northeast Bornean orangutans are the smallest in size and found in Sabah and eastern Kalimantan as far as the Mahakam River. Central Bornean orangutans are the subspecies with the most animals, with at least 35,000 individuals.",
+      "diet": "98% Herbivore, 2% Insects",
+      "url": "https://www.worldwildlife.org/species/bornean-orangutan"
+    },
+    {
+      "id": 8,
+      "continentId": 3,
+      "image": "https://www.flickr.com/photos/140772355@N02/41751591965/in/dateposted-public/",
+      "name": "Hawksbill Turtle",
+      "fact": "Hawksbills are named for their narrow, pointed beak. They also have a distinctive pattern of overlapping scales on their shells that form a serrated-look on the edges. These colored and patterned shells make them highly-valuable and commonly sold as 'tortoiseshell' in markets. Hawksbills are found mainly throughout the world's tropical oceans, predominantly in coral reefs. They feed mainly on sponges by using their narrow pointed beaks to extract them from crevices on the reef, but also eat sea anemones and jellyfish. Sea turtles are the living representatives of a group of reptiles that has existed on Earth and travelled our seas for the last 100 million years. They are a fundamental link in marine ecosystems and help maintain the health of coral reefs and sea grass beds.",
+      "diet": "Herbivore",
+      "url": "https://www.worldwildlife.org/species/hawksbill-turtle"
+    },
+    {
+      "id": 9,
+      "continentId": 3,
+      "image": "https://www.flickr.com/photos/140772355@N02/42651475781/in/dateposted-public/",
+      "name": "Vaquita",
+      "fact": "Vaquita, the world’s most rare marine mammal, is on the edge of extinction. This little porpoise wasn't discovered until 1958 and a little over half a century later, we are on the brink of losing them forever. Vaquita are often caught and drowned in gillnets used by illegal fishing operations in marine protected areas within Mexico's Gulf of California. The population has dropped drastically in the last few years. The vaquita has a large dark ring around its eyes and dark patches on its lips that form a thin line from the mouth to the pectoral fins. Its dorsal surface is dark gray, sides pale gray and ventral surface white with long, light gray markings. Newborn vaquita have darker coloration and a wide gray fringe of color that runs from the head to the dorsal flukes, passing through the dorsal and pectoral fins. They are most often found close to shore in the Gulf's shallow waters, although they quickly swim away if a boat approaches. Dolphins and porpoises delight us with their playful antics and warm our hearts with their friendly faces. Marine species are the most well-known, but there are several species that live in freshwater rivers. All are air-breathing, warm-blooded mammals that nurse their young. The difference between a dolphin and a porpoise has to do with their appearance: dolphins have longer snouts, bigger mouths, more curved dorsal fins, and longer, leaner bodies than porpoises",
+      "diet": "Carnivore",
+      "url": "https://www.worldwildlife.org/species/dolphins-and-porpoises"
+    }
+  ]
+}

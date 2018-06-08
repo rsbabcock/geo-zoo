@@ -3,6 +3,7 @@ import './App.css'
 import NavBar from './nav/NavBar';
 import Register from './auth/Register';
 import Login from './auth/Login';
+import Welcome from './welcome/Welcome';
 // import SearchResults from './search/SearchResults';
 // import ProfileView from './profile/ProfileView'
 
@@ -21,38 +22,11 @@ class App extends Component {
         }
         // uniqueKey: 1
         
-    
-    // searchingView = () => (<h1 style={{marginTop: '125px'}}>Searching ... </h1>)
-    // // Search handler -> passed to NavBar
-    // performSearch = function (terms) {
-    //     this.setState({
-    //         searchTerms: terms,
-    //         currentView: "searching"
-    //     })
-    //     // searchResults = function () {
-    //         const foundStuff = {}
-    //         fetch(`http://localhost:5001/posts?message_like=${encodeURI(terms)}&_expand=user`)
-    //         .then(r => r.json())
-    //         .then(posts => {
-    //             foundStuff.posts = posts
-    //             return fetch(`http://localhost:5001/users?q=${encodeURI(terms)}`)
-    //         })
-    //         .then(r => r.json())
-    //         .then(users => {
-    //            foundStuff.users = users
-    //             this.setState({
-    //                 resultsSearch: foundStuff,
-    //                 currentView: "results"
-    //             })
-               
-    //         })
-    //     // }
-    // }.bind(this)
         
         // Function to update local storage and set activeUser state
     setActiveUser = (val) => {
         if (val) {
-            localStorage.setItem("geoId", val)
+            localStorage.setItem("geoId", val, )
         } else {
             localStorage.removeItem("geoId")
         }
@@ -65,7 +39,7 @@ class App extends Component {
     // View switcher -> passed to NavBar and Login
     // Argument can be an event (via NavBar) or a string (via Login)
     showView = function (e) {
-      debugger
+      // debugger
         let view = null
 
         // Click event triggered switching view
@@ -108,11 +82,11 @@ class App extends Component {
             switch (this.state.currentView) {
                 case "logout":
                     return <Login showView={this.showView} setActiveUser={this.setActiveUser} />
-                //     return <this.searchingView />
                 // case "results":
                 //     return <SearchResults resultsSearch={this.state.resultsSearch} />
-                // case "home":
-                default:
+                case "welcome":
+                default: 
+                  return <Welcome activeUser={this.state.activeUser}/>
             }
         }
     }

@@ -30,25 +30,10 @@ export default class Login extends Component {
                 // User exists. Set local storage, and show home view
                 if (user.length) {
                     this.props.setActiveUser(user[0].id)
-                    this.props.showView("home")
+                    this.props.showView("welcome")
 
                     // User doesn't exist
-                } else {
-                    // Create user in API
-                    fetch("http://localhost:8088/users", {
-                        method: "POST",
-                        headers: {
-                            "Content-Type": "application/json"
-                        },
-                        body: JSON.stringify({ email: this.state.email, password: this.state.password })
-                    })
-
-                        // Set local storage with newly created user's id and show home view
-                        .then(newUser => {
-                            this.props.setActiveUser(newUser.id)
-                            this.props.showView("welcome")
-                        })
-                }
+                } else {alert("Please go sign up!")}
 
             })
     }.bind(this)
@@ -71,13 +56,13 @@ export default class Login extends Component {
                             <Input onChange={this.handleFieldChange} isColor='success' placeholder='Password' type="password" id="password" />
                         </Control>
                 <Control>
-                    <Button type="submit" isColor='primary'>Submit</Button>
+                    <Button type="submit" isColor='primary'>Log In</Button>
                 </Control>
                     </Field>
             </form>
             </div>
             <div>
-                <a id="page__register" href="#" onClick={this.props.showView}> Register</a>
+                <a id="page__register" href="#" onClick={this.props.showView}>Sign Up!</a>
             </div>
             </div>
 
