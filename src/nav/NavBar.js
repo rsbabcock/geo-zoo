@@ -1,24 +1,10 @@
 import React, { Component } from "react"
+import { Tabs, Tab, TabLink, TabList} from 'bloomer'
 import "./NavBar.css"
 
 
 export default class NavBar extends Component {
 
-    // Set initial state
-    state = {
-        searchTerms: ""
-    }
-
-    /**
-     * Local search handler, which invokes the searchHandler reference
-     * passed from App
-     */
-    search = (e) => {
-        if (e.charCode === 13) {
-            this.props.searchHandler(this.state.searchTerms)
-            this.setState({ searchTerms: "" })
-        }
-    }
 
     LoginLogout = () => {
         if (this.props.activeUser === null) {
@@ -38,26 +24,17 @@ export default class NavBar extends Component {
 
     render() {
         return (
-            <nav>
-                <a className="navbar-brand col-sm-3 col-md-2 mr-0" onClick={this.props.viewHandler} href="#">
-                    {/* <img id="nav__home" src={yak} style={{ height: `50px` }} /> */}
-                </a>
-                <ul className="navbar-nav px-3">
-                    <li className="nav-item text-nowrap">
-                        <a className="nav-link"
-                            onClick={this.props.viewHandler} href="#">
-                            {/* <img id="navimg"
-                                 onClick={()=>$(".profileMenu").slideToggle(333)}
-                                 src={profilepic} style={{ height: `30px` }} /> */}
-                        </a>
-                    </li>
-                </ul>
-                <ul className="navbar-nav px-3">
-                    <li className="nav-item text-nowrap">
+            <Tabs>
+                <TabList>
+                    <Tab>
+                        <TabLink>
                         <this.LoginLogout />
-                    </li>
-                </ul>
-            </nav>
+                            {/* <Icon isSize='small'><span className='fa fa-image' aria-hidden='true' /></Icon> */}
+                        </TabLink>
+                    </Tab>
+                </TabList>
+            </Tabs>
+               
         )
     }
 }

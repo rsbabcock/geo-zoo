@@ -1,9 +1,11 @@
 import React, { Component } from "react"
-import { Field, Control, Input, Button } from 'bloomer'
+import { Columns, Column, Field, Control, Input, Button } from 'bloomer'
+import 'bulma/css/bulma.css'
+// import { Columns } from "bloomer/lib/grid/Columns";
 // import { Column } from "bloomer/lib/grid/Column";
 
 
-export default class Login extends Component {
+class Login extends Component {
 
     // Set initial state
     state = {
@@ -33,7 +35,7 @@ export default class Login extends Component {
                     this.props.showView("welcome")
 
                     // User doesn't exist
-                } else {alert("Please go sign up!")}
+                } else { alert("Please go sign up!") }
 
             })
     }.bind(this)
@@ -48,22 +50,28 @@ export default class Login extends Component {
     render() {
         return (
             <div>
-            <div>
-            <form onSubmit={this.handleLogin}>
-                    <Field>
-                    <Control> 
-                            <Input isSize="large" onChange={this.handleFieldChange} isColor='success' placeholder='Email' type="email" id="email"/>
-                            <Input onChange={this.handleFieldChange} isColor='success' placeholder='Password' type="password" id="password" />
-                        </Control>
-                <Control>
-                    <Button type="submit" isColor='primary'>Log In</Button>
-                </Control>
-                    </Field>
-            </form>
-            </div>
-            <div>
-                <a id="page__register" href="#" onClick={this.props.showView}>Sign Up!</a>
-            </div>
+                <div>
+                    <Columns isCentered>
+                        <Column isSize="1/2">
+                        <form onSubmit={this.handleLogin}>
+                            <Field>
+                            {/* <Title isSize={2}>Sign Up!</Title> */}
+                                <Control>
+                                    <Input isSize="large" onChange={this.handleFieldChange} isColor='light' placeholder='Email' type="email" id="email" />
+                                    <Input isSize="large" onChange={this.handleFieldChange} isColor='light' placeholder='Password' type="password" id="password" />
+                                </Control>
+                                <Control>
+                                    <Button type="submit" isColor='primary' isOutlined>Log In</Button>
+                                </Control>
+                            </Field>
+                            <Button isColor='primary'id="page__register" onClick={this.props.showView} isOutlined>Sign Up!
+                            </Button>
+                        </form>
+                        </Column>
+                </Columns>
+                {/* </div>
+                    <div> */}
+                </div>
             </div>
 
             // <form className="form-signin" onSubmit={this.handleLogin}>
@@ -81,3 +89,5 @@ export default class Login extends Component {
         )
     }
 }
+
+export default Login

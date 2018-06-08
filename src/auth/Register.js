@@ -1,5 +1,6 @@
 import React, { Component } from "react"
-import { Field, Control, Input, Button } from 'bloomer'
+import { Columns, Field, Control, Input, Button, Title } from 'bloomer'
+import 'bulma/css/bulma.css'
 
 export default class Register extends Component {
     // Then a registration form should be displayed where the user 
@@ -62,8 +63,10 @@ export default class Register extends Component {
 
     render() {
          return(
+             <Columns isCentered>
             <form onSubmit = { this.handleSignUp } >
                             <Field>
+             <Title isSize={2}>Sign Up!</Title>
                                 <Control>
                                     <Input onChange={this.handleFieldChange} isColor='success' placeholder='Email' type="email" id="email" />
                                     <Input onChange={this.handleFieldChange} isColor='success' placeholder='First Name' type="text" id="firstName" />
@@ -71,10 +74,11 @@ export default class Register extends Component {
                                     <Input onChange={this.handleFieldChange} isColor='success' placeholder='Password' type="password" id="password" />
                                 </Control>
                                 <Control>
-                                    <Button type="submit" isColor='primary'>Sign Up!</Button>
+                                    <Button type="submit" isColor='primary' isOutlined>Sign Up!</Button>
                                 </Control>
                             </Field>
             </form>
+            </Columns>
         )
     }
 }
