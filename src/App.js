@@ -4,6 +4,7 @@ import NavBar from './nav/NavBar';
 import Register from './auth/Register';
 import Login from './auth/Login';
 import Welcome from './welcome/Welcome';
+import Game from './game/Game';
 // import SearchResults from './search/SearchResults';
 // import ProfileView from './profile/ProfileView'
 
@@ -13,10 +14,6 @@ class App extends Component {
     state = {
         currentView: "login",
         activeUser: localStorage.getItem("geoId"),
-        animals: [],
-        continents: [],
-        userScore: 0,
-        drag: "",
         correctGuess: false,
         gamePlay: ""
         }
@@ -82,11 +79,11 @@ class App extends Component {
             switch (this.state.currentView) {
                 case "logout":
                     return <Login showView={this.showView} setActiveUser={this.setActiveUser} />
-                // case "results":
-                //     return <SearchResults resultsSearch={this.state.resultsSearch} />
+                case "game":
+                    return <Game activeUser={this.state.activeUser} showView={this.showView}/>
                 case "welcome":
                 default: 
-                  return <Welcome activeUser={this.state.activeUser}/>
+                  return <Welcome activeUser={this.state.activeUser} showView={this.showView}/>
             }
         }
     }
