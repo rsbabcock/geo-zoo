@@ -1,6 +1,7 @@
 import React, { Component } from "react"
-import { Tabs, Tab, TabLink, TabList} from 'bloomer'
+import { Tabs, Tab, TabLink, TabList, Image} from 'bloomer'
 import "./NavBar.css"
+import logo from "../img/Group.png"
 
 
 export default class NavBar extends Component {
@@ -26,6 +27,12 @@ export default class NavBar extends Component {
         return (
             <Tabs>
                 <TabList>
+                <Tab>
+                        <TabLink>
+                        <Image isSize="64x64" src={logo} />
+                            {/* <Icon isSize='small'><span className='fa fa-image' aria-hidden='true' /></Icon> */}
+                        </TabLink>
+                    </Tab>
                     <Tab>
                         <TabLink>
                         <this.LoginLogout />

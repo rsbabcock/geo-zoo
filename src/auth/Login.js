@@ -55,8 +55,8 @@ class Login extends Component {
                 <div>
                     <Columns isCentered>
                         {/* <img src={logo} width="300" height="300"/> */}
-                        <Column isSize="1/2" >
-                            <Image width="100" height="100" src={logo} />
+                        <Column isCentered isSize="1/2" >
+                            <Image isSize="128x128" src={logo} />
                             <form onSubmit={this.handleLogin}>
                                 <Field>
                                     {/* <Title isSize={2}>Sign Up!</Title> */}
