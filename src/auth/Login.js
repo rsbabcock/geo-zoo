@@ -1,6 +1,8 @@
 import React, { Component } from "react"
-import { Columns, Column, Field, Control, Input, Button } from 'bloomer'
+import { Columns, Column, Field, Control, Input, Button, Image } from 'bloomer'
 import 'bulma/css/bulma.css'
+import logo from "../img/Group.png"
+// import geoZoo from "../img/words.png"
 // import { Columns } from "bloomer/lib/grid/Columns";
 // import { Column } from "bloomer/lib/grid/Column";
 
@@ -52,24 +54,30 @@ class Login extends Component {
             <div>
                 <div>
                     <Columns isCentered>
-                        <Column isSize="1/2">
-                        <form onSubmit={this.handleLogin}>
-                            <Field>
-                            {/* <Title isSize={2}>Sign Up!</Title> */}
-                                <Control>
-                                    <Input isSize="large" onChange={this.handleFieldChange} isColor='light' placeholder='Email' type="email" id="email" />
-                                    <Input isSize="large" onChange={this.handleFieldChange} isColor='light' placeholder='Password' type="password" id="password" />
-                                </Control>
-                                <Control>
-                                    <Button type="submit" isColor='primary' isOutlined>Log In</Button>
-                                </Control>
-                            </Field>
-                            <Button isColor='primary'id="page__register" onClick={this.props.showView} isOutlined>Sign Up!
-                            </Button>
-                        </form>
+                        {/* <img src={logo} width="300" height="300"/> */}
+                        <Column isSize="1/2" >
+                            <Image width="100" height="100" src={logo} />
+                            <form onSubmit={this.handleLogin}>
+                                <Field>
+                                    {/* <Title isSize={2}>Sign Up!</Title> */}
+                                    <Control>
+                                        <Input isSize="large" onChange={this.handleFieldChange} isColor='light' placeholder='Email' type="email" id="email" />
+                                        <Input isSize="large" onChange={this.handleFieldChange} isColor='light' placeholder='Password' type="password" id="password" />
+                                    </Control>
+                                    <Columns isCentered>
+                                        <Control>
+                                            <Column isSize="full">
+                                                <Button type="submit" isColor='primary' isOutlined>Log In</Button>
+                                                <Button isColor='primary' id="page__register" onClick={this.props.showView} isOutlined>Sign Up!
+                                                </Button>
+                                            </Column>
+                                        </Control>
+                                    </Columns>
+                                </Field>
+                            </form>
                         </Column>
-                </Columns>
-                {/* </div>
+                    </Columns>
+                    {/* </div>
                     <div> */}
                 </div>
             </div>
