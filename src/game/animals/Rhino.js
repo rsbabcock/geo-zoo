@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Image, Button, Columns, Column } from 'bloomer'
+import { Button, Columns, Column } from 'bloomer'
 import { Icon } from 'bloomer/lib/elements/Icon';
 import '@fortawesome/fontawesome'
 
@@ -30,10 +30,10 @@ class Rhino extends Component {
                         </div>
                     ))}
                     </div>
+                <Column isSize="narrow" >
+                    <i className="fa fa-chevron-right fa-5x" id="next__dog" aria-hidden="true" onClick={this.props.showView}></i>
+                </Column>
                 </Columns>
-                <div >
-                    <i class="fa fa-chevron-right fa-5x" id="next__dog" aria-hidden="true" onClick={this.props.showView}></i>
-                </div>
             </div>
         )
     }
