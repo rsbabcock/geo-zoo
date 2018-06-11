@@ -29,7 +29,7 @@ class App extends Component {
         activeUser: localStorage.getItem("geoId"),
         correctGuess: false,
         animals: [],
-        animalImg: [],
+        // animalImg: [],
         continents: [],
         counter: 0
         }
@@ -82,13 +82,13 @@ class App extends Component {
           })
       })
   }
-  // gets all animal images
-  getAnimalImg = () => {
-    this.setState({
-      animalImg: [rhino, dog, gorilla, tiger, elephant, leopard, orangutan, turtle, vaquita]
-    })
-      // console.log(this.state.)
-  }
+  // // gets all animal images
+  // getAnimalImg = () => {
+  //   this.setState({
+  //     animalImg: [rhino, dog, gorilla, tiger, elephant, leopard, orangutan, turtle, vaquita]
+  //   })
+  //     // console.log(this.state.)
+  // }
   // gets all continents from api for information
   getContinents = () => {
     // const foundStuff = {}
@@ -106,7 +106,7 @@ class App extends Component {
   // function to change counter
   gameCounter = function (e){
     // e.preventDefault
-    if(this.state.counter < this.state.animalImg.length-1 ) {
+    if(this.state.counter < this.state.animals.length-1 ) {
       this.setState({
         counter : this.state.counter+1
       })
@@ -119,7 +119,7 @@ class App extends Component {
 
   componentDidMount(){
         this.getAnimals()
-        this.getAnimalImg()
+        // this.getAnimalImg()
         this.getContinents()
         console.log(this.state.continents)
     }
@@ -138,7 +138,7 @@ class App extends Component {
                     return <Login showView={this.showView} setActiveUser={this.setActiveUser} />
                 case "game":
                     return <Game animals={this.state.animals} 
-                    animalImg={this.state.animalImg}
+                    // animalImg={this.state.animalImg}
                      continents={this.state.continents} 
                      counter={this.state.counter}
                      activeUser={this.state.activeUser} 

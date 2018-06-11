@@ -27,7 +27,7 @@ class Game extends Component {
         return (
             <article>
                 <Animal animals={this.props.animals} 
-                animalImg={this.props.animalImg} 
+                // animalImg={this.props.animalImg} 
                 continents={this.props.continents}
                 // continentImg={this.props.continentImg} 
                 counter={this.props.counter}

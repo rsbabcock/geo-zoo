@@ -14,7 +14,8 @@ class Animal extends Component {
             <div>
                 <Columns isCentered >
                     <Column >
-                        <img width="80%" height="80%" src={this.props.animalImg[this.props.counter]} alt="animals" />
+                        <h6> {this.props.animals[this.props.counter].name} </h6>
+                        <img width="80%" height="80%" src={this.props.animals[this.props.counter].image} alt="animals" />
                     </Column>
                     <Column >
                         <div> {this.props.continents.map( c => (
