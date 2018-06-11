@@ -11,22 +11,25 @@ class Animal extends Component {
     // }
 
     render() {
+        // const continentTitle = this.props.continents.map(c => if(c.id < 3 ){return c} )
         return (
             <div>
                 <Columns isCentered >
                     <Column >
                         <img width="80%" height="80%" src={this.props.animalImg[this.props.counter]} alt="animals" />
                     </Column>
-                    <div> 
-                        {this.props.continentImg.map(c => (
-                        <div>
-                            <img src={c} width="200" alt="continents" />
+                    <Column >
+                        <div> {this.props.continents.map ( c => (
+                            <div>
+                            <h6> {c.name} </h6>
+                            <img src={c.image} width="200" alt="continents" /> 
+                            </div>
+                            ))} 
                         </div>
-                    ))}
-                    </div>
-                <Column isSize="narrow" >
-                    <i className="fa fa-chevron-right fa-5x" id="next" aria-hidden="true" onClick={this.props.gameCounter}></i>
-                </Column>
+                    </Column>
+                    <Column isSize="narrow">
+                        <i className="fa fa-chevron-right fa-5x" id="next" aria-hidden="true" onClick={this.props.gameCounter}></i>
+                    </Column>
                 </Columns>
             </div>
         )

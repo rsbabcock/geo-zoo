@@ -30,8 +30,10 @@ class App extends Component {
         correctGuess: false,
         animals: [],
         animalImg: [],
-        continents: [],
-        continentImg: [],
+        continents: []
+          // data: []
+          // images: [],
+          ,
         counter: 0
         }
         // uniqueKey: 1
@@ -92,20 +94,18 @@ class App extends Component {
   }
   // gets all continents from api for information
   getContinents = () => {
+    const foundStuff = {}
       fetch("http://localhost:8088/continents")
       .then(r => r.json())
       .then(c => {
+        // foundStuff.data = c
+        // foundStuff.images = [africa, asia, nAmerica]
           this.setState({
-              continents: c
+            continents : c
           })
       })
   }
   // gets all the continent images from local files and pushes them in an array for ease of use
-  getContinentImages = () => {
-         this.setState({
-           continentImg : [africa, asia, nAmerica]
-         })
-  }
   // function to change counter
   gameCounter = function (e){
     // e.preventDefault
@@ -124,7 +124,7 @@ class App extends Component {
         this.getAnimals()
         this.getAnimalImg()
         this.getContinents()
-        this.getContinentImages()
+        console.log(this.state.continents)
     }
 
 
@@ -143,7 +143,6 @@ class App extends Component {
                     return <Game animals={this.state.animals} 
                     animalImg={this.state.animalImg}
                      continents={this.state.continents} 
-                     continentImg={this.state.continentImg} 
                      counter={this.state.counter}
                      activeUser={this.state.activeUser} 
                      gameCounter={this.gameCounter}/>
