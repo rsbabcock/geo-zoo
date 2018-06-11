@@ -2,11 +2,6 @@ import React, { Component } from 'react'
 import { Button, Columns, Column } from 'bloomer'
 import { Icon } from 'bloomer/lib/elements/Icon';
 import '@fortawesome/fontawesome'
-// import africa from "../img/aImg/africa.png"
-// import asia from "../img/aImg/asia.png"
-// import nAmerica from "../img/aImg/northamerica.png"
-
-
 
 class Animal extends Component {
     // state = {
