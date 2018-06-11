@@ -6,32 +6,26 @@ import '@fortawesome/fontawesome'
 
 
 class Animal extends Component {
-
-    // needs to receive: 
-    // animals and continents
-    // needs to manage:
-    // drag?
-    // <Animal animals={this.state.animals} 
-    // animalImg={this.state.animalImg} 
-    // continents={this.state.continents}
-    // continentImg={this.state.continentImg} 
-    // key={this.uniqueKey++}/>
+    // state = {
+    //     counter : 0
+    // }
 
     render() {
         return (
             <div>
                 <Columns isCentered >
                     <Column >
-                        <img width="80%" height="80%" src={this.props.animalImg[0]} alt="animals" />
+                        <img width="80%" height="80%" src={this.props.animalImg[this.props.counter]} alt="animals" />
                     </Column>
-                    <div> {this.props.continentImg.map(c => (
+                    <div> 
+                        {this.props.continentImg.map(c => (
                         <div>
                             <img src={c} width="200" alt="continents" />
                         </div>
                     ))}
                     </div>
                 <Column isSize="narrow" >
-                    <i className="fa fa-chevron-right fa-5x" id="next__dog" aria-hidden="true" onClick={this.props.showView}></i>
+                    <i className="fa fa-chevron-right fa-5x" id="next" aria-hidden="true" onClick={this.props.gameCounter}></i>
                 </Column>
                 </Columns>
             </div>
