@@ -8,6 +8,15 @@ import Animal from './animals/Animal';
 class Game extends Component {
     uniqueKey = 1
     
+    gameHandler = function (e) {
+        // event that checks if the continent clicked is
+        //  correct one for the current animal
+        // if correct then alerts user and
+        // adds score 
+        if(e.target.id == this.props.animals[0].id){
+            alert("a match!")
+        }
+    } 
 
     render() {
         return (
@@ -18,6 +27,7 @@ class Game extends Component {
                 // continentImg={this.props.continentImg} 
                 counter={this.props.counter}
                 gameCounter={this.props.gameCounter}
+                gameHandler={this.gameHandler}
                 key={this.uniqueKey++}/>
             </article>
         )
