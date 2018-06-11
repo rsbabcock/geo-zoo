@@ -14,12 +14,14 @@ class Animal extends Component {
             <div>
                 <Columns isCentered >
                     <Column >
+                    <div id={this.props.animals[this.props.counter].id} draggable="true">
                         <h6> {this.props.animals[this.props.counter].name} </h6>
                         <img width="80%" height="80%" src={this.props.animals[this.props.counter].image} alt="animals" />
+                    </div>
                     </Column>
                     <Column >
                         <div> {this.props.continents.map( c => (
-                            <div>
+                            <div id={c.id}>
                                 <h6> {c.name} </h6>
                                 <img src={c.image} width="200" alt="continents" /> 
                             </div>

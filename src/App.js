@@ -29,7 +29,6 @@ class App extends Component {
         activeUser: localStorage.getItem("geoId"),
         correctGuess: false,
         animals: [],
-        // animalImg: [],
         continents: [],
         counter: 0
         }
@@ -82,28 +81,18 @@ class App extends Component {
           })
       })
   }
-  // // gets all animal images
-  // getAnimalImg = () => {
-  //   this.setState({
-  //     animalImg: [rhino, dog, gorilla, tiger, elephant, leopard, orangutan, turtle, vaquita]
-  //   })
-  //     // console.log(this.state.)
-  // }
-  // gets all continents from api for information
+  // function to get all continenet info
   getContinents = () => {
     // const foundStuff = {}
       fetch("http://localhost:8088/continents")
       .then(r => r.json())
       .then(c => {
-        // foundStuff.data = c
-        // foundStuff.images = [africa, asia, nAmerica]
           this.setState({
             continents : c
           })
       })
   }
-  // gets all the continent images from local files and pushes them in an array for ease of use
-  // function to change counter
+  // function to change counter to increment game pages one at a time
   gameCounter = function (e){
     // e.preventDefault
     if(this.state.counter < this.state.animals.length-1 ) {
@@ -119,9 +108,7 @@ class App extends Component {
 
   componentDidMount(){
         this.getAnimals()
-        // this.getAnimalImg()
         this.getContinents()
-        console.log(this.state.continents)
     }
 
 
