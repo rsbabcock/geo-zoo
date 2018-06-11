@@ -14,7 +14,7 @@ import orangutan from "../img/aImg/orangutan.png"
 import turtle from "../img/aImg/hawksbillTurtle.png"
 import vaquita from "../img/aImg/vaquitaBetter.png"
 // animal component pages
-import Rhino from './animals/Rhino';
+import Animal from './animals/Animal';
 
 
 
@@ -46,7 +46,6 @@ class Game extends Component {
         this.state.animalImg.push(rhino, dog, gorilla, tiger, elephant, leopard, orangutan, turtle, vaquita)
         // console.log(this.state.)
     }
-
     // gets all continents from api for information
     getContinents = () => {
         fetch("http://localhost:8088/continents")
@@ -75,7 +74,7 @@ class Game extends Component {
     render() {
         return (
             <article>
-                <Rhino animals={this.state.animals} 
+                <Animal animals={this.state.animals} 
                 animalImg={this.state.animalImg} 
                 continents={this.state.continents}
                 continentImg={this.state.continentImg} 

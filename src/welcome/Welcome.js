@@ -12,7 +12,7 @@ class Welcome extends Component {
     render() {
         return (
             <div>
-                <Columns isCentered isGapless>
+                <Columns isCentered>
                     <Column isSize="1/2">
                         <h1> Welcome to GeoZoo</h1>
                         <h3> Instructions </h3>

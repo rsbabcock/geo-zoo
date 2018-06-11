@@ -5,13 +5,13 @@ import '@fortawesome/fontawesome'
 
 
 
-class Rhino extends Component {
+class Animal extends Component {
 
     // needs to receive: 
     // animals and continents
     // needs to manage:
     // drag?
-    // <Rhino animals={this.state.animals} 
+    // <Animal animals={this.state.animals} 
     // animalImg={this.state.animalImg} 
     // continents={this.state.continents}
     // continentImg={this.state.continentImg} 
@@ -39,4 +39,4 @@ class Rhino extends Component {
     }
 }
 
-export default Rhino
+export default Animal
