@@ -6,22 +6,8 @@ import Animal from './animals/Animal';
 
 
 class Game extends Component {
-
-    state = {
-        drag: "",
-        userScore: 0,
-    }
-    // props: activeUser={this.state.activeUser} showView={this.showView}
     uniqueKey = 1
-    // needs to do: 
-    // function to get all animals from the api for game pieces
     
-    // componentDidMount(){
-    //     this.getAnimals()
-    //     this.getAnimalImg()
-    //    this.getContinents()
-    //     this.getContinentImages()
-    // }
 
     render() {
         return (

@@ -5,21 +5,7 @@ import Register from './auth/Register';
 import Login from './auth/Login';
 import Welcome from './welcome/Welcome';
 import Game from './game/Game';
-// import SearchResults from './search/SearchResults';
-// import ProfileView from './profile/ProfileView'
-import africa from "./img/aImg/africa.png"
-import asia from "./img/aImg/asia.png"
-import nAmerica from "./img/aImg/northamerica.png"
-// animals images
-import rhino from "./img/aImg/rhino.png"
-import dog from "./img/aImg/wildDog.png"
-import gorilla from "./img/aImg/mtGorilla.png"
-import tiger from "./img/aImg/tiger.png"
-import elephant from "./img/aImg/elephant.png"
-import leopard from "./img/aImg/leopard.png"
-import orangutan from "./img/aImg/orangutan.png"
-import turtle from "./img/aImg/hawksbillTurtle.png"
-import vaquita from "./img/aImg/vaquitaBetter.png"
+
 
 class App extends Component {
 
@@ -27,14 +13,14 @@ class App extends Component {
     state = {
         currentView: "login",
         activeUser: localStorage.getItem("geoId"),
-        correctGuess: false,
+        userScore: 0,
         animals: [],
         continents: [],
         counter: 0
         }
         // uniqueKey: 1
         
-    // Function to update local storage and set activeUser state
+  // Function to update local storage and set activeUser state
     setActiveUser = (val) => {
         if (val) {
             localStorage.setItem("geoId", val, )
@@ -45,8 +31,7 @@ class App extends Component {
             activeUser: val
         })
     }
-    // View switcher -> passed to NavBar and Login
-    // Argument can be an event (via NavBar) or a string (via Login)
+  // Argument can be an event (via NavBar) or a string (via Login)
     showView = function (e) {
       // debugger
         let view = null
@@ -71,7 +56,7 @@ class App extends Component {
         })
 
     }.bind(this)
-    // getannimals
+  // get annimals
     getAnimals = () => {
       fetch("http://localhost:8088/animals")
       .then(r => r.json())
@@ -105,7 +90,7 @@ class App extends Component {
     // debugger
 
   }.bind(this)
-
+  // Component that gets all animal and continent info
   componentDidMount(){
         this.getAnimals()
         this.getContinents()
