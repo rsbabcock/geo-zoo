@@ -30,10 +30,7 @@ class App extends Component {
         correctGuess: false,
         animals: [],
         animalImg: [],
-        continents: []
-          // data: []
-          // images: [],
-          ,
+        continents: [],
         counter: 0
         }
         // uniqueKey: 1
@@ -94,7 +91,7 @@ class App extends Component {
   }
   // gets all continents from api for information
   getContinents = () => {
-    const foundStuff = {}
+    // const foundStuff = {}
       fetch("http://localhost:8088/continents")
       .then(r => r.json())
       .then(c => {

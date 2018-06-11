@@ -2,6 +2,9 @@ import React, { Component } from 'react'
 import { Button, Columns, Column } from 'bloomer'
 import { Icon } from 'bloomer/lib/elements/Icon';
 import '@fortawesome/fontawesome'
+// import africa from "../img/aImg/africa.png"
+// import asia from "../img/aImg/asia.png"
+// import nAmerica from "../img/aImg/northamerica.png"
 
 
 
@@ -19,10 +22,10 @@ class Animal extends Component {
                         <img width="80%" height="80%" src={this.props.animalImg[this.props.counter]} alt="animals" />
                     </Column>
                     <Column >
-                        <div> {this.props.continents.map ( c => (
+                        <div> {this.props.continents.map( c => (
                             <div>
-                            <h6> {c.name} </h6>
-                            <img src={c.image} width="200" alt="continents" /> 
+                                <h6> {c.name} </h6>
+                                <img src={c.image} width="200" alt="continents" /> 
                             </div>
                             ))} 
                         </div>

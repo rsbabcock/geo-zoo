@@ -29,7 +29,7 @@ class Game extends Component {
                 <Animal animals={this.props.animals} 
                 animalImg={this.props.animalImg} 
                 continents={this.props.continents}
-                continentImg={this.props.continentImg} 
+                // continentImg={this.props.continentImg} 
                 counter={this.props.counter}
                 gameCounter={this.props.gameCounter}
                 key={this.uniqueKey++}/>

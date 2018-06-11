@@ -55,21 +55,21 @@
   "continents": [
     {
       "id": 1,
-      "image": "../img/aImg/africa.png",
+      "image": "https://image.ibb.co/dKBcno/africa.png",
       "name": "Africa",
       "fact": "Africa is known for its many magnificent animal species, and many people come to Africa for the very purpose of catching a glimpse of these amazing animals in their native habitat. Among the animals native to Africa are the African Wild Dog, Mountain Gorilla, and Black Rhinoceros. Many African animals have earned distinctions, among these, the African Elephant is the world’s largest land animal, the cheetah is the world’s fastest land animal and the giraffe is the tallest animal on land. There are several species of fish native to Africa, and Lake Malawi has more species of fish recorded than any other lake in the world.",
       "url": "https://www.whatarethe7continents.com/africa-continent/"
     },
     {
       "id": 2,
-      "image": "../img/aImg/asia.png",
+      "image": "https://image.ibb.co/hfZxno/asia.png",
       "name": "Asia",
       "fact": "Asia is the largest of the 7 continents. There are 48 countries in Asia. Most people of Asia are Chinese, Japanese, Indian, or Arab. The main religions include Buddhism, Hinduism, Taoism, Jainism, Christianity, and Shintoism. The largest cities of Asia are Tokyo, Seoul, Jakarta, Dehli, Mumbai, Manila, and Shanghai. Asia is surrounded on three sides by oceans. The Pacific, Artic, and Indian oceans all surround Asia. The land of Asia is divided into six regions. These six regions are North Asia, Central Asia, Southwest Asia, South Asia, Southeast Asia, and East Asia. Each region has something unique to offer.",
       "url": "https://www.whatarethe7continents.com/asia-continent/"
     },
     {
       "id": 3,
-      "image": "../img/aImg/northamerica.png",
+      "image": "https://image.ibb.co/fpgz08/northamerica.png",
       "name": "North America",
       "fact": "North America is divided into four main geographic regions: the Great Plains, Canadian Shield, East and the West. The Great Plains is a large area of grassland that stretched west of the Mississippi River and east of the Rocky Mountains in the central Canada and United States. The Canadian Shield, or the Laurentian Plateau, is a large plateau region made mostly from igneous (or lava) rock covered in soil. The East is characterized as everything east of the Appalachian Mountains, while the West is generally considered as everything west of the Rocky Mountains. The highest point of North America is Mount McKinley, Alaska, which reaches to 6,194 meters above sea level. The lowest point of North America is Death Valley, California, which sinks to 86 meters below sea level. North America is bordered by the Atlantic Ocean in the east, the Pacific Ocean in the west, the Arctic Ocean to the north, and both the Panama Canal and South America to the South. North America’s longest river is the Mississippi River, which runs from Northern Minnesota to the Gulf of Mexico. The largest freshwater lake in the world, Lake Superior, can be found in both Ontario and Minnesota.",
       "url": "https://www.whatarethe7continents.com/north-american-continent/"
