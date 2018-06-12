@@ -1,11 +1,23 @@
 import React, { Component } from 'react'
 import { Columns, Column } from 'bloomer'
+import { Modal, ModalCard, ModalCardHeader, ModalBackground, Delete, ModalCardTitle, ModalCardBody, ModalCardFooter, } from 'bloomer'
 // import { Icon } from 'bloomer/lib/elements/Icon';
 import '@fortawesome/fontawesome'
+import Fact from './Modal'
 
 class Animal extends Component {
-    
-    
+    state = {
+        isActive: false
+    }
+
+
+    modalHandler = (e) => {
+        this.setState({
+            isActive: !this.state.isActive
+        })
+    }
+
+
 
     render() {
         // const continentTitle = this.props.continents.map(c => if(c.id < 3 ){return c} )
@@ -13,25 +25,31 @@ class Animal extends Component {
             <div>
                 <Columns isCentered >
                     <Column>
-                    <div className="animal" id={this.props.animals[this.props.counter].continentId} draggable="true">
-                        <h6> {this.props.animals[this.props.counter].name} </h6>
-                        <img width="80%" height="80%" src={this.props.animals[this.props.counter].image} alt="animals" />
-                    </div>
+                        <div className="animal" id={this.props.animals[this.props.counter].continentId} draggable="true">
+                            <h6> {this.props.animals[this.props.counter].name} </h6>
+                            <img width="80%" height="80%" src={this.props.animals[this.props.counter].image} alt="animals" />
+                        </div>
+                        <div>
+                            <button onClick={this.modalHandler}> Facts </button>
+                            < Fact show={this.state.isActive}
+                                onClose={this.modalHandler}
+                                animal={this.props.animals[this.props.counter]} />
+                        </div>
                     </Column>
                     <Column >
-                        <div> {this.props.continents.map( c => (
-                            <div id={c.id} className="continent" 
+                        <div> {this.props.continents.map(c => (
+                            <div id={c.id} className="continent"
                                 onClick={() => this.props.gameHandler(this.props.animals[this.props.counter].continentId, c.id)}>
                                 <h6> {c.name} </h6>
-                                <img src={c.image} width="200" alt="continents" /> 
+                                <img src={c.image} width="200" alt="continents" />
                             </div>
-                            ))} 
+                        ))}
                         </div>
                     </Column>
                     <Column isSize="narrow">
-                            <div>
-                        <i className="fa fa-chevron-right fa-5x" id="next_gameScore" aria-hidden="true" onClick={this.props.gameCounter}></i>
-                            </div>
+                        <div>
+                            <i className="fa fa-chevron-right fa-5x" id="next_gameScore" aria-hidden="true" onClick={this.props.gameCounter}></i>
+                        </div>
                     </Column>
                 </Columns>
             </div>
