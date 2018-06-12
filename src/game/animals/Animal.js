@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Columns, Column } from 'bloomer'
-import { Modal, ModalCard, ModalCardHeader, ModalBackground, Delete, ModalCardTitle, ModalCardBody, ModalCardFooter, } from 'bloomer'
+import { Modal, Button, ModalCard, ModalCardHeader, ModalBackground, Delete, ModalCardTitle, ModalCardBody, ModalCardFooter, } from 'bloomer'
 // import { Icon } from 'bloomer/lib/elements/Icon';
 import '@fortawesome/fontawesome'
 import Fact from './Modal'
@@ -30,7 +30,7 @@ class Animal extends Component {
                             <img width="80%" height="80%" src={this.props.animals[this.props.counter].image} alt="animals" />
                         </div>
                         <div>
-                            <button onClick={this.modalHandler}> Facts </button>
+                            <Button onClick={this.modalHandler} isOutlined> Facts </Button>
                             <Modal isActive={this.state.isActive}>
                                 <ModalBackground />
                                 <ModalCard>
@@ -55,10 +55,25 @@ class Animal extends Component {
                     </Column>
                     <Column >
                         <div> {this.props.continents.map(c => (
-                            <div id={c.id} className="continent"
-                                onClick={() => this.props.gameHandler(this.props.animals[this.props.counter].continentId, c.id)}>
+                            <div id={c.id} className="continent">
                                 <h6> {c.name} </h6>
-                                <img src={c.image} width="200" alt="continents" />
+                                <img id={c.id} 
+                                src={c.image} width="200" alt="continents" 
+                                onClick={() => this.props.gameHandler(this.props.animals[this.props.counter].continentId, c.id)} />
+                                <Button onClick={this.modalHandler} isOutlined> Facts </Button>
+                                <Modal isActive={this.state.isActive}>
+                                    <ModalBackground />
+                                    <ModalCard>
+                                        <ModalCardHeader>
+                                            <ModalCardTitle> {c.name} </ModalCardTitle>
+                                            <Delete onClick={this.modalHandler} />
+                                        </ModalCardHeader>
+                                        <ModalCardBody>
+                                            <p> {c.fact} </p>
+                                            <p> {c.url} </p>
+                                        </ModalCardBody>
+                                    </ModalCard>
+                                </Modal>
                             </div>
                         ))}
                         </div>
