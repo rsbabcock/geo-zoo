@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import { Box } from 'bloomer'
 
 
 export default class Scores extends Component {
@@ -7,7 +8,7 @@ export default class Scores extends Component {
             <div className="card score">
                 <div className="card-body">
                     {this.props.scores.map(score => (
-                        <div>
+                        <Box >
                         <div>
                             <h5 className="card-title">
                                 {score.user.firstName}  {score.user.lastName}
@@ -21,7 +22,7 @@ export default class Scores extends Component {
                                 {score.finalScore}
                             </p>
                         </div>
-                        </div>
+                        </Box>
                 ))}
                 </div>
             </div>

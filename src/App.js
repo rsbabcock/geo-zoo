@@ -134,7 +134,7 @@ class App extends Component {
                      gameHandler={this.gameHandler}
                      userScore={this.state.userScore}/>
                 case "gameScore":
-                    return <GameScore score={this.state.userScore} activeUser={this.state.activeUser} counter={this.state.counter}/>                     
+                    return <GameScore score={this.state.userScore} activeUser={this.state.activeUser} counter={this.state.counter} showView={this.showView}/>                     
                 case "scoreList":
                     return <ScoreList activeUser={this.state.activeUser} />
                 case "welcome":
