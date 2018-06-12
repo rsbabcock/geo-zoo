@@ -4,7 +4,7 @@ import { Modal, Button, ModalCard, ModalCardHeader, ModalBackground, Delete, Mod
 // import { Icon } from 'bloomer/lib/elements/Icon';
 import '@fortawesome/fontawesome'
 import Fact from './Modal'
-import $ from ‘jquery’
+// import $ from ‘jquery’
 
 class Animal extends Component {
     state = {
@@ -20,14 +20,14 @@ class Animal extends Component {
         })
     }
 
-    continentHandler = (id) => {
-        if( id === $("#continent__id")) {
-            this.setState({
-                isActive : true
-            })
-        }
-        // });
-    }
+    // continentHandler = (id) => {
+    //     if( id === $("#continent__id")) {
+    //         this.setState({
+    //             isActive : true
+    //         })
+    //     }
+    //     // });
+    // }
     
 
 
@@ -57,9 +57,9 @@ class Animal extends Component {
                                         <p>
                                             {this.props.animals[this.props.counter].diet}
                                         </p>
-                                        <p>
-                                            {this.props.animals[this.props.counter].url}
-                                        </p>
+                                        <a href={this.props.animals[this.props.counter].url} target="_blank"> 
+                                        {this.props.animals[this.props.counter].url}
+                                        </a>
                                     </ModalCardBody>
                                 </ModalCard>
                             </Modal>
