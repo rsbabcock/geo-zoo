@@ -29,7 +29,9 @@ class Animal extends Component {
                         </div>
                     </Column>
                     <Column isSize="narrow">
-                        <i className="fa fa-chevron-right fa-5x" id="next" aria-hidden="true" onClick={this.props.gameCounter}></i>
+                            <div>
+                        <i className="fa fa-chevron-right fa-5x" id="next_gameScore" aria-hidden="true" onClick={this.props.gameCounter}></i>
+                            </div>
                     </Column>
                 </Columns>
             </div>

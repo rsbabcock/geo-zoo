@@ -87,8 +87,7 @@ class App extends Component {
         counter : this.state.counter+1
       })
     } else {
-      
-      return <GameScore score={this.state.userScore} activeUser={this.state.activeUser}/>
+      this.showView("gameScore")
     }
     // debugger
 
@@ -134,6 +133,8 @@ class App extends Component {
                      gameCounter={this.gameCounter}
                      gameHandler={this.gameHandler}
                      userScore={this.state.userScore}/>
+                case "gameScore":
+                    return <GameScore score={this.state.userScore} activeUser={this.state.activeUser} counter={this.state.counter}/>                     
                 case "scoreList":
                     return <ScoreList activeUser={this.state.activeUser} />
                 case "welcome":
