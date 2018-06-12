@@ -90,6 +90,20 @@ class App extends Component {
     // debugger
 
   }.bind(this)
+  // function to handle game play
+  gameHandler = function (animalContinent, currentContinent) {
+    // e.preventDefault()
+    // event that checks if the continent clicked is
+    //  correct one for the current animal
+    if(animalContinent === currentContinent) {
+        // if correct then alerts user and
+        alert("That's correct!")
+        // adds score 
+        this.setState({
+          userScore : this.state.userScore+1
+        })
+    } else { alert("That's incorrect")}
+}.bind(this)
   // Component that gets all animal and continent info
   componentDidMount(){
         this.getAnimals()
@@ -114,7 +128,9 @@ class App extends Component {
                      continents={this.state.continents} 
                      counter={this.state.counter}
                      activeUser={this.state.activeUser} 
-                     gameCounter={this.gameCounter}/>
+                     gameCounter={this.gameCounter}
+                     gameHandler={this.gameHandler}
+                     userScore={this.state.userScore}/>
                 case "welcome":
                 default: 
                   return <Welcome activeUser={this.state.activeUser} showView={this.showView}/>

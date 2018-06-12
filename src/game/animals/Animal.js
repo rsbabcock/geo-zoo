@@ -20,7 +20,8 @@ class Animal extends Component {
                     </Column>
                     <Column >
                         <div> {this.props.continents.map( c => (
-                            <div id={c.id} className="continent" onClick={this.props.gameHandler}>
+                            <div id={c.id} className="continent" 
+                                onClick={() => this.props.gameHandler(this.props.animals[this.props.counter].continentId, c.id)}>
                                 <h6> {c.name} </h6>
                                 <img src={c.image} width="200" alt="continents" /> 
                             </div>
