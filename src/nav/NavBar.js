@@ -10,11 +10,11 @@ export default class NavBar extends Component {
 
     LoginLogout = () => {
         if (this.props.activeUser === null) {
-            return <a className="nav-link" id="nav__login"
-                onClick={this.props.viewHandler} href="#">Login</a>
+            return <p className="nav-link" id="nav__login"
+                onClick={this.props.viewHandler} href="#">Login</p>
         } else {
-            return <a className="nav-link" id="nav__logout"
-                onClick={this.props.viewHandler} href="#">Logout</a>
+            return <p className="nav-link" id="nav__logout"
+                onClick={this.props.viewHandler}>Logout</p>
         }
     }
 
@@ -42,8 +42,8 @@ export default class NavBar extends Component {
                     </Tab>
                     <Tab>
                         <TabLink  >
-                            <a className="nav-link" id="nav__scoreList"
-                        onClick={this.props.viewHandler} href="#">Scores</a>
+                            <p className="nav-link" id="nav__scoreList"
+                        onClick={this.props.viewHandler} >Scores</p>
                             {/* <Icon isSize='small'><span className='fa fa-image' aria-hidden='true' /></Icon> */}
                         </TabLink>
                     </Tab>

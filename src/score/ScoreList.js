@@ -14,6 +14,7 @@ class ScoreList extends Component {
     state = {
        scores : []
     }
+    unique = 1
 
 
     // Handle for getting all scores
@@ -41,7 +42,7 @@ class ScoreList extends Component {
                    <h1> Scores </h1>
                 </div>
                 <div>
-                    <Scores scores={this.state.scores}/>
+                    <Scores scores={this.state.scores} key={this.unique++}/>
                 </div>
             </div>
 

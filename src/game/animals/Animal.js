@@ -1,22 +1,34 @@
 import React, { Component } from 'react'
 import { Columns, Column } from 'bloomer'
-import { Modal, Button, ModalCard, ModalCardHeader, ModalBackground, Delete, ModalCardTitle, ModalCardBody, ModalCardFooter, } from 'bloomer'
+import { Modal, Button, ModalCard, ModalCardHeader, ModalBackground, Delete, ModalCardTitle, ModalCardBody } from 'bloomer'
 // import { Icon } from 'bloomer/lib/elements/Icon';
 import '@fortawesome/fontawesome'
 import Fact from './Modal'
+import $ from ‘jquery’
 
 class Animal extends Component {
     state = {
-        isActive: false
+        isActive: false,
+        animalActive: false
+        // continentActive: false,
     }
 
 
-    modalHandler = (e) => {
+    animalHandler = (e) => {
         this.setState({
-            isActive: !this.state.isActive
+            animalActive: !this.state.animalActive
         })
     }
 
+    continentHandler = (id) => {
+        if( id === $("#continent__id")) {
+            this.setState({
+                isActive : true
+            })
+        }
+        // });
+    }
+    
 
 
     render() {
@@ -30,13 +42,13 @@ class Animal extends Component {
                             <img width="80%" height="80%" src={this.props.animals[this.props.counter].image} alt="animals" />
                         </div>
                         <div>
-                            <Button onClick={this.modalHandler} isOutlined> Facts </Button>
-                            <Modal isActive={this.state.isActive}>
+                            <Button id="animalFact" onClick={this.animalHandler} isOutlined> Facts </Button>
+                            <Modal isActive={this.state.animalActive}>
                                 <ModalBackground />
                                 <ModalCard>
                                     <ModalCardHeader>
                                         <ModalCardTitle>{this.props.animals[this.props.counter].name}</ModalCardTitle>
-                                        <Delete onClick={this.modalHandler} />
+                                        <Delete onClick={this.animalHandler} />
                                     </ModalCardHeader>
                                     <ModalCardBody>
                                         <p>
@@ -54,29 +66,17 @@ class Animal extends Component {
                         </div>
                     </Column>
                     <Column >
-                        <div> {this.props.continents.map(c => (
-                            <div id={c.id} className="continent">
+                        {this.props.continents.map(c => (
+                            <div key={c.id} id={c.id} className="continent">
                                 <h6> {c.name} </h6>
-                                <img id={c.id} 
-                                src={c.image} width="200" alt="continents" 
-                                onClick={() => this.props.gameHandler(this.props.animals[this.props.counter].continentId, c.id)} />
-                                <Button onClick={this.modalHandler} isOutlined> Facts </Button>
-                                <Modal isActive={this.state.isActive}>
-                                    <ModalBackground />
-                                    <ModalCard>
-                                        <ModalCardHeader>
-                                            <ModalCardTitle> {c.name} </ModalCardTitle>
-                                            <Delete onClick={this.modalHandler} />
-                                        </ModalCardHeader>
-                                        <ModalCardBody>
-                                            <p> {c.fact} </p>
-                                            <p> {c.url} </p>
-                                        </ModalCardBody>
-                                    </ModalCard>
-                                </Modal>
-                            </div>
-                        ))}
+                                <img id={c.id}
+                                    src={c.image} width="200" alt="continents"
+                                    onClick={() => this.props.gameHandler(this.props.animals[this.props.counter].continentId, c.id)}
+                                />
+                                <Button id={"button__"+ c.id} onClick={() => this.continentHandler(c.id )} isOutlined> Facts </Button>
+                                <Fact c={c} id={"continent__"+ c.id} isActive={this.state.continentActive} continentHandler={this.continentHandler}/>
                         </div>
+                        ))}
                     </Column>
                     <Column isSize="narrow">
                         <div>
