@@ -5,6 +5,7 @@ import Register from './auth/Register';
 import Login from './auth/Login';
 import Welcome from './welcome/Welcome';
 import Game from './game/Game';
+import ScoreList from "./score/ScoreList"
 
 
 class App extends Component {
@@ -131,6 +132,8 @@ class App extends Component {
                      gameCounter={this.gameCounter}
                      gameHandler={this.gameHandler}
                      userScore={this.state.userScore}/>
+                case "scoreList":
+                    return <ScoreList activeUser={this.state.activeUser} />
                 case "welcome":
                 default: 
                   return <Welcome activeUser={this.state.activeUser} showView={this.showView}/>

@@ -4,6 +4,7 @@ import "./NavBar.css"
 import logo from "../img/Group.png"
 
 
+
 export default class NavBar extends Component {
 
 
@@ -36,6 +37,13 @@ export default class NavBar extends Component {
                     <Tab>
                         <TabLink>
                         <this.LoginLogout />
+                            {/* <Icon isSize='small'><span className='fa fa-image' aria-hidden='true' /></Icon> */}
+                        </TabLink>
+                    </Tab>
+                    <Tab>
+                        <TabLink  >
+                            <a className="nav-link" id="nav__scoreList"
+                        onClick={this.props.viewHandler} href="#">Scores</a>
                             {/* <Icon isSize='small'><span className='fa fa-image' aria-hidden='true' /></Icon> */}
                         </TabLink>
                     </Tab>
