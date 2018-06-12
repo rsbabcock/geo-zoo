@@ -30,7 +30,7 @@ export default class NavBar extends Component {
                 <TabList>
                 <Tab>
                         <TabLink>
-                        <Image isSize="64x64" src={logo} />
+                        <Image className="nav_logo" isSize="64x64" src={logo} onClick={this.props.viewHandler}/>
                             {/* <Icon isSize='small'><span className='fa fa-image' aria-hidden='true' /></Icon> */}
                         </TabLink>
                     </Tab>
