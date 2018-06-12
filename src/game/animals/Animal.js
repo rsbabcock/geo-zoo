@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Button, Columns, Column } from 'bloomer'
+import { Columns, Column } from 'bloomer'
 import { Icon } from 'bloomer/lib/elements/Icon';
 import '@fortawesome/fontawesome'
 
@@ -13,7 +13,7 @@ class Animal extends Component {
             <div>
                 <Columns isCentered >
                     <Column>
-                    <div id={this.props.animals[this.props.counter].id} draggable="true">
+                    <div className="animal" id={this.props.animals[this.props.counter].continentId} draggable="true">
                         <h6> {this.props.animals[this.props.counter].name} </h6>
                         <img width="80%" height="80%" src={this.props.animals[this.props.counter].image} alt="animals" />
                     </div>

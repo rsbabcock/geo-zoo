@@ -13,9 +13,12 @@ class Game extends Component {
         //  correct one for the current animal
         // if correct then alerts user and
         // adds score 
-        if(e.target.id == this.props.animals[0].id){
-            alert("a match!")
-        }
+        e.preventDefault()
+        console.log(e.currentTarget.id)
+        console.log("you click me!")
+        // if(e.target.id == this.props.animals[0].id){
+        //     alert("a match!")
+        // }
     } 
 
     render() {
