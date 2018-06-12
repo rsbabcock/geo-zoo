@@ -31,9 +31,26 @@ class Animal extends Component {
                         </div>
                         <div>
                             <button onClick={this.modalHandler}> Facts </button>
-                            < Fact show={this.state.isActive}
-                                onClose={this.modalHandler}
-                                animal={this.props.animals[this.props.counter]} />
+                            <Modal isActive={this.state.isActive}>
+                                <ModalBackground />
+                                <ModalCard>
+                                    <ModalCardHeader>
+                                        <ModalCardTitle>{this.props.animals[this.props.counter].name}</ModalCardTitle>
+                                        <Delete onClick={this.modalHandler} />
+                                    </ModalCardHeader>
+                                    <ModalCardBody>
+                                        <p>
+                                            {this.props.animals[this.props.counter].fact}
+                                        </p>
+                                        <p>
+                                            {this.props.animals[this.props.counter].diet}
+                                        </p>
+                                        <p>
+                                            {this.props.animals[this.props.counter].url}
+                                        </p>
+                                    </ModalCardBody>
+                                </ModalCard>
+                            </Modal>
                         </div>
                     </Column>
                     <Column >
