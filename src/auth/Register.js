@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import { Columns, Column, Field, Control, Input, Button, Title, Image } from 'bloomer'
+import { Columns, Column, Field, Control, Input, Button, Title } from 'bloomer'
 import 'bulma/css/bulma.css'
 // import logo from "../img/Group.png"
 

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Columns, Column } from 'bloomer'
-import { Icon } from 'bloomer/lib/elements/Icon';
+// import { Icon } from 'bloomer/lib/elements/Icon';
 import '@fortawesome/fontawesome'
 
 class Animal extends Component {

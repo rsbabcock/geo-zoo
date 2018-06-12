@@ -1,7 +1,7 @@
 import React, { Component } from "react"
-import { Columns, Column, Field, Control, Input, Button, Image } from 'bloomer'
+// import { Columns, Column, Field, Control, Input, Button, Image } from 'bloomer'
 import 'bulma/css/bulma.css'
-import logo from "../img/Group.png"
+// import logo from "../img/Group.png"
 import Scores from "./Scores"
 // import geoZoo from "../img/words.png"
 // import { Columns } from "bloomer/lib/grid/Columns";

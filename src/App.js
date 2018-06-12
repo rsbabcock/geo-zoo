@@ -6,6 +6,7 @@ import Login from './auth/Login';
 import Welcome from './welcome/Welcome';
 import Game from './game/Game';
 import ScoreList from "./score/ScoreList"
+import GameScore from "./game/GameScore"
 
 
 class App extends Component {
@@ -86,7 +87,8 @@ class App extends Component {
         counter : this.state.counter+1
       })
     } else {
-      return alert("all done")
+      
+      return <GameScore score={this.state.userScore} activeUser={this.state.activeUser}/>
     }
     // debugger
 
