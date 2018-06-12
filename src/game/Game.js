@@ -7,25 +7,6 @@ import Animal from './animals/Animal';
 
 class Game extends Component {
     uniqueKey = 1
-    
-    // gameHandler = function (animalContinent, currentContinent) {
-    //     // e.preventDefault()
-    //     // event that checks if the continent clicked is
-    //     //  correct one for the current animal
-    //     if(animalContinent === currentContinent) {
-    //         // if correct then alerts user and
-    //         alert("That's correct!")
-    //         // adds score 
-    //         this.setState({
-    //             userScore : this.props.userScore+1
-    //         })
-    //     } else { alert("That's incorrect")}
-    //     // console.log(e.currentTarget.id)
-    //     // console.log("you click me!")
-    //     // if(e.target.id == this.props.animals[0].id){
-    //     //     alert("a match!")
-    //     // }
-    // } 
 
     render() {
         return (
