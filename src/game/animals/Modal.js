@@ -11,7 +11,7 @@ class Fact extends Component {
 
     render() {
         return (
-            <Modal key={this.props.c.id} isActive={this.props.isActive}>
+            <Modal id={this.props.id} key={this.props.c.id} >
                                     <ModalBackground />
                                     <ModalCard>
                                         <ModalCardHeader>

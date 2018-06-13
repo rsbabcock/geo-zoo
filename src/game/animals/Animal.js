@@ -4,15 +4,14 @@ import { Modal, Button, ModalCard, ModalCardHeader, ModalBackground, Delete, Mod
 // import { Icon } from 'bloomer/lib/elements/Icon';
 import '@fortawesome/fontawesome'
 import Fact from './Modal'
-// import $ from ‘jquery’
+// import $ from 'jquery'
 
 class Animal extends Component {
     state = {
-        isActive: false,
-        animalActive: false
+        animalActive: false,
+        // isActive: false
         // continentActive: false,
     }
-
 
     animalHandler = (e) => {
         this.setState({
@@ -20,16 +19,18 @@ class Animal extends Component {
         })
     }
 
-    // continentHandler = (id) => {
-    //     if( id === $("#continent__id")) {
-    //         this.setState({
-    //             isActive : true
-    //         })
-    //     }
-    //     // });
-    // }
-    
+    continentHandler = function ( id) {
+        // debugger
+        // console.log($(`#${id}`).attr("isActive"))
+        const thing = document.getElementById(id)
+        thing.classList.add('is-active')
 
+    }
+    
+    closeHandler = function(id){
+        const close = document.getElementById(id)
+        close.classList.remove('is-active')
+    }
 
     render() {
         // const continentTitle = this.props.continents.map(c => if(c.id < 3 ){return c} )
@@ -73,8 +74,20 @@ class Animal extends Component {
                                     src={c.image} width="200" alt="continents"
                                     onClick={() => this.props.gameHandler(this.props.animals[this.props.counter].continentId, c.id)}
                                 />
-                                <Button id={"button__"+ c.id} onClick={() => this.continentHandler(c.id )} isOutlined> Facts </Button>
-                                <Fact c={c} id={"continent__"+ c.id} isActive={this.state.continentActive} continentHandler={this.continentHandler}/>
+                                <Button id={"button__"+ c.id} onClick={() => this.continentHandler( "continent__"+c.id )} isOutlined> Facts </Button>
+                                <Modal id={"continent__"+c.id} key={c.id} value={this.state.value} >
+                                    <ModalBackground />
+                                    <ModalCard>
+                                        <ModalCardHeader>
+                                            <ModalCardTitle> {c.name} </ModalCardTitle>
+                                            <Delete id={"delete__"+c.id} onClick={() => this.closeHandler("continent__"+c.id)}   />
+                                        </ModalCardHeader>
+                                        <ModalCardBody>
+                                            <p> {c.fact} </p>
+                                            <p> {c.url} </p>
+                                        </ModalCardBody>
+                                    </ModalCard>
+                                </Modal>
                         </div>
                         ))}
                     </Column>
