@@ -87,18 +87,18 @@ class App extends Component {
   }
   // function to post score at the end of hte game
   // function to change counter to increment game pages one at a time
-  gameCounter = function (e){
+  // gameCounter = function (e){
     // e.preventDefault
-    if(this.state.counter < this.state.animals.length-1 ) {
-      this.setState({
-        counter : this.state.counter+1
-      })
-    } else {
-      this.showView("gameScore")
-    }
+    // if(this.state.counter < this.state.animals.length-1 ) {
+    //   this.setState({
+    //     counter : this.state.counter+1
+    //   })
+    // } else {
+    //   this.showView("gameScore")
+    // }
     // debugger
 
-  }.bind(this)
+  // }.bind(this)
   // function to handle game play
   gameHandler = function (animalContinent, currentContinent) {
     // e.preventDefault()
@@ -111,7 +111,23 @@ class App extends Component {
         this.setState({
           userScore : this.state.userScore+1
         })
-    } else { alert("That's incorrect")}
+        if(this.state.counter < this.state.animals.length-1 ) {
+          this.setState({
+            counter : this.state.counter+1
+          })
+        } else {
+          this.showView("gameScore")
+        }
+    } else { 
+      alert("That's incorrect")
+      if(this.state.counter < this.state.animals.length-1 ) {
+        this.setState({
+          counter : this.state.counter+1
+        })
+      } else {
+        this.showView("gameScore")
+      }
+    }
 }.bind(this)
   // Component that gets all animal and continent info
   componentDidMount(){

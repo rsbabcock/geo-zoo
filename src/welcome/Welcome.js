@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { Button } from 'bloomer'
 import { Hero, HeroHeader, 
-    HeroBody, HeroFooter, Container, 
-    Title, Columns, Column} from 'bloomer'
+    HeroBody, Container, 
+    Title} from 'bloomer'
 import words from "../img/words.png"    
 
 
@@ -19,7 +19,7 @@ class Welcome extends Component {
                 <Container style={{ margin: 15}}>
                 <Hero style={{ padding: 15}} isColor="primary">
                     <Container>
-                        <HeroHeader isSize="1/2">
+                        <HeroHeader>
                             <Title style={{ textAlign: 'center'}}> Welcome to <br/> <img src={words}/></Title>
                         </HeroHeader>
                     </Container>

@@ -264,6 +264,18 @@
       "finalScore": 1,
       "timeStamp": "2018-06-13T19:25:41.694Z",
       "id": 36
+    },
+    {
+      "userId": "1",
+      "finalScore": 6,
+      "timeStamp": "2018-06-13T20:34:34.282Z",
+      "id": 37
+    },
+    {
+      "userId": 6,
+      "finalScore": 7,
+      "timeStamp": "2018-06-13T20:35:23.795Z",
+      "id": 38
     }
   ],
   "continents": [

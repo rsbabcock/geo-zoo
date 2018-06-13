@@ -91,11 +91,11 @@ class Animal extends Component {
                         </div>
                         ))}
                     </Column>
-                    <Column isSize="narrow">
+                    {/* <Column isSize="narrow">
                         <div>
                             <i className="fa fa-chevron-right fa-5x" id="next_gameScore" aria-hidden="true" onClick={this.props.gameCounter}></i>
                         </div>
-                    </Column>
+                    </Column> */}
                 </Columns>
             </div>
         )
