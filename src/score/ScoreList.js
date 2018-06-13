@@ -26,7 +26,7 @@ class ScoreList extends Component {
                 // console.log(user)
                 const userScore = []
                 scores.forEach(score => {
-                    if (score.userId === user) {
+                    if (+score.userId === user) {
                         // debugger
                         userScore.push(score)
                         // console.log(userScore)
@@ -46,7 +46,7 @@ class ScoreList extends Component {
         return (
             <div>
                 <Hero> 
-                    <Notification style={{ margin: 15}}  style={{ textAlign: 'center'}} isColor="primary"> <Title> Scores </Title> </Notification>
+                    <Notification  style={{ textAlign: 'center'}} isColor="primary"> <Title> Scores </Title> </Notification>
                     <Scores scores={this.state.scores} key={this.unique++} />
                 </Hero>
             </div>
