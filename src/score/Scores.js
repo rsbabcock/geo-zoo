@@ -1,30 +1,33 @@
 import React, { Component } from "react"
-import { Box } from 'bloomer'
+import { Notification, Title, Container } from 'bloomer'
 
 
 export default class Scores extends Component {
+
+    // timeConverter = function(date)
+    // { date.toDateString()
+    // }.bind(this)
+
     render() {
         return (
             <div className="card score">
-                <div className="card-body">
+                <Container isFluid style={{ margin: 20 }} className="card-body">
                     {this.props.scores.map(score => (
-                        <Box >
+                        <Notification style={{ textAlign: 'center'}} isColor="light" key={score.id}>
                         <div>
-                            <h5 className="card-title">
+                            <Title isSize={3}>
                                 {score.user.firstName}  {score.user.lastName}
-                            </h5>
+                            </Title>
                         </div>
                         <div>
-                            <h4> Final Score: </h4>
-                        </div>
-                        <div>
+                            <h4> Final Score: {score.finalScore}</h4>
                             <p className="card-text">
-                                {score.finalScore}
+                                {score.timeStamp}
                             </p>
                         </div>
-                        </Box>
+                        </Notification>
                 ))}
-                </div>
+                </Container>
             </div>
         )
     }

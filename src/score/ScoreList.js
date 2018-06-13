@@ -4,7 +4,7 @@ import 'bulma/css/bulma.css'
 // import logo from "../img/Group.png"
 import Scores from "./Scores"
 // import geoZoo from "../img/words.png"
-// import { Columns } from "bloomer/lib/grid/Columns";
+import { Hero, Title, Notification } from 'bloomer'
 // import { Column } from "bloomer/lib/grid/Column";
 
 
@@ -23,13 +23,13 @@ class ScoreList extends Component {
         fetch("http://localhost:8088/scores?_expand=user")
             .then(r => r.json())
             .then(scores => {
-                console.log(user)
+                // console.log(user)
                 const userScore = []
                 scores.forEach(score => {
                     if (score.userId === user) {
                         // debugger
                         userScore.push(score)
-                        console.log(userScore)
+                        // console.log(userScore)
                         this.setState({
                             scores: userScore
                         })
@@ -45,12 +45,10 @@ class ScoreList extends Component {
     render() {
         return (
             <div>
-                <div>
-                    <h1> Scores </h1>
-                </div>
-                <div>
+                <Hero> 
+                    <Notification style={{ margin: 15}}  style={{ textAlign: 'center'}} isColor="primary"> <Title> Scores </Title> </Notification>
                     <Scores scores={this.state.scores} key={this.unique++} />
-                </div>
+                </Hero>
             </div>
 
         )
