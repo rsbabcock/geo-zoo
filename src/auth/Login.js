@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import { Columns, Column, Field, Control, Input, Button, Image } from 'bloomer'
+import { Columns, Column, Field, Control, Input, Button, Container } from 'bloomer'
 import 'bulma/css/bulma.css'
 import logo from "../img/Group.png"
 // import geoZoo from "../img/words.png"
@@ -55,8 +55,10 @@ class Login extends Component {
                 <div>
                     <Columns isCentered>
                         {/* <img src={logo} width="300" height="300"/> */}
-                        <Column isCentered isSize="1/2" >
-                            <Image isSize="128x128" src={logo} />
+                        <Column isSize="1/2">
+                            <Container isFluid>
+                                <img src={logo} alt="brand"/>
+                            </Container>
                             <form onSubmit={this.handleLogin}>
                                 <Field>
                                     {/* <Title isSize={2}>Sign Up!</Title> */}
@@ -67,8 +69,8 @@ class Login extends Component {
                                     <Columns isCentered>
                                         <Control>
                                             <Column isSize="full">
-                                                <Button type="submit" isColor='primary' isOutlined>Log In</Button>
-                                                <Button isColor='primary' id="page__register" onClick={this.props.showView} isOutlined>Sign Up!
+                                                <Button type="submit" isColor='primary' isOutlined isSize="large">Log In</Button>
+                                                <Button isColor='primary' id="page__register" onClick={this.props.showView} isOutlined isSize="large">Sign Up!
                                                 </Button>
                                             </Column>
                                         </Control>

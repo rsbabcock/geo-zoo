@@ -11,10 +11,10 @@ export default class NavBar extends Component {
     LoginLogout = () => {
         if (this.props.activeUser === null) {
             return <Title className="nav-link" id="nav__login"
-                onClick={this.props.viewHandler} href="#">Login</Title>
+                onClick={this.props.viewHandler} href="#" isSize={3}>Login</Title>
         } else {
             return <Title className="nav-link" id="nav__logout"
-                onClick={this.props.viewHandler}>Logout</Title>
+                onClick={this.props.viewHandler} isSize={3}>Logout</Title>
         }
     }
 
@@ -26,15 +26,15 @@ export default class NavBar extends Component {
 
     render() {
         return (
-            <Tabs>
+            <Tabs isSize="large">
                 <TabList>
                 <Tab>
                         <TabLink >
-                        <Image id="nav_welcome" onClick={()=>this.props.viewHandler("welcome")} isSize="64x64" src={logo} />
+                        <Image id="nav_welcome" onClick={()=>this.props.viewHandler("welcome")} isSize="96x96" src={logo} />
                             {/* <Icon isSize='small'><span className='fa fa-image' aria-hidden='true' /></Icon> */}
                         </TabLink>
                     </Tab>
-                    <Tab>
+                    <Tab >
                         <TabLink>
                         <this.LoginLogout />
                             {/* <Icon isSize='small'><span className='fa fa-image' aria-hidden='true' /></Icon> */}
@@ -43,7 +43,7 @@ export default class NavBar extends Component {
                     <Tab>
                         <TabLink  >
                             <Title className="nav-link" id="nav__scoreList"
-                        onClick={this.props.viewHandler} >Scores</Title>
+                        onClick={this.props.viewHandler} isSize={3}>Scores</Title>
                             {/* <Icon isSize='small'><span className='fa fa-image' aria-hidden='true' /></Icon> */}
                         </TabLink>
                     </Tab>
