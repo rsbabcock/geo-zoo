@@ -25,13 +25,13 @@ class Welcome extends Component {
                     </Container>
                     <HeroBody>
                         <Container  style={{ textAlign: 'center'}}>
-                            <p>
+                            <Title isSize={4}>
                                 To play,  click on the correct continent image for the animal. You only have one guess before it moves to the next animal, so make sure to read the facts before you guess!
-                                </p>
+                                </Title>
                             <br />
-                            <p>
+                            <Title isSize={4}>
                                 Have fun and good luck!
-                                </p>
+                                </Title>
                         </Container>
                     </HeroBody>
                     <Container>
