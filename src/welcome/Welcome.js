@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
-import { Columns, Column, Button } from 'bloomer'
-import { HeroFooter } from 'bloomer/lib/layout/Hero/HeroFooter';
-import { HeroFooter } from 'bloomer/lib/layout/Hero/HeroFooter';
-import { HeroHeader } from 'bloomer/lib/layout/Hero/HeroHeader';
+import { Button } from 'bloomer'
+import { Hero, HeroHeader, 
+    HeroBody, HeroFooter, Container, 
+    Title, Columns, Column} from 'bloomer'
+import words from "../img/words.png"    
 
 
 class Welcome extends Component {
@@ -15,19 +16,32 @@ class Welcome extends Component {
     render() {
         return (
             <div>
-                    <Columns isCentered>
-                        <Column isSize="1/2">
-                            <h1> Welcome to GeoZoo</h1>
-                            <h3> To play,  click on the correct continent image for the animal. You only have one guess before it moves to the next animal, so make sure to read the facts before you guess!
-
-                            Have fun and good luck!
-                             </h3>
-                            <Button id="play__game" onClick={this.props.showView}> Play </Button>
-                        </Column>
-                    </Columns >
-            </div>
-        )
+                <Container style={{ margin: 15}}>
+                <Hero style={{ padding: 15}} isColor="primary">
+                    <Container>
+                        <HeroHeader isSize="1/2">
+                            <Title style={{ textAlign: 'center'}}> Welcome to <br/> <img src={words}/></Title>
+                        </HeroHeader>
+                    </Container>
+                    <HeroBody>
+                        <Container  style={{ textAlign: 'center'}}>
+                            <p>
+                                To play,  click on the correct continent image for the animal. You only have one guess before it moves to the next animal, so make sure to read the facts before you guess!
+                                </p>
+                            <br />
+                            <p>
+                                Have fun and good luck!
+                                </p>
+                        </Container>
+                    </HeroBody>
+                    <Container>
+                            <Button isSize="large" id="play__game" onClick={this.props.showView}> Play </Button>
+                    </Container>
+               </Hero>
+               </Container>
+               </div> 
+        )   
     }
-}
+} 
 
 export default Welcome
