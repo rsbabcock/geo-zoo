@@ -20,14 +20,15 @@ class ScoreList extends Component {
     // Handle for getting all scores
     handleScores = () => {
         // Determine if a user already exists in API
-        fetch(`http://localhost:8088/scores?_expand=user&?id=${this.props.activeUser}`)
+        fetch("http://localhost:8088/scores?_expand=user")
             .then(r => r.json())
             .then(scores => {
-                // User exists. Set local storage, and show home view
-                this.setState({
-                    scores: scores
-                })
-
+                if(scores.userId = this.props.activeUser){
+                    this.setState({
+                        scores: scores
+                    })
+                    console.log(this.state.scores)
+                }
             })
     }
 

@@ -97,6 +97,48 @@
       "finalScore": 2,
       "timeStamp": "2018-06-12T23:28:55.128Z",
       "id": 9
+    },
+    {
+      "userId": "1",
+      "finalScore": 1,
+      "timeStamp": "2018-06-13T16:05:24.829Z",
+      "id": 10
+    },
+    {
+      "userId": "1",
+      "finalScore": 1,
+      "timeStamp": "2018-06-13T16:13:50.747Z",
+      "id": 11
+    },
+    {
+      "userId": "1",
+      "finalScore": 1,
+      "timeStamp": "2018-06-13T16:13:56.922Z",
+      "id": 12
+    },
+    {
+      "userId": "1",
+      "finalScore": 1,
+      "timeStamp": "2018-06-13T16:14:02.555Z",
+      "id": 13
+    },
+    {
+      "userId": "1",
+      "finalScore": 1,
+      "timeStamp": "2018-06-13T16:14:23.799Z",
+      "id": 14
+    },
+    {
+      "userId": "1",
+      "finalScore": 0,
+      "timeStamp": "2018-06-13T16:16:26.856Z",
+      "id": 15
+    },
+    {
+      "userId": 1,
+      "finalScore": 1,
+      "timeStamp": "2018-06-13T17:28:59.984Z",
+      "id": 16
     }
   ],
   "continents": [
