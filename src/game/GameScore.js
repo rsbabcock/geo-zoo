@@ -3,11 +3,11 @@ import { Box, Button } from 'bloomer'
 
 
 export default class GameScore extends Component {
-    state = {
-        userinfo: []
-    }
+    // state = {
+    //     userinfo: []
+    // }
     // receives user score and active user 
-    postScore = () => fetch("http://localhost:8088/scores", {
+    postScore = () => {fetch("http://localhost:8088/scores", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -17,20 +17,14 @@ export default class GameScore extends Component {
             finalScore: this.props.score,
             timeStamp: new Date()
         })
-    })
+        })
         .then(r => r.json())
         .then(score => {
             // and posts to api as well as gives message
             console.log("score saved")
         })
-    // .then(() => {return fetch(`http://localhost:8088/users/${this.props.activeUser}`)
-    // })
-    // .then(r => r.json())
-    // .then(user => {
-    //     this.setState({
-    //         userinfo: user
-    //     })
-    // })
+    }
+    
 
     componentDidMount() {
         this.postScore()

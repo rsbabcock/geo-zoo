@@ -8,20 +8,27 @@ class Welcome extends Component {
     // currentView, activeUser, UserScore
     // needs to manage:
     // play game function
+    componentDidMount(){
+        this.setState({
+            UserScore: 0,
+            counter: 0
+        })
+        
+    }
 
     render() {
         return (
             <div>
-                <Columns isCentered>
-                    <Column isSize="1/2">
-                        <h1> Welcome to GeoZoo</h1>
-                        <h3> Instructions </h3>
-                        <Button id="play__game" onClick={this.props.showView}> Play </Button>
-                    </Column>
-                </Columns>
-            </div> 
+                    <Columns isCentered>
+                        <Column isSize="1/2">
+                            <h1> Welcome to GeoZoo</h1>
+                            <h3> Instructions </h3>
+                            <Button id="play__game" onClick={this.props.showView}> Play </Button>
+                        </Column>
+                    </Columns>
+            </div>
         )
-    } 
-}    
-        
+    }
+}
+
 export default Welcome

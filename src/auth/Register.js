@@ -55,7 +55,7 @@ export default class Register extends Component {
                         // Set local storage with newly created user's id and show home view
                         .then(r => r.json())
                         .then(newUser => {
-                            debugger
+                            // debugger
                             this.props.setActiveUser(newUser.id)
                             this.props.showView("welcome")
                         })

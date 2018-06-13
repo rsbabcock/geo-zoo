@@ -51,10 +51,16 @@ class App extends Component {
         if (view === "logout") {
             this.setActiveUser(null)
         }
+        if (view === "welcome") {
+          this.setState({
+            userScore: 0,
+            counter: 0
+          })
+        }
 
         // Update state to correct view will be rendered
         this.setState({
-            currentView: view
+            currentView: view,
         })
 
     }.bind(this)
@@ -79,6 +85,7 @@ class App extends Component {
           })
       })
   }
+  // function to post score at the end of hte game
   // function to change counter to increment game pages one at a time
   gameCounter = function (e){
     // e.preventDefault
@@ -138,6 +145,7 @@ class App extends Component {
                 case "scoreList":
                     return <ScoreList activeUser={this.state.activeUser} />
                 case "welcome":
+                    return <Welcome activeUser={this.state.activeUser} showView={this.showView}/>
                 default: 
                   return <Welcome activeUser={this.state.activeUser} showView={this.showView}/>
             }

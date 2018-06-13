@@ -19,7 +19,7 @@ class Animal extends Component {
         })
     }
 
-    continentHandler = function ( id) {
+    continentHandler = function (id) {
         // debugger
         // console.log($(`#${id}`).attr("isActive"))
         const thing = document.getElementById(id)
@@ -39,7 +39,7 @@ class Animal extends Component {
                 <Columns isCentered >
                     <Column>
                         <div className="animal" id={this.props.animals[this.props.counter].continentId} draggable="true">
-                            <h6> {this.props.animals[this.props.counter].name} </h6>
+                            {/* <h6> {this.props.animals[this.props.counter].name} </h6> */}
                             <img width="80%" height="80%" src={this.props.animals[this.props.counter].image} alt="animals" />
                         </div>
                         <div>

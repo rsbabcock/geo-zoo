@@ -4,7 +4,7 @@
 
 ##### On each image of the animal and continent the user can press a fact button where pertinenent information pops up. 
 
-##### The user drags the correct animal to the correct country and after dragging all the animals to a continent, the user will be presented with their score.
+##### The user clicks on the correct country and guessing for all the animals continents, the user will be presented with their score.
 
 
 ##### This project was bootstrapped with Create React App.
