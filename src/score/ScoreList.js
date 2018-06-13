@@ -12,38 +12,44 @@ class ScoreList extends Component {
 
     // Set initial state
     state = {
-       scores : []
+        scores: []
     }
     unique = 1
 
 
     // Handle for getting all scores
-    handleScores = () => {
+    handleScores = (user) => {
         // Determine if a user already exists in API
         fetch("http://localhost:8088/scores?_expand=user")
             .then(r => r.json())
             .then(scores => {
-                if(scores.userId = this.props.activeUser){
-                    this.setState({
-                        scores: scores
-                    })
-                    console.log(this.state.scores)
-                }
+                console.log(user)
+                const userScore = []
+                scores.forEach(score => {
+                    if (score.userId == user) {
+                        // debugger
+                        userScore.push(score)
+                        console.log(userScore)
+                        this.setState({
+                            scores: userScore
+                        })
+                    }
+                })
             })
     }
 
-    componentDidMount(){
-        this.handleScores()
+    componentDidMount() {
+        this.handleScores(this.props.activeUser)
     }
 
     render() {
         return (
             <div>
                 <div>
-                   <h1> Scores </h1>
+                    <h1> Scores </h1>
                 </div>
                 <div>
-                    <Scores scores={this.state.scores} key={this.unique++}/>
+                    <Scores scores={this.state.scores} key={this.unique++} />
                 </div>
             </div>
 

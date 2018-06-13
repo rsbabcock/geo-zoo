@@ -3,7 +3,7 @@ import { Columns, Column } from 'bloomer'
 import { Modal, Button, ModalCard, ModalCardHeader, ModalBackground, Delete, ModalCardTitle, ModalCardBody } from 'bloomer'
 // import { Icon } from 'bloomer/lib/elements/Icon';
 import '@fortawesome/fontawesome'
-import Fact from './Modal'
+// import Fact from './Modal'
 // import $ from 'jquery'
 
 class Animal extends Component {

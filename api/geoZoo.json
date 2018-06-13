@@ -139,6 +139,18 @@
       "finalScore": 1,
       "timeStamp": "2018-06-13T17:28:59.984Z",
       "id": 16
+    },
+    {
+      "userId": 6,
+      "finalScore": 5,
+      "timeStamp": "2018-06-13T17:51:07.234Z",
+      "id": 17
+    },
+    {
+      "userId": 2,
+      "finalScore": 3,
+      "timeStamp": "2018-06-13T18:11:56.965Z",
+      "id": 18
     }
   ],
   "continents": [
