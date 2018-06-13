@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Button } from 'bloomer'
 import { Hero, HeroHeader, 
     HeroBody, Container, 
-    Title} from 'bloomer'
+    Title, Box, Notification} from 'bloomer'
 import words from "../img/words.png"    
 
 
@@ -16,26 +16,38 @@ class Welcome extends Component {
     render() {
         return (
             <div>
-                <Container style={{ margin: 15}}>
+                <Container isFluid style={{ margin: 15}}>
                 <Hero style={{ padding: 15}} isColor="primary">
                     <Container>
                         <HeroHeader>
-                            <Title style={{ textAlign: 'center'}}> Welcome to <br/> <img src={words}/></Title>
+                            <Title style={{ textAlign: 'center'}}> Welcome to <br/> <img src={words} alt="logo"/></Title>
                         </HeroHeader>
                     </Container>
                     <HeroBody>
                         <Container  style={{ textAlign: 'center'}}>
+                            <Box>
+                            <Notification isColor="primary"> 
                             <Title isSize={4}>
-                                To play,  click on the correct continent image for the animal. You only have one guess before it moves to the next animal, so make sure to read the facts before you guess!
+                                <p>
+                                To play,  click on the correct continent image for the animal. 
+                                </p>
+                                <br/>
+                                <p>
+                                You only have one guess before it moves to the next animal, 
+                                </p>
+                                <p>
+                                so make sure to read the facts before you guess!
+                                </p>
                                 </Title>
-                            <br />
-                            <Title isSize={4}>
+                            <Title isSize={1}>
                                 Have fun and good luck!
                                 </Title>
+                                </Notification>
+                                </Box>
                         </Container>
                     </HeroBody>
-                    <Container>
-                            <Button isSize="large" id="play__game" onClick={this.props.showView}> Play </Button>
+                    <Container style={{ textAlign: 'center'}}>
+                            <Button id="play__game" onClick={this.props.showView} isSize="large" isOutlined isColor="light"> Play</Button>
                     </Container>
                </Hero>
                </Container>

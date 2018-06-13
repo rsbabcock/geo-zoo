@@ -26,7 +26,7 @@ class ScoreList extends Component {
                 console.log(user)
                 const userScore = []
                 scores.forEach(score => {
-                    if (score.userId == user) {
+                    if (score.userId === user) {
                         // debugger
                         userScore.push(score)
                         console.log(userScore)
