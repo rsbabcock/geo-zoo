@@ -1,0 +1,32 @@
+/* font-family: 'Luckiest Guy', cursive;
+font-family: 'Butterfly Kids', cursive; */
+.hero-head {
+    font-family: 'Luckiest Guy', cursive;
+    /* font-size: 2em; */
+    color: #FF916F;
+    /* text-shadow: 1px 1px #FF3D00; */
+    font-kerning: 4px;
+    font-weight: lighter;
+}
+
+.notification h1 {
+    font-family: 'Luckiest Guy', cursive;
+    font-weight: lighter;
+    font-kerning: 4px;
+}
+
+#haveFun {
+    color: #FF916F;
+    font-family: 'Luckiest Guy', cursive;
+    font-weight: lighter;
+    font-kerning: 4px;
+    text-shadow: 1px 1px #FF3D00;
+}
+
+#play__game {
+    font-family: 'Luckiest Guy', cursive;
+    font-weight: lighter;
+    font-kerning: 4px;
+    color: #FF916F;
+    text-shadow: 1px 1px #FF3D00;
+}

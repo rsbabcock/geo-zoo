@@ -53,11 +53,13 @@ class Animal extends Component {
                                     </ModalCardHeader>
                                     <ModalCardBody>
                                         <p>
-                                            {this.props.animals[this.props.counter].fact}
+                                          {this.props.animals[this.props.counter].fact}
                                         </p>
+                                        <br/>
                                         <p>
-                                            {this.props.animals[this.props.counter].diet}
+                                           <strong>Diet:</strong>  {this.props.animals[this.props.counter].diet}
                                         </p>
+                                        <br/>
                                         <a href={this.props.animals[this.props.counter].url} target="_blank"> 
                                         {this.props.animals[this.props.counter].url}
                                         </a>
@@ -69,16 +71,16 @@ class Animal extends Component {
                     </Column>
                     </Columns>
                     {/* Beginning of Continents */}
-                    <Columns isCentered>
+                    <Columns isCentered isGrid>
                         {this.props.continents.map(c => (
-                    <Column isSize="1/3" >
-                            <Box key={c.id} id={c.id} className="continent">
+
+                            <Box key={c.id} id={c.id} className={"continent__"+c.name}>
                                 <h6> {c.name} </h6>
                                 <img id={c.id}
                                     src={c.image} alt="continents"
                                     onClick={() => this.props.gameHandler(this.props.animals[this.props.counter].continentId, c.id)}
                                 />
-                                <Button className="fact" id={"button__"+ c.id} onClick={() => this.continentHandler( "continent__"+c.id )} isOutlined> Facts </Button>
+                                <Button className="fact" id={"button__"+ c.id} onClick={() => this.continentHandler( "continent__"+c.id )} isOutlined isSize="medium"> Facts </Button>
                                 <Modal id={"continent__"+c.id} key={c.id} value={this.state.value} >
                                     <ModalBackground />
                                     <ModalCard>
@@ -88,12 +90,12 @@ class Animal extends Component {
                                         </ModalCardHeader>
                                         <ModalCardBody>
                                             <p> {c.fact} </p>
-                                            <p> {c.url} </p>
+                                            <br/>
+                                            <a href={c.url} target="_blank"> {c.url} </a>
                                         </ModalCardBody>
                                     </ModalCard>
                                 </Modal>
                         </Box>
-                    </Column>
                         ))}
   
                 </Columns>

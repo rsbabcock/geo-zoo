@@ -75,6 +75,12 @@
       "finalScore": 7,
       "timeStamp": "06/14/2018, 10:51:45 AM",
       "id": 3
+    },
+    {
+      "userId": "1",
+      "finalScore": 7,
+      "timeStamp": "06/14/2018, 1:26:14 PM",
+      "id": 4
     }
   ],
   "continents": [
@@ -149,7 +155,7 @@
     {
       "id": 6,
       "continentId": 2,
-      "image": "https://image.ibb.co/jecHno/leopard.png",
+      "image": "https://image.ibb.co/ckPhaJ/leopard.png",
       "name": "Amur Leopard",
       "fact": "People usually think of leopards in the savannas of Africa but in the Russian Far East, a rare subspecies has adapted to life in the temperate forests that make up the northern-most part of the species’ range. Similar to other leopards, the Amur leopard can run at speeds of up to 37 miles per hour. This incredible animal has been reported to leap more than 19 feet horizontally and up to 10 feet vertically. The Amur leopard is solitary. Nimble-footed and strong, it carries and hides unfinished kills so that they are not taken by other predators. It has been reported that some males stay with females after mating, and may even help with rearing the young. Several males sometimes follow and fight over a female. They live for 10-15 years, and in captivity up to 20 years. The Amur leopard is also known as the Far East leopard, the Manchurian leopard or the Korean leopard.",
       "diet": "Carnivore",

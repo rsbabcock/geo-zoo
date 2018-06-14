@@ -15,7 +15,7 @@ export default class Scores extends Component {
                     {this.props.scores.map(score => (
                         <Notification style={{ textAlign: 'center'}} isColor="light" key={score.id}>
                         <div>
-                            <Title isSize={3}>
+                            <Title id="player" isSize={3}>
                                 {score.user.firstName}  {score.user.lastName}
                             </Title>
                         </div>

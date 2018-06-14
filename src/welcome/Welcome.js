@@ -3,7 +3,8 @@ import { Button } from 'bloomer'
 import { Hero, HeroHeader, 
     HeroBody, Container, 
     Title, Box, Notification} from 'bloomer'
-import words from "../img/words.png"    
+import words from "../img/words.png" 
+import './welcome.css'   
 
 
 class Welcome extends Component {
@@ -39,7 +40,7 @@ class Welcome extends Component {
                                 so make sure to read the facts before you guess!
                                 </p>
                                 </Title>
-                            <Title isSize={1}>
+                            <Title id="haveFun"isSize={1}>
                                 Have fun and good luck!
                                 </Title>
                                 </Notification>

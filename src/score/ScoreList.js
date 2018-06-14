@@ -1,11 +1,9 @@
 import React, { Component } from "react"
-// import { Columns, Column, Field, Control, Input, Button, Image } from 'bloomer'
 import 'bulma/css/bulma.css'
-// import logo from "../img/Group.png"
 import Scores from "./Scores"
-// import geoZoo from "../img/words.png"
-import { Hero, Title, Notification } from 'bloomer'
-// import { Column } from "bloomer/lib/grid/Column";
+import { Hero, Title, Notification, Container } from 'bloomer'
+import './scores.css'
+
 
 
 class ScoreList extends Component {
@@ -45,10 +43,12 @@ class ScoreList extends Component {
     render() {
         return (
             <div>
-                <Hero> 
+
+                    <Container isFluid>
                     <Notification  style={{ textAlign: 'center'}} isColor="primary"> <Title> Scores </Title> </Notification>
                     <Scores scores={this.state.scores} key={this.unique++} />
-                </Hero>
+                    </Container>
+
             </div>
 
         )
