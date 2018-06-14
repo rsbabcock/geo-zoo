@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import { Columns, Column, Field, Control, Input, Button, Container } from 'bloomer'
 import 'bulma/css/bulma.css'
 import logo from "../img/Group.png"
+import './login.css'
 // import geoZoo from "../img/words.png"
 // import { Columns } from "bloomer/lib/grid/Columns";
 // import { Column } from "bloomer/lib/grid/Column";
@@ -53,7 +54,7 @@ class Login extends Component {
         return (
             <div>
                 <div>
-                    <Columns isCentered>
+                    <Columns  isCentered>
                         {/* <img src={logo} width="300" height="300"/> */}
                         <Column isSize="1/2">
                             <Container isFluid>
@@ -63,9 +64,10 @@ class Login extends Component {
                                 <Field>
                                     {/* <Title isSize={2}>Sign Up!</Title> */}
                                     <Control>
-                                        <Input isSize="large" onChange={this.handleFieldChange} isColor='light' placeholder='Email' type="email" id="email" />
-                                        <Input isSize="large" onChange={this.handleFieldChange} isColor='light' placeholder='Password' type="password" id="password" />
+                                        <Input isSize="large" onChange={this.handleFieldChange} isColor='primary' placeholder='Email' type="email" id="email" />
+                                        <Input style={{marginTop : 10}} isSize="large" onChange={this.handleFieldChange} isColor='primary' placeholder='Password' type="password" id="password" />
                                     </Control>
+                                    <Container style={{ marginTop : 15}}>
                                     <Columns isCentered>
                                         <Control>
                                             <Column isSize="full">
@@ -75,12 +77,11 @@ class Login extends Component {
                                             </Column>
                                         </Control>
                                     </Columns>
+                                    </Container>
                                 </Field>
                             </form>
                         </Column>
                     </Columns>
-                    {/* </div>
-                    <div> */}
                 </div>
             </div>
 

@@ -288,6 +288,12 @@
       "finalScore": 7,
       "timeStamp": "2018-06-13T21:45:10.802Z",
       "id": 40
+    },
+    {
+      "userId": 1,
+      "finalScore": 9,
+      "timeStamp": "2018-06-14T13:43:54.771Z",
+      "id": 41
     }
   ],
   "continents": [
