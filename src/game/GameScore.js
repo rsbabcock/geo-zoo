@@ -15,7 +15,7 @@ export default class GameScore extends Component {
         body: JSON.stringify({
             userId: this.props.activeUser,
             finalScore: this.props.score,
-            timeStamp: new Date()
+            timeStamp: new Intl.DateTimeFormat('en-US', {year: 'numeric', month: '2-digit',day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit'}).format(Date.now())
         })
         })
         .then(r => r.json())
