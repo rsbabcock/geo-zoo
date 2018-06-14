@@ -18,28 +18,28 @@ class ScoreList extends Component {
 
 
     // Handle for getting all scores
-    handleScores = (user) => {
+    handleScores = () => {
         // Determine if a user already exists in API
-        fetch("http://localhost:8088/scores?_expand=user")
+        fetch(`http://localhost:8088/scores?userId=${this.props.activeUser}&_expand=user`)
             .then(r => r.json())
             .then(scores => {
                 // console.log(user)
-                const userScore = []
-                scores.forEach(score => {
-                    if (+score.userId === user) {
+                // const userScore = []
+                // scores.forEach(score => {
+                    // if (+score.userId === user) {
                         // debugger
-                        userScore.push(score)
+                        // userScore.push(score)
                         // console.log(userScore)
                         this.setState({
-                            scores: userScore
+                            scores: scores
                         })
-                    }
-                })
-            })
+                    })
+                // })
+            // })
     }
 
     componentDidMount() {
-        this.handleScores(this.props.activeUser)
+        this.handleScores()
     }
 
     render() {
