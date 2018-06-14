@@ -1,8 +1,7 @@
 import React, { Component } from "react"
-import { Tabs, Tab, TabLink, TabList, Image, Title} from 'bloomer'
+// import { Image, Title} from 'bloomer'
 import "./NavBar.css"
 import logo from "../img/Group.png"
-
 
 
 export default class NavBar extends Component {
@@ -10,11 +9,11 @@ export default class NavBar extends Component {
 
     LoginLogout = () => {
         if (this.props.activeUser === null) {
-            return <Title className="nav-link" id="nav__login"
-                onClick={this.props.viewHandler} href="#" isSize={3}>Login</Title>
+            return <h1 className="nav-link" id="nav__login"
+                onClick={this.props.viewHandler} href="#" >Login</h1>
         } else {
-            return <Title className="nav-link" id="nav__logout"
-                onClick={this.props.viewHandler} isSize={3}>Logout</Title>
+            return <h1 className="nav-link" id="nav__logout"
+                onClick={this.props.viewHandler} >Logout</h1>
         }
     }
 
@@ -26,30 +25,36 @@ export default class NavBar extends Component {
 
     render() {
         return (
-            <Tabs isSize="large">
-                <TabList>
-                <Tab>
-                        <TabLink >
-                        <Image id="nav_welcome" onClick={()=>this.props.viewHandler("welcome")} isSize="96x96" src={logo} />
-                            {/* <Icon isSize='small'><span className='fa fa-image' aria-hidden='true' /></Icon> */}
-                        </TabLink>
-                    </Tab>
-                    <Tab >
-                        <TabLink>
+            <nav className="navBar" style={{ border: 'solid 1px #00D1B2', margin: '0' }}>
+                    <img id="nav_welcome" onClick={()=>this.props.viewHandler("welcome")} src={logo} alt="brand"/>    
                         <this.LoginLogout />
-                            {/* <Icon isSize='small'><span className='fa fa-image' aria-hidden='true' /></Icon> */}
-                        </TabLink>
-                    </Tab>
-                    <Tab>
-                        <TabLink  >
-                            <Title className="nav-link" id="nav__scoreList"
-                        onClick={this.props.viewHandler} isSize={3}>Scores</Title>
-                            {/* <Icon isSize='small'><span className='fa fa-image' aria-hidden='true' /></Icon> */}
-                        </TabLink>
-                    </Tab>
-                </TabList>
-            </Tabs>
-               
+                    <h1 className="nav-link" id="nav__scoreList"
+                        onClick={this.props.viewHandler} >Scores</h1>
+            </nav>    
         )
     }
 }
+
+// <Tabs isSize="large">
+// <TabList>
+// <Tab>
+//         <TabLink >
+//         <Image id="nav_welcome" onClick={()=>this.props.viewHandler("welcome")} isSize="96x96" src={logo} />
+//             {/* <Icon isSize='small'><span className='fa fa-image' aria-hidden='true' /></Icon> */}
+//         </TabLink>
+//     </Tab>
+//     <Tab >
+//         <TabLink>
+//         <this.LoginLogout />
+//             {/* <Icon isSize='small'><span className='fa fa-image' aria-hidden='true' /></Icon> */}
+//         </TabLink>
+//     </Tab>
+//     <Tab>
+//         <TabLink  >
+//             <Title className="nav-link" id="nav__scoreList"
+//         onClick={this.props.viewHandler} isSize={3}>Scores</Title>
+//             {/* <Icon isSize='small'><span className='fa fa-image' aria-hidden='true' /></Icon> */}
+//         </TabLink>
+//     </Tab>
+// </TabList>
+// </Tabs>

@@ -63,6 +63,18 @@
       "finalScore": 3,
       "timeStamp": "06/14/2018, 9:44:35 AM",
       "id": 1
+    },
+    {
+      "userId": 1,
+      "finalScore": 9,
+      "timeStamp": "06/14/2018, 10:26:50 AM",
+      "id": 2
+    },
+    {
+      "userId": "1",
+      "finalScore": 7,
+      "timeStamp": "06/14/2018, 10:51:45 AM",
+      "id": 3
     }
   ],
   "continents": [

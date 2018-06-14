@@ -20,7 +20,7 @@ class Welcome extends Component {
                 <Hero style={{ padding: 15}} isColor="primary">
                     <Container>
                         <HeroHeader>
-                            <Title style={{ textAlign: 'center'}}> Welcome to <br/> <img src={words} alt="logo"/></Title>
+                            <Title style={{ textAlign : 'center'}}> Welcome to <br/> <img src={words} alt="logo"/></Title>
                         </HeroHeader>
                     </Container>
                     <HeroBody>
