@@ -40,7 +40,7 @@ class Welcome extends Component {
                                 so make sure to read the facts before you guess!
                                 </p>
                                 </Title>
-                            <Title id="haveFun"isSize={1}>
+                            <Title id="haveFun" isSize={1}>
                                 Have fun and good luck!
                                 </Title>
                                 </Notification>

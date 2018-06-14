@@ -40,7 +40,7 @@ class Animal extends Component {
                         <Box>
                         <div className="animal" id={this.props.animals[this.props.counter].continentId} draggable="true">
                             {/* <h6> {this.props.animals[this.props.counter].name} </h6> */}
-                            <img width="80%" height="80%" src={this.props.animals[this.props.counter].image} alt="animals" />
+                            <img src={this.props.animals[this.props.counter].image} alt="animals" />
                         </div>
                         <div>
                             <Button className="fact" id="animalFact" onClick={this.animalHandler} isOutlined> Facts </Button>
@@ -71,9 +71,8 @@ class Animal extends Component {
                     </Column>
                     </Columns>
                     {/* Beginning of Continents */}
-                    <Columns isCentered isGrid>
+                    <Columns isCentered isGrid class="contContainer">
                         {this.props.continents.map(c => (
-
                             <Box key={c.id} id={c.id} className={"continent__"+c.name}>
                                 <h6> {c.name} </h6>
                                 <img id={c.id}
@@ -95,9 +94,8 @@ class Animal extends Component {
                                         </ModalCardBody>
                                     </ModalCard>
                                 </Modal>
-                        </Box>
+                         </Box>
                         ))}
-  
                 </Columns>
             </div>
         )
