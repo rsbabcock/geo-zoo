@@ -31,7 +31,7 @@ export default class Scores extends Component {
                 </Container>
                 <Container className="chart">
                     <h6>Your Scores!</h6>
-                    <Doughnut data={this.props.chartData} />
+                    <Doughnut data={this.props.data} options={this.props.options} />
                 </Container>
             </div>
         )

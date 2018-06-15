@@ -11,7 +11,8 @@ class ScoreList extends Component {
     // Set initial state
     state = {
         scores: [],
-        chartData: {}
+        chartData: {},
+        chartOptions: {}
     }
     unique = 1
 
@@ -66,7 +67,7 @@ class ScoreList extends Component {
                     
                 })
                 console.log(c1, c2, c3, c4, c5, c6, c7, c8, c9)
-                console.log(finalScores)
+                // console.log(finalScores)
                 this.setState({
                     chartData: {
                         labels: ['1 correct',
@@ -96,8 +97,13 @@ class ScoreList extends Component {
                                 '#36A2EB',
                                 '#FFCE56'
                             ]
-                        }]
-                    }
+                        }],
+                        },
+                    chartOptions: {
+                            legend : {
+                                position : 'left'
+                            } 
+                    },
                 })
             })
     }.bind(this)
@@ -113,7 +119,7 @@ class ScoreList extends Component {
 
                 <Container isFluid>
                     <Notification style={{ textAlign: 'center' }} isColor="primary"> <Title> Scores </Title> </Notification>
-                    <Scores scores={this.state.scores} key={this.unique++} chartData={this.state.chartData} />
+                    <Scores scores={this.state.scores} key={this.unique++} data={this.state.chartData} options={this.state.chartOptions} />
                 </Container>
 
             </div>
