@@ -88,6 +88,18 @@
       "finalScore": 7,
       "timeStamp": "06/14/2018, 1:26:14 PM",
       "id": 4
+    },
+    {
+      "userId": "1",
+      "finalScore": 7,
+      "timeStamp": "06/15/2018, 11:39:25 AM",
+      "id": 5
+    },
+    {
+      "userId": 1,
+      "finalScore": 8,
+      "timeStamp": "06/15/2018, 1:10:00 PM",
+      "id": 6
     }
   ],
   "continents": [

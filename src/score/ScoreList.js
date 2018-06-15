@@ -10,7 +10,8 @@ class ScoreList extends Component {
 
     // Set initial state
     state = {
-        scores: []
+        scores: [],
+        chartData : {}
     }
     unique = 1
 
@@ -36,6 +37,39 @@ class ScoreList extends Component {
             // })
     }
 
+  data = function(){
+    fetch("http://localhost:8088/scores")
+    .then(r => r.json())
+    .then(data => {
+      // const finalLabels = data.map( score => {return `${score.finalScore}`})
+      const finalScores = data.map(score => {return score.finalScore})
+      console.log(finalScores)
+      this.setState({
+        chartData: {
+          // labels: ['Score:'],
+        datasets: [{
+          data: finalScores,
+          backgroundColor: [
+          '#FF6384',
+          '#36A2EB',
+          '#FFCE56',
+          '#B22B00',
+          '#FF916F',
+          '#FF3D00',
+          '#6BB09F',
+          '#BBFFEE'
+          ],
+          hoverBackgroundColor: [
+          '#FF6384',
+          '#36A2EB',
+          '#FFCE56'
+          ]
+        }]
+      }
+      })
+    })
+  }.bind(this)
+
     componentDidMount() {
         this.handleScores()
     }
@@ -46,7 +80,7 @@ class ScoreList extends Component {
 
                     <Container isFluid>
                     <Notification  style={{ textAlign: 'center'}} isColor="primary"> <Title> Scores </Title> </Notification>
-                    <Scores scores={this.state.scores} key={this.unique++} />
+                    <Scores scores={this.state.scores} key={this.unique++} chartData={this.state.chartData}/>
                     </Container>
 
             </div>
