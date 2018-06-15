@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import { Box, Button } from 'bloomer'
+import './gamescore.css'
 
 
 export default class GameScore extends Component {
@@ -32,13 +33,13 @@ export default class GameScore extends Component {
 
     render() {
         return (
+            <div className="score">
             <div>
-            <div className="card score">
-                <div className="card-body">
-                    <Box>
-                        <h1> Congrats </h1>
+                <div id="score" >
+                    {/* <Box> */}
+                        <h1 > Congrats </h1>
                         <h3>You scored {this.props.score} out of {this.props.counter + 1}!</h3>
-                    </Box>
+                    {/* </Box> */}
                 </div>
             </div>
             <div>

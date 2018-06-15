@@ -124,6 +124,84 @@
       "finalScore": 9,
       "timeStamp": "06/15/2018, 3:33:45 PM",
       "id": 10
+    },
+    {
+      "userId": "1",
+      "finalScore": 9,
+      "timeStamp": "06/15/2018, 3:50:36 PM",
+      "id": 11
+    },
+    {
+      "userId": "1",
+      "finalScore": 1,
+      "timeStamp": "06/15/2018, 3:52:25 PM",
+      "id": 12
+    },
+    {
+      "userId": "1",
+      "finalScore": 3,
+      "timeStamp": "06/15/2018, 3:53:00 PM",
+      "id": 13
+    },
+    {
+      "userId": "1",
+      "finalScore": 3,
+      "timeStamp": "06/15/2018, 3:54:15 PM",
+      "id": 14
+    },
+    {
+      "userId": "1",
+      "finalScore": 3,
+      "timeStamp": "06/15/2018, 3:55:30 PM",
+      "id": 15
+    },
+    {
+      "userId": "1",
+      "finalScore": 3,
+      "timeStamp": "06/15/2018, 3:56:33 PM",
+      "id": 16
+    },
+    {
+      "userId": 1,
+      "finalScore": 1,
+      "timeStamp": "06/15/2018, 3:57:49 PM",
+      "id": 17
+    },
+    {
+      "userId": "1",
+      "finalScore": 1,
+      "timeStamp": "06/15/2018, 3:58:38 PM",
+      "id": 18
+    },
+    {
+      "userId": 6,
+      "finalScore": 9,
+      "timeStamp": "06/15/2018, 4:00:28 PM",
+      "id": 19
+    },
+    {
+      "userId": "6",
+      "finalScore": 3,
+      "timeStamp": "06/15/2018, 4:01:04 PM",
+      "id": 20
+    },
+    {
+      "userId": "6",
+      "finalScore": 3,
+      "timeStamp": "06/15/2018, 4:01:59 PM",
+      "id": 21
+    },
+    {
+      "userId": "6",
+      "finalScore": 3,
+      "timeStamp": "06/15/2018, 4:03:27 PM",
+      "id": 22
+    },
+    {
+      "userId": "6",
+      "finalScore": 3,
+      "timeStamp": "06/15/2018, 4:04:09 PM",
+      "id": 23
     }
   ],
   "continents": [
