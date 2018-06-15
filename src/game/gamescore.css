@@ -1,0 +1,27 @@
+#score {
+    font-family: 'Luckiest Guy', cursive;
+    color: #FF916F;
+    text-shadow: 2px 2px #FF3D00;
+    font-size: 3em;
+    font-weight: lighter;
+    text-align: center;
+    margin-top: 2%;
+}
+
+#button__welcome {
+    font-family: 'Luckiest Guy', cursive;
+    color: #FF916F;
+    text-shadow: 2px 2px #FF3D00;
+    /* font-size: 2em; */
+    font-weight: lighter;
+    margin-top: 10%;
+}
+
+.gameScore {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10%;
+    padding: 2%, 4%;
+}

@@ -17,10 +17,16 @@
 .chart {
     flex-grow: 3;
     align-self: baseline;
+    text-align: center;
     /* margin-top:; */
     /* margin-left: -10%; */
 }
 
 .chart h6 {
     margin-top: 5%;
+    color: #FF916F;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 2em;
+    text-shadow: 1px 1px #FF3D00;
+    font-kerning: 1px;
 }

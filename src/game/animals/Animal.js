@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 // import { divs, div } from 'bloomer'
-import { Box, Modal, Button, ModalCard, ModalCardHeader, ModalBackground, Delete, ModalCardTitle, ModalCardBody } from 'bloomer'
+import { Box, Modal, 
+    Button, ModalCard, Progress,
+     ModalCardHeader, ModalBackground, 
+     Delete, ModalCardTitle, ModalCardBody } from 'bloomer'
 import './animal.css';
 import '@fortawesome/fontawesome'
 
@@ -38,11 +41,10 @@ class Animal extends Component {
                     <div className="animalContainer">
                         <Box>
                         <div className="animal" id={this.props.animals[this.props.counter].continentId} draggable="true">
-                            {/* <h6> {this.props.animals[this.props.counter].name} </h6> */}
                             <img src={this.props.animals[this.props.counter].image} alt="animals" />
                         </div>
                         <div>
-                            <Button className="fact" id="animalFact" onClick={this.animalHandler} isOutlined> Facts </Button>
+                            <Button isSize="medium" className="fact" id="animalFact" onClick={this.animalHandler} isOutlined> Facts </Button>
                             <Modal isActive={this.state.animalActive}>
                                 <ModalBackground />
                                 <ModalCard>
@@ -67,17 +69,18 @@ class Animal extends Component {
                             </Modal>
                         </div>
                         </Box>
+                        <Progress isColor='primary' value={this.props.counter} max={this.props.animals.length}/>
                     </div>
                     {/* Beginning of Continents */}
                     <div className="contContainer">
                         {this.props.continents.map(c => (
                             <Box key={c.id} id={c.id} className={"continent"}>
-                                <h6> {c.name} </h6>
+                                <p> {c.name} </p>
                                 <img id={c.id}
                                     src={c.image} alt="continents"
                                     onClick={() => this.props.gameHandler(this.props.animals[this.props.counter].continentId, c.id)}
                                 />
-                                <Button className="fact" id={"button__"+ c.id} onClick={() => this.continentHandler( "continent__"+c.id )} isOutlined isSize="medium"> Facts </Button>
+                                <Button isSize="small" className="fact" id={"button__"+ c.id} onClick={() => this.continentHandler( "continent__"+c.id )} isOutlined> Facts </Button>
                                 <Modal id={"continent__"+c.id} key={c.id} value={this.state.value} >
                                     <ModalBackground />
                                     <ModalCard>

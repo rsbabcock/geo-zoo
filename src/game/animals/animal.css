@@ -1,12 +1,11 @@
 /* font-family: 'Luckiest Guy', cursive;
 font-family: 'Butterfly Kids', cursive; */
-.fact {
+.fact{
     font-family: 'Luckiest Guy', cursive;
     font-size: 2em;
     color: #FF916F;
     text-shadow: 1px 1px #FF3D00;
     font-kerning: 1px;
-    margin-top: -10%;
 }
 .gameContainer {
     display: flex;
@@ -23,8 +22,8 @@ font-family: 'Butterfly Kids', cursive; */
 }
 
 .animal img {
-    height: 60%;
-    width: 60%;
+    height: 80%;
+    width: 80%;
     /* margin: -2%; */
 }
 
@@ -42,9 +41,15 @@ font-family: 'Butterfly Kids', cursive; */
     width: 65%;
     margin-left: 1%;
     margin-right: 1%;
+    text-align: center;
 } 
 
-h6 {
+.continent img {
+    height: 60%;
+    width: 60%;
+}
+
+.continent p {
     font-family: 'Luckiest Guy', cursive;
     text-align: center;
     font-size: 1.25em;

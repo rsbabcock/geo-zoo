@@ -11,8 +11,8 @@ export default class Scores extends Component {
 
     render() {
         return (
-            <div className="card score">
-                <Container isFluid style={{ margin: 20 }} className="card-body">
+            <div className="score">
+                <Container isFluid style={{ margin: 20 }}>
                     {this.props.scores.map(score => (
                         <Notification style={{ textAlign: 'center' }} isColor="light" key={score.id}>
                             <div>
