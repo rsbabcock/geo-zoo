@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import 'bulma/css/bulma.css'
 import Scores from "./Scores"
-import { Hero, Title, Notification, Container } from 'bloomer'
+import {  Title, Notification, Container } from 'bloomer'
 import './scores.css'
 
 
@@ -34,7 +34,7 @@ class ScoreList extends Component {
         fetch(`http://localhost:8088/scores?userId=${this.props.activeUser}`)
             .then(r => r.json())
             .then(data => {
-                const finalScores = data.map(score => {
+               data.map(score => {
                     switch (score.finalScore) {
                         case 1:
                              c1++
