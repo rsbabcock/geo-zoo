@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 // import { divs, div } from 'bloomer'
-import { Box, Modal, Button, ModalCard, ModalCardHeader, ModalBackground, Delete, ModalCardTitle, ModalCardBody } from 'bloomer'
+import { Box, Modal, 
+    Button, ModalCard, Progress,
+     ModalCardHeader, ModalBackground, 
+     Delete, ModalCardTitle, ModalCardBody } from 'bloomer'
 import './animal.css';
 import '@fortawesome/fontawesome'
 
@@ -67,6 +70,7 @@ class Animal extends Component {
                             </Modal>
                         </div>
                         </Box>
+                        <Progress isColor='primary' value={this.props.counter} max={this.props.animals.length}/>
                     </div>
                     {/* Beginning of Continents */}
                     <div className="contContainer">
