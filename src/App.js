@@ -7,6 +7,8 @@ import Welcome from './welcome/Welcome';
 import Game from './game/Game';
 import ScoreList from "./score/ScoreList"
 import GameScore from "./game/GameScore"
+import swal from 'sweetalert';
+
 
 
 class App extends Component {
@@ -106,7 +108,7 @@ class App extends Component {
     //  correct one for the current animal
     if(animalContinent === currentContinent) {
         // if correct then alerts user and
-        alert("That's correct!")
+        swal("","That's correct!", "success")
         // adds score 
         this.setState({
           userScore : this.state.userScore+1
@@ -119,7 +121,7 @@ class App extends Component {
           this.showView("gameScore")
         }
     } else { 
-      alert("That's incorrect")
+      swal("", "That's incorrect", "warning")
       if(this.state.counter < this.state.animals.length-1 ) {
         this.setState({
           counter : this.state.counter+1

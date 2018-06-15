@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Columns, Column } from 'bloomer'
+// import { divs, div } from 'bloomer'
 import { Box, Modal, Button, ModalCard, ModalCardHeader, ModalBackground, Delete, ModalCardTitle, ModalCardBody } from 'bloomer'
 import './animal.css';
 import '@fortawesome/fontawesome'
@@ -34,9 +34,8 @@ class Animal extends Component {
     render() {
         // const continentTitle = this.props.continents.map(c => if(c.id < 3 ){return c} )
         return (
-            <div>
-                <Columns isCentered >
-                    <Column isSize="1/2">
+            <div className="gameContainer">
+                    <div className="animalContainer">
                         <Box>
                         <div className="animal" id={this.props.animals[this.props.counter].continentId} draggable="true">
                             {/* <h6> {this.props.animals[this.props.counter].name} </h6> */}
@@ -68,12 +67,11 @@ class Animal extends Component {
                             </Modal>
                         </div>
                         </Box>
-                    </Column>
-                    </Columns>
+                    </div>
                     {/* Beginning of Continents */}
-                    <Columns isCentered isGrid class="contContainer">
+                    <div className="contContainer">
                         {this.props.continents.map(c => (
-                            <Box key={c.id} id={c.id} className={"continent__"+c.name}>
+                            <Box key={c.id} id={c.id} className={"continent"}>
                                 <h6> {c.name} </h6>
                                 <img id={c.id}
                                     src={c.image} alt="continents"
@@ -96,7 +94,7 @@ class Animal extends Component {
                                 </Modal>
                          </Box>
                         ))}
-                </Columns>
+                </div>
             </div>
         )
     }

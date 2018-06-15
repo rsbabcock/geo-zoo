@@ -3,9 +3,7 @@ import { Columns, Column, Field, Control, Input, Button, Container } from 'bloom
 import 'bulma/css/bulma.css'
 import logo from "../img/Group.png"
 import './login.css'
-// import geoZoo from "../img/words.png"
-// import { Columns } from "bloomer/lib/grid/Columns";
-// import { Column } from "bloomer/lib/grid/Column";
+import swal from 'sweetalert';
 
 
 class Login extends Component {
@@ -38,7 +36,7 @@ class Login extends Component {
                     this.props.showView("welcome")
 
                     // User doesn't exist
-                } else { alert("Please go sign up!") }
+                } else { swal("", "Please go sign up!", "warning") }
 
             })
     }.bind(this)
