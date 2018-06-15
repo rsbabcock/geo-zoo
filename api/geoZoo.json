@@ -55,6 +55,13 @@
       "lastName": "hearty",
       "password": "heart",
       "id": 8
+    },
+    {
+      "email": "daniel@daniel.com",
+      "firstName": "daniel",
+      "lastName": "daniel",
+      "password": "poop",
+      "id": 9
     }
   ],
   "scores": [
