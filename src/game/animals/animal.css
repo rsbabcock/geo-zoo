@@ -16,11 +16,16 @@ font-family: 'Butterfly Kids', cursive; */
 }
 
 .animalContainer {
-    margin-top: -40%;
-    margin-right:  2%;
-    margin-left: 2%;
-    margin-bottom: 2%;
+    margin-top: 3%;
+    padding-left: 2%;
+    align-self: flex-start;
+    justify-content: initial;
+}
 
+.animal img {
+    height: 60%;
+    width: 60%;
+    /* margin: -2%; */
 }
 
 .contContainer {
@@ -54,6 +59,21 @@ h6 {
     color: #FF916F;
     text-shadow: 1px 1px #FF3D00;
     font-kerning: 1px;
+}
+
+
+.swal-modal {
+    /* color: #FF916F; */
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 2em;
+    /* text-shadow: 1px 1px #FF3D00; */
+    font-kerning: 1px;
+}
+
+.swal-modal button {
+    background-color: #FF916F;
+    font-family: 'Luckiest Guy', cursive;
+    font-weight: lighter;
 }
 
 

@@ -5,3 +5,18 @@
     text-shadow: 1px 1px #FF3D00;
     font-kerning: 1px;
 }
+
+.score {
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.chart {
+    flex-grow: 3;
+    align-self: baseline;
+    /* margin-top:; */
+    /* margin-left: -10%; */
+}

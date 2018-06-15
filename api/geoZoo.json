@@ -100,6 +100,24 @@
       "finalScore": 8,
       "timeStamp": "06/15/2018, 1:10:00 PM",
       "id": 6
+    },
+    {
+      "userId": 1,
+      "finalScore": 8,
+      "timeStamp": "06/15/2018, 2:05:09 PM",
+      "id": 7
+    },
+    {
+      "userId": "1",
+      "finalScore": 6,
+      "timeStamp": "06/15/2018, 2:10:09 PM",
+      "id": 8
+    },
+    {
+      "userId": "1",
+      "finalScore": 8,
+      "timeStamp": "06/15/2018, 2:14:49 PM",
+      "id": 9
     }
   ],
   "continents": [

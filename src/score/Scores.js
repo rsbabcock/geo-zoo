@@ -29,7 +29,7 @@ export default class Scores extends Component {
                         </Notification>
                     ))}
                 </Container>
-                <Container>
+                <Container className="chart">
                     <h6>Your Scores!</h6>
                     <Doughnut data={this.props.chartData} />
                 </Container>

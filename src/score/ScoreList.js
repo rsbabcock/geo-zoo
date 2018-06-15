@@ -11,7 +11,7 @@ class ScoreList extends Component {
     // Set initial state
     state = {
         scores: [],
-        chartData : {}
+        chartData: {}
     }
     unique = 1
 
@@ -22,71 +22,105 @@ class ScoreList extends Component {
         fetch(`http://localhost:8088/scores?userId=${this.props.activeUser}&_expand=user`)
             .then(r => r.json())
             .then(scores => {
-                // console.log(user)
-                // const userScore = []
-                // scores.forEach(score => {
-                    // if (+score.userId === user) {
-                        // debugger
-                        // userScore.push(score)
-                        // console.log(userScore)
-                        this.setState({
-                            scores: scores
-                        })
-                    })
-                // })
-            // })
+                this.setState({
+                    scores: scores
+                })
+            })
     }
 
-  data = function(){
-    fetch("http://localhost:8088/scores")
-    .then(r => r.json())
-    .then(data => {
-      // const finalLabels = data.map( score => {return `${score.finalScore}`})
-      const finalScores = data.map(score => {return score.finalScore})
-      console.log(finalScores)
-      this.setState({
-        chartData: {
-          // labels: ['Score:'],
-        datasets: [{
-          data: finalScores,
-          backgroundColor: [
-          '#FF6384',
-          '#36A2EB',
-          '#FFCE56',
-          '#B22B00',
-          '#FF916F',
-          '#FF3D00',
-          '#6BB09F',
-          '#BBFFEE'
-          ],
-          hoverBackgroundColor: [
-          '#FF6384',
-          '#36A2EB',
-          '#FFCE56'
-          ]
-        }]
-      }
-      })
-    })
-  }.bind(this)
+    data = function () {
+        let c1=0, c2 =0 , c3=0, c4=0, c5=0, c6=0, c7=0, c8=0, c9 = 0
+        fetch(`http://localhost:8088/scores?userId=${this.props.activeUser}`)
+            .then(r => r.json())
+            .then(data => {
+                const finalScores = data.map(score => {
+                    switch (score.finalScore) {
+                        case 1:
+                             c1++
+                            break
+                        case 2:
+                             c2++
+                            break
+                        case 3:
+                             c3++
+                            break
+                        case 4:
+                             c4++
+                            break
+                        case 5:
+                             c5++
+                            break
+                        case 6:
+                             c6++
+                            break
+                        case 7:
+                             c7++
+                            break
+                        case 8:
+                             c8++
+                            break
+                        default :
+                             c9++
+                            break
+                    }
+                    
+                })
+                console.log(c1, c2, c3, c4, c5, c6, c7, c8, c9)
+                console.log(finalScores)
+                this.setState({
+                    chartData: {
+                        labels: ['1 correct',
+                            '2 correct',
+                            '3 correct',
+                            '4 correct',
+                            '5 correct',
+                            '6 correct',
+                            '7 correct',
+                            '8 correct',
+                            '9 correct'],
+                        datasets: [{
+                            data: [c1, c2, c3, c4, c5, c6, c7, c8, c9],
+                            backgroundColor: [
+                                '#FF6384',
+                                '#36A2EB',
+                                '#FFCE56',
+                                '#B22B00',
+                                '#FF916F',
+                                '#FF3D00',
+                                '#6BB09F',
+                                '#BBFFEE',
+                                'blue'
+                            ],
+                            hoverBackgroundColor: [
+                                '#FF6384',
+                                '#36A2EB',
+                                '#FFCE56'
+                            ]
+                        }]
+                    }
+                })
+            })
+    }.bind(this)
 
     componentDidMount() {
         this.handleScores()
+        this.data()
     }
 
     render() {
         return (
             <div>
 
-                    <Container isFluid>
-                    <Notification  style={{ textAlign: 'center'}} isColor="primary"> <Title> Scores </Title> </Notification>
-                    <Scores scores={this.state.scores} key={this.unique++} chartData={this.state.chartData}/>
-                    </Container>
+                <Container isFluid>
+                    <Notification style={{ textAlign: 'center' }} isColor="primary"> <Title> Scores </Title> </Notification>
+                    <Scores scores={this.state.scores} key={this.unique++} chartData={this.state.chartData} />
+                </Container>
 
             </div>
 
         )
     }
 }
+
 
 export default ScoreList
