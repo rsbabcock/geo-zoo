@@ -20,7 +20,8 @@ class App extends Component {
         userScore: 0,
         animals: [],
         continents: [],
-        counter: 0
+        counter: 0,
+        randomNum: 0,
         }
         // uniqueKey: 1
         
@@ -87,23 +88,8 @@ class App extends Component {
           })
       })
   }
-  // function to post score at the end of hte game
-  // function to change counter to increment game pages one at a time
-  // gameCounter = function (e){
-    // e.preventDefault
-    // if(this.state.counter < this.state.animals.length-1 ) {
-    //   this.setState({
-    //     counter : this.state.counter+1
-    //   })
-    // } else {
-    //   this.showView("gameScore")
-    // }
-    // debugger
-
-  // }.bind(this)
   // function to handle game play
   gameHandler = function (animalContinent, currentContinent) {
-    // e.preventDefault()
     // event that checks if the continent clicked is
     //  correct one for the current animal
     if(animalContinent === currentContinent) {
@@ -113,10 +99,11 @@ class App extends Component {
         this.setState({
           userScore : this.state.userScore+1
         })
-        if(this.state.counter < this.state.animals.length-1 ) {
+        if(this.state.counter < 9 ) {
           this.setState({
             counter : this.state.counter+1
           })
+          this.randomizeHandler()
         } else {
           this.showView("gameScore")
         }
@@ -131,6 +118,15 @@ class App extends Component {
       }
     }
 }.bind(this)
+// function to randomize animal input
+ randomizeHandler = function() {
+    const rando = Math.floor(Math.random() * 12)
+    console.log(rando)
+    this.setState({
+        randomNum : rando
+    })
+    }.bind(this)
+
   // Component that gets all animal and continent info
   componentDidMount(){
         this.getAnimals()
@@ -157,7 +153,9 @@ class App extends Component {
                      activeUser={this.state.activeUser} 
                      gameCounter={this.gameCounter}
                      gameHandler={this.gameHandler}
-                     userScore={this.state.userScore}/>
+                     userScore={this.state.userScore}
+                     randomizeHandler={this.randomizeHandler}
+                     randomNum={this.state.randomNum}/>
                 case "gameScore":
                     return <GameScore score={this.state.userScore} activeUser={this.state.activeUser} counter={this.state.counter} showView={this.showView}/>                     
                 case "scoreList":

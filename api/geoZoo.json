@@ -142,6 +142,30 @@
       "finalScore": 10,
       "timeStamp": "06/18/2018, 9:57:13 AM",
       "id": 13
+    },
+    {
+      "userId": "1",
+      "finalScore": 10,
+      "timeStamp": "06/18/2018, 3:23:43 PM",
+      "id": 14
+    },
+    {
+      "userId": "1",
+      "finalScore": 10,
+      "timeStamp": "06/18/2018, 3:39:27 PM",
+      "id": 15
+    },
+    {
+      "userId": "1",
+      "finalScore": 10,
+      "timeStamp": "06/18/2018, 3:43:53 PM",
+      "id": 16
+    },
+    {
+      "userId": "1",
+      "finalScore": 10,
+      "timeStamp": "06/18/2018, 3:50:18 PM",
+      "id": 17
     }
   ],
   "continents": [
@@ -257,6 +281,24 @@
       "fact": "The African elephant is the largest animal walking the Earth. Their herds wander through 37 countries in Africa. They are easily recognized by their trunk that is used for communication and handling objects. And their large ears allow them to radiate excess heat. Upper incisor teeth develop into tusks in African elephants and grow throughout their lifetime. There are two subspecies of African elephants—the Savanna (or bush) elephant and the Forest elephant. Savanna elephants are larger than forest elephants, and their tusks curve outwards. In addition to being smaller, forest elephants are darker and their tusks are straighter and point downward. There are also differences in the size and shape of the skull and skeleton between the two subspecies.",
       "diet": "Herbivore",
       "url": "https://www.worldwildlife.org/species/african-elephant"
+    },
+    {
+      "id": 11,
+      "continentId": 3,
+      "image": "https://image.ibb.co/hKwiqJ/whaleshark.png",
+      "name": "Whale Shark",
+      "fact": "The whale shark is the biggest fish and shark in the world. These gentle marine giants roam the oceans around the globe, generally alone. However, large numbers of whale sharks often gather in areas with abundant plankton food—making them prime tourist attractions. Its enormous mouth (nearly five feet wide) engulfs large quantities of tiny plankton that it filters through its gills as it swims.",
+      "diet": "Carnivore",
+      "url": "https://www.worldwildlife.org/species/whale-shark"
+    },
+    {
+      "id": 12,
+      "continentId": 3,
+      "image": "https://image.ibb.co/nhEKVJ/Ferret.png",
+      "name": "Black Footed Ferret",
+      "fact": "Once thought to be globally extinct, black-footed ferrets are making a comeback. For the last thirty years, concerted efforts from many state and federal agencies, zoos, Native American tribes, conservation organizations and private landowners have given black-footed ferrets a second chance for survival. Today, recovery efforts have helped restore the black-footed ferret population to nearly 300 animals across North America. Although great strides have been made to recover the black-footed ferret, habitat loss and disease remain key threats to this highly endangered species.",
+      "diet": "Carnivore",
+      "url": "https://www.worldwildlife.org/species/black-footed-ferret"
     }
   ]
 }

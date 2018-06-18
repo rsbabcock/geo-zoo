@@ -40,8 +40,8 @@ class Animal extends Component {
             <div className="gameContainer">
                     <div className="animalContainer">
                         <Box>
-                        <div className="animal" id={this.props.animals[this.props.counter].continentId} draggable="true">
-                            <img src={this.props.animals[this.props.counter].image} alt="animals" />
+                        <div className="animal" id={this.props.animals[this.props.randomNum].continentId} draggable="true">
+                            <img src={this.props.animals[this.props.randomNum].image} alt="animals" />
                         </div>
                         <div>
                             <Button isSize="medium" className="fact" id="animalFact" onClick={this.animalHandler} isOutlined> Facts </Button>
@@ -49,27 +49,27 @@ class Animal extends Component {
                                 <ModalBackground />
                                 <ModalCard>
                                     <ModalCardHeader>
-                                        <ModalCardTitle>{this.props.animals[this.props.counter].name}</ModalCardTitle>
+                                        <ModalCardTitle>{this.props.animals[this.props.randomNum].name}</ModalCardTitle>
                                         <Delete onClick={this.animalHandler} />
                                     </ModalCardHeader>
                                     <ModalCardBody>
                                         <p>
-                                          {this.props.animals[this.props.counter].fact}
+                                          {this.props.animals[this.props.randomNum].fact}
                                         </p>
                                         <br/>
                                         <p>
-                                           <strong>Diet:</strong>  {this.props.animals[this.props.counter].diet}
+                                           <strong>Diet:</strong>  {this.props.animals[this.props.randomNum].diet}
                                         </p>
                                         <br/>
-                                        <a href={this.props.animals[this.props.counter].url} target="_blank"> 
-                                        {this.props.animals[this.props.counter].url}
+                                        <a href={this.props.animals[this.props.randomNum].url} target="_blank"> 
+                                        {this.props.animals[this.props.randomNum].url}
                                         </a>
                                     </ModalCardBody>
                                 </ModalCard>
                             </Modal>
                         </div>
                         </Box>
-                        <Progress isColor='primary' value={this.props.counter} max={this.props.animals.length}/>
+                        <Progress isColor='primary' value={this.props.counter} max={9}/>
                     </div>
                     {/* Beginning of Continents */}
                     <div className="contContainer">
@@ -78,7 +78,7 @@ class Animal extends Component {
                                 <p> {c.name} </p>
                                 <img id={c.id}
                                     src={c.image} alt="continents"
-                                    onClick={() => this.props.gameHandler(this.props.animals[this.props.counter].continentId, c.id)}
+                                    onClick={() => this.props.gameHandler(this.props.animals[this.props.randomNum].continentId, c.id)}
                                 />
                                 <Button isSize="small" className="fact" id={"button__"+ c.id} onClick={() => this.continentHandler( "continent__"+c.id )} isOutlined> Facts </Button>
                                 <Modal id={"continent__"+c.id} key={c.id} value={this.state.value} >
