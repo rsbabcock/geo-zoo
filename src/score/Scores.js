@@ -29,9 +29,9 @@ export default class Scores extends Component {
                         </Notification>
                     ))}
                 </Container>
-                <Container className="chart">
+                <Container style={{height: 500}} className="chart">
                     <h6>Your Scores!</h6>
-                    <Doughnut data={this.props.data} options={this.props.options} />
+                    <Doughnut  data={this.props.data} options={this.props.options} />
                 </Container>
             </div>
         )

@@ -30,7 +30,7 @@ class ScoreList extends Component {
     }
 
     data = function () {
-        let c1=0, c2 =0 , c3=0, c4=0, c5=0, c6=0, c7=0, c8=0, c9 = 0
+        let c1=0, c2 =0 , c3=0, c4=0, c5=0, c6=0, c7=0, c8=0, c9 = 0, c10=0
         fetch(`http://localhost:8088/scores?userId=${this.props.activeUser}`)
             .then(r => r.json())
             .then(data => {
@@ -60,27 +60,31 @@ class ScoreList extends Component {
                         case 8:
                              c8++
                             break
+                        case 9:
+                            c9++
+                            break
                         default :
-                             c9++
+                             c10++
                             break
                     }
                     
                 })
-                console.log(c1, c2, c3, c4, c5, c6, c7, c8, c9)
+                console.log(c1, c2, c3, c4, c5, c6, c7, c8, c9, c10)
                 // console.log(finalScores)
                 this.setState({
                     chartData: {
-                        labels: ['1 correct',
-                            '2 correct',
-                            '3 correct',
-                            '4 correct',
-                            '5 correct',
-                            '6 correct',
-                            '7 correct',
-                            '8 correct',
-                            '9 correct'],
+                        labels: ['10%',
+                            '20%',
+                            '30%',
+                            '40%',
+                            '50%',
+                            '60%',
+                            '70%',
+                            '80%',
+                            '90%',
+                            '100%'],
                         datasets: [{
-                            data: [c1, c2, c3, c4, c5, c6, c7, c8, c9],
+                            data: [c1, c2, c3, c4, c5, c6, c7, c8, c9, c10],
                             backgroundColor: [
                                 '#FF6384',
                                 '#36A2EB',
@@ -90,7 +94,8 @@ class ScoreList extends Component {
                                 '#FF3D00',
                                 '#6BB09F',
                                 '#BBFFEE',
-                                'blue'
+                                'blue',
+                                '#44146f'
                             ],
                             hoverBackgroundColor: [
                                 '#FF6384',
@@ -101,8 +106,12 @@ class ScoreList extends Component {
                         },
                     chartOptions: {
                             legend : {
-                                position : 'left'
-                            } 
+                                position : 'left',
+                                labels : {
+                                    fontFamily : "'Luckiest Guy', 'cursive'"
+                                }
+                            },
+                             
                     },
                 })
             })

@@ -33,7 +33,7 @@ export default class GameScore extends Component {
 
     render() {
         return (
-            <div className="gameScore">
+        <div className="gameScore">
             <div>
                 <div id="score" >
                     {/* <Box> */}
