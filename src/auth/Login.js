@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import { Columns, Column, Field, Control, Input, Button, Container } from 'bloomer'
+import { Field, Control, Input, Button } from 'bloomer'
 import 'bulma/css/bulma.css'
 import logo from "../img/Group.png"
 import './login.css'
@@ -50,38 +50,33 @@ class Login extends Component {
     */
     render() {
         return (
-            <div>
-                <div>
-                    <Columns  isCentered>
-                        {/* <img src={logo} width="300" height="300"/> */}
-                        <Column isSize="1/2">
-                            <Container isFluid>
-                                <img src={logo} alt="brand"/>
-                            </Container>
-                            <form onSubmit={this.handleLogin}>
-                                <Field>
-                                    {/* <Title isSize={2}>Sign Up!</Title> */}
-                                    <Control>
-                                        <Input isSize="large" onChange={this.handleFieldChange} isColor='primary' placeholder='Email' type="email" id="email" />
-                                        <Input style={{marginTop : 10}} isSize="large" onChange={this.handleFieldChange} isColor='primary' placeholder='Password' type="password" id="password" />
-                                    </Control>
-                                    <Container style={{ marginTop : 15}}>
-                                    <Columns isCentered>
-                                        <Control>
-                                            <Column isSize="full">
-                                                <Button type="submit" isColor='primary' isOutlined isSize="large">Log In</Button>
-                                                <Button isColor='primary' id="page__register" onClick={this.props.showView} isOutlined isSize="large">Sign Up!
-                                                </Button>
-                                            </Column>
-                                        </Control>
-                                    </Columns>
-                                    </Container>
-                                </Field>
-                            </form>
-                        </Column>
-                    </Columns>
+                <div className="loginContainer">
+                    <div className="logoHolder">
+                        <img src={logo} alt="brand"/>
+                    </div>
+                    <form onSubmit={this.handleLogin}>
+                        <Field>
+                            <Control>
+                                <Input isSize="large" onChange={this.handleFieldChange} isColor='primary' placeholder='Email' type="email" id="email" />
+                                <Input style={{marginTop : 10}} isSize="large" onChange={this.handleFieldChange} isColor='primary' placeholder='Password' type="password" id="password" />
+                            </Control>
+                            <Control id="buttons">
+                                    <Button 
+                                    id="button__login"
+                                    type="submit" 
+                                    isColor='primary' 
+                                    isOutlined 
+                                    isSize="large">Log In</Button>
+                                    <Button 
+                                    isColor='primary' 
+                                    id="page__register" 
+                                    onClick={this.props.showView} 
+                                    isOutlined 
+                                    isSize="large">Sign Up!</Button>
+                            </Control>
+                        </Field>
+                    </form>
                 </div>
-            </div>
 
             // <form className="form-signin" onSubmit={this.handleLogin}>
             //     <h1 className="h3 mb-3 font-weight-normal">Please sign in</h1>

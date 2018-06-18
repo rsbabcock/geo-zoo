@@ -1,6 +1,7 @@
 import React, { Component } from "react"
-import { Columns, Column, Field, Control, Input, Button, Title } from 'bloomer'
+import { Field, Control, Input, Button } from 'bloomer'
 import 'bulma/css/bulma.css'
+import './register.css'
 // import logo from "../img/Group.png"
 
 export default class Register extends Component {
@@ -65,27 +66,27 @@ export default class Register extends Component {
 
     render() {
         return (
-            <Columns isCentered>
+            <div className="registContatiner">
                 <form onSubmit={this.handleSignUp} >
-                <Column isSize="full">
+                <div>
                     <Field>
-                        {/* <Column isSize="1/2"> */}
+                        {/* <div isSize="1/2"> */}
                         {/* <Image isSize="128x128" src={logo} /> */}
-                        <Title isSize={2}>Sign Up!</Title>
-                        {/* </Column> */}
+                        <h1>Please Sign Up!</h1>
+                        {/* </div> */}
                         <Control>
-                            <Input onChange={this.handleFieldChange} isColor='success' placeholder='Email' type="email" id="email" />
-                            <Input onChange={this.handleFieldChange} isColor='success' placeholder='First Name' type="text" id="firstName" />
-                            <Input onChange={this.handleFieldChange} isColor='success' placeholder='Last Name' type="text" id="lastName" />
-                            <Input onChange={this.handleFieldChange} isColor='success' placeholder='Password' type="password" id="password" />
+                            <Input style={{marginBottom: 10}} onChange={this.handleFieldChange} isColor='success' placeholder='Email' type="email" id="email" isSize="large"/>
+                            <Input style={{marginBottom: 10}} onChange={this.handleFieldChange} isColor='success' placeholder='First Name' type="text" id="firstName" isSize="large"/>
+                            <Input style={{marginBottom: 10}} onChange={this.handleFieldChange} isColor='success' placeholder='Last Name' type="text" id="lastName" isSize="large"/>
+                            <Input onChange={this.handleFieldChange} isColor='success' placeholder='Password' type="password" id="password" isSize="large"/>
                         </Control>
-                        <Control>
-                            <Button type="submit" isColor='primary' isOutlined>Sign Up!</Button>
+                        <Control id="controller">
+                            <Button id="button__signUp" type="submit" isColor='primary' isSize="large"isOutlined>Sign Up!</Button>
                         </Control>
                     </Field>
-                </Column >
+                </div >
                 </form>
-            </Columns>
+            </div>
         )
     }
 }

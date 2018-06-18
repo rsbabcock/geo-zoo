@@ -1,0 +1,33 @@
+.registContatiner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.registContatiner h1 {
+    /* margin-left: 2%; */
+    color: #FF916F;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 3em;
+    text-shadow: 1px 1px #FF3D00;
+    font-kerning: 1px;
+}
+
+#controller {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin-top: 3%;
+}
+
+#button__signUp {
+    color: #FF916F;
+    font-family: 'Luckiest Guy', cursive;
+    /* font-size: em; */
+    text-shadow: 1px 1px #FF3D00;
+    font-kerning: 1px;
+}
