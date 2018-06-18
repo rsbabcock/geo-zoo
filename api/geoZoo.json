@@ -242,6 +242,15 @@
       "fact": "Vaquita, the world’s most rare marine mammal, is on the edge of extinction. This little porpoise wasn't discovered until 1958 and a little over half a century later, we are on the brink of losing them forever. Vaquita are often caught and drowned in gillnets used by illegal fishing operations in marine protected areas within Mexico's Gulf of California. The population has dropped drastically in the last few years. The vaquita has a large dark ring around its eyes and dark patches on its lips that form a thin line from the mouth to the pectoral fins. Its dorsal surface is dark gray, sides pale gray and ventral surface white with long, light gray markings. Newborn vaquita have darker coloration and a wide gray fringe of color that runs from the head to the dorsal flukes, passing through the dorsal and pectoral fins. They are most often found close to shore in the Gulf's shallow waters, although they quickly swim away if a boat approaches. Dolphins and porpoises delight us with their playful antics and warm our hearts with their friendly faces. Marine species are the most well-known, but there are several species that live in freshwater rivers. All are air-breathing, warm-blooded mammals that nurse their young. The difference between a dolphin and a porpoise has to do with their appearance: dolphins have longer snouts, bigger mouths, more curved dorsal fins, and longer, leaner bodies than porpoises",
       "diet": "Carnivore",
       "url": "https://www.worldwildlife.org/species/dolphins-and-porpoises"
+    },
+    {
+      "id": 10,
+      "continentId": 1,
+      "image": "https://image.ibb.co/kN92jd/African_Elephant.png",
+      "name": "African Elephant",
+      "fact": "The African elephant is the largest animal walking the Earth. Their herds wander through 37 countries in Africa. They are easily recognized by their trunk that is used for communication and handling objects. And their large ears allow them to radiate excess heat. Upper incisor teeth develop into tusks in African elephants and grow throughout their lifetime. There are two subspecies of African elephants—the Savanna (or bush) elephant and the Forest elephant. Savanna elephants are larger than forest elephants, and their tusks curve outwards. In addition to being smaller, forest elephants are darker and their tusks are straighter and point downward. There are also differences in the size and shape of the skull and skeleton between the two subspecies.",
+      "diet": "Herbivore",
+      "url": "https://www.worldwildlife.org/species/african-elephant"
     }
   ]
 }
