@@ -21,7 +21,7 @@ class App extends Component {
         animals: [],
         continents: [],
         counter: 0,
-        randomNum: 0,
+        // randomNum: 0,
         }
         // uniqueKey: 1
         
@@ -59,6 +59,7 @@ class App extends Component {
             userScore: 0,
             counter: 0
           })
+          this.randomizeHandler()
         }
 
         // Update state to correct view will be rendered
@@ -72,8 +73,13 @@ class App extends Component {
       fetch("http://localhost:8088/animals")
       .then(r => r.json())
       .then(animals => {
+        let randomals = animals
+        for (let i = randomals.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [randomals[i], randomals[j]] = [randomals[j], randomals[i]];
+        }
           this.setState({
-              animals: animals
+              animals: randomals
           })
       })
   }
@@ -103,27 +109,34 @@ class App extends Component {
           this.setState({
             counter : this.state.counter+1
           })
-          this.randomizeHandler()
-        } else {
+        //   this.randomizeHandler()
+        } else if( this.state.counter === 9){
           this.showView("gameScore")
         }
     } else { 
       swal("", "That's incorrect", "warning")
-      if(this.state.counter < this.state.animals.length-1 ) {
+      if(this.state.counter < 9 ) {
         this.setState({
           counter : this.state.counter+1
         })
-      } else {
+      } else if(this.state.counter === 9){
         this.showView("gameScore")
       }
     }
 }.bind(this)
 // function to randomize animal input
  randomizeHandler = function() {
-    const rando = Math.floor(Math.random() * 12)
-    console.log(rando)
+    //  e.preventDefault()
+    let randomals = this.state.animals
+    for (let i = randomals.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [randomals[i], randomals[j]] = [randomals[j], randomals[i]];
+    }
     this.setState({
-        randomNum : rando
+        animals : randomals,
+        userScore: 0,
+        counter: 0,
+        currentView: "welcome"
     })
     }.bind(this)
 
@@ -131,6 +144,7 @@ class App extends Component {
   componentDidMount(){
         this.getAnimals()
         this.getContinents()
+        this.randomizeHandler()
     }
 
 
@@ -157,7 +171,7 @@ class App extends Component {
                      randomizeHandler={this.randomizeHandler}
                      randomNum={this.state.randomNum}/>
                 case "gameScore":
-                    return <GameScore score={this.state.userScore} activeUser={this.state.activeUser} counter={this.state.counter} showView={this.showView}/>                     
+                    return <GameScore score={this.state.userScore} activeUser={this.state.activeUser} counter={this.state.counter} showView={this.randomizeHandler}/>                     
                 case "scoreList":
                     return <ScoreList activeUser={this.state.activeUser} />
                 case "welcome":
@@ -174,6 +188,7 @@ class App extends Component {
                 <NavBar viewHandler={this.showView}
                     activeUser={this.state.activeUser}
                     setActiveUser={this.setActiveUser}
+                    randomizeHandler={this.state.randomizeHandler}
                     // profileHandler={this.viewProfile}
                 />
 
