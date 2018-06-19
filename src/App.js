@@ -128,6 +128,8 @@ class App extends Component {
  randomizeHandler = function() {
     //  e.preventDefault()
     let randomals = this.state.animals
+    // this code courtesy of Joshua Barton
+    // Goes through array and goes backwards through array and reshuffles array
     for (let i = randomals.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [randomals[i], randomals[j]] = [randomals[j], randomals[i]];
