@@ -18,7 +18,9 @@ class Game extends Component {
                 counter={this.props.counter}
                 gameCounter={this.props.gameCounter}
                 gameHandler={this.props.gameHandler}
-                key={this.uniqueKey++}/>
+                key={this.uniqueKey++}
+                randomizeHandler={this.randomizeHandler}
+                     randomNum={this.props.randomNum}/>
             </article>
         )
     }

@@ -62,6 +62,13 @@
       "lastName": "daniel",
       "password": "poop",
       "id": 9
+    },
+    {
+      "email": "me@me.com",
+      "firstName": "me",
+      "lastName": "me",
+      "password": "me",
+      "id": 10
     }
   ],
   "scores": [
@@ -142,6 +149,168 @@
       "finalScore": 10,
       "timeStamp": "06/18/2018, 9:57:13 AM",
       "id": 13
+    },
+    {
+      "userId": "1",
+      "finalScore": 10,
+      "timeStamp": "06/18/2018, 3:23:43 PM",
+      "id": 14
+    },
+    {
+      "userId": "1",
+      "finalScore": 10,
+      "timeStamp": "06/18/2018, 3:39:27 PM",
+      "id": 15
+    },
+    {
+      "userId": "1",
+      "finalScore": 10,
+      "timeStamp": "06/18/2018, 3:43:53 PM",
+      "id": 16
+    },
+    {
+      "userId": "1",
+      "finalScore": 10,
+      "timeStamp": "06/18/2018, 3:50:18 PM",
+      "id": 17
+    },
+    {
+      "userId": "1",
+      "finalScore": 10,
+      "timeStamp": "06/19/2018, 9:25:47 AM",
+      "id": 18
+    },
+    {
+      "userId": "1",
+      "finalScore": 10,
+      "timeStamp": "06/19/2018, 9:40:00 AM",
+      "id": 19
+    },
+    {
+      "userId": "1",
+      "finalScore": 8,
+      "timeStamp": "06/19/2018, 9:44:09 AM",
+      "id": 20
+    },
+    {
+      "userId": "1",
+      "finalScore": 9,
+      "timeStamp": "06/19/2018, 9:44:48 AM",
+      "id": 21
+    },
+    {
+      "userId": "1",
+      "finalScore": 4,
+      "timeStamp": "06/19/2018, 9:45:53 AM",
+      "id": 22
+    },
+    {
+      "userId": "1",
+      "finalScore": 9,
+      "timeStamp": "06/19/2018, 9:46:24 AM",
+      "id": 23
+    },
+    {
+      "userId": "1",
+      "finalScore": 4,
+      "timeStamp": "06/19/2018, 9:46:53 AM",
+      "id": 24
+    },
+    {
+      "userId": "1",
+      "finalScore": 10,
+      "timeStamp": "06/19/2018, 9:51:02 AM",
+      "id": 25
+    },
+    {
+      "userId": "1",
+      "finalScore": 6,
+      "timeStamp": "06/19/2018, 9:57:25 AM",
+      "id": 26
+    },
+    {
+      "userId": "1",
+      "finalScore": 4,
+      "timeStamp": "06/19/2018, 10:00:00 AM",
+      "id": 27
+    },
+    {
+      "userId": "1",
+      "finalScore": 4,
+      "timeStamp": "06/19/2018, 10:01:12 AM",
+      "id": 28
+    },
+    {
+      "userId": "1",
+      "finalScore": 3,
+      "timeStamp": "06/19/2018, 10:02:39 AM",
+      "id": 29
+    },
+    {
+      "userId": "1",
+      "finalScore": 18,
+      "timeStamp": "06/19/2018, 10:06:59 AM",
+      "id": 30
+    },
+    {
+      "userId": "1",
+      "finalScore": 2,
+      "timeStamp": "06/19/2018, 10:10:11 AM",
+      "id": 31
+    },
+    {
+      "userId": "1",
+      "finalScore": 8,
+      "timeStamp": "06/19/2018, 10:11:37 AM",
+      "id": 32
+    },
+    {
+      "userId": "1",
+      "finalScore": 6,
+      "timeStamp": "06/19/2018, 10:39:07 AM",
+      "id": 33
+    },
+    {
+      "userId": "1",
+      "finalScore": 4,
+      "timeStamp": "06/19/2018, 10:48:49 AM",
+      "id": 34
+    },
+    {
+      "userId": "1",
+      "finalScore": 4,
+      "timeStamp": "06/19/2018, 10:49:05 AM",
+      "id": 35
+    },
+    {
+      "userId": "1",
+      "finalScore": 2,
+      "timeStamp": "06/19/2018, 10:53:31 AM",
+      "id": 36
+    },
+    {
+      "userId": "1",
+      "finalScore": 7,
+      "timeStamp": "06/19/2018, 10:53:59 AM",
+      "id": 37
+    },
+    {
+      "userId": "1",
+      "finalScore": 9,
+      "timeStamp": "06/19/2018, 11:47:06 AM",
+      "id": 38
+    },
+    {
+      "userId": "10",
+      "finalScore": 10,
+      "timeStamp": "06/19/2018, 1:58:15 PM",
+      "id": 39
+    },
+    {
+      "userId": "10",
+      "finalScore": 8,
+      "timeStamp": "06/19/2018, 2:00:13 PM",
+      "id": 40
     }
   ],
   "continents": [
@@ -243,7 +412,7 @@
     {
       "id": 9,
       "continentId": 3,
-      "image": "https://image.ibb.co/cgGcno/vaquita_Better.png",
+      "image": "https://image.ibb.co/kbrBCy/vaquita_Better.png",
       "name": "Vaquita",
       "fact": "Vaquita, the world’s most rare marine mammal, is on the edge of extinction. This little porpoise wasn't discovered until 1958 and a little over half a century later, we are on the brink of losing them forever. Vaquita are often caught and drowned in gillnets used by illegal fishing operations in marine protected areas within Mexico's Gulf of California. The population has dropped drastically in the last few years. The vaquita has a large dark ring around its eyes and dark patches on its lips that form a thin line from the mouth to the pectoral fins. Its dorsal surface is dark gray, sides pale gray and ventral surface white with long, light gray markings. Newborn vaquita have darker coloration and a wide gray fringe of color that runs from the head to the dorsal flukes, passing through the dorsal and pectoral fins. They are most often found close to shore in the Gulf's shallow waters, although they quickly swim away if a boat approaches. Dolphins and porpoises delight us with their playful antics and warm our hearts with their friendly faces. Marine species are the most well-known, but there are several species that live in freshwater rivers. All are air-breathing, warm-blooded mammals that nurse their young. The difference between a dolphin and a porpoise has to do with their appearance: dolphins have longer snouts, bigger mouths, more curved dorsal fins, and longer, leaner bodies than porpoises",
       "diet": "Carnivore",
@@ -257,6 +426,96 @@
       "fact": "The African elephant is the largest animal walking the Earth. Their herds wander through 37 countries in Africa. They are easily recognized by their trunk that is used for communication and handling objects. And their large ears allow them to radiate excess heat. Upper incisor teeth develop into tusks in African elephants and grow throughout their lifetime. There are two subspecies of African elephants—the Savanna (or bush) elephant and the Forest elephant. Savanna elephants are larger than forest elephants, and their tusks curve outwards. In addition to being smaller, forest elephants are darker and their tusks are straighter and point downward. There are also differences in the size and shape of the skull and skeleton between the two subspecies.",
       "diet": "Herbivore",
       "url": "https://www.worldwildlife.org/species/african-elephant"
+    },
+    {
+      "id": 11,
+      "continentId": 3,
+      "image": "https://image.ibb.co/hKwiqJ/whaleshark.png",
+      "name": "Whale Shark",
+      "fact": "The whale shark is the biggest fish and shark in the world. These gentle marine giants roam the oceans around the globe, generally alone. However, large numbers of whale sharks often gather in areas with abundant plankton food—making them prime tourist attractions. Its enormous mouth (nearly five feet wide) engulfs large quantities of tiny plankton that it filters through its gills as it swims.",
+      "diet": "Carnivore",
+      "url": "https://www.worldwildlife.org/species/whale-shark"
+    },
+    {
+      "id": 12,
+      "continentId": 3,
+      "image": "https://image.ibb.co/nhEKVJ/Ferret.png",
+      "name": "Black Footed Ferret",
+      "fact": "Once thought to be globally extinct, black-footed ferrets are making a comeback. For the last thirty years, concerted efforts from many state and federal agencies, zoos, Native American tribes, conservation organizations and private landowners have given black-footed ferrets a second chance for survival. Today, recovery efforts have helped restore the black-footed ferret population to nearly 300 animals across North America. Although great strides have been made to recover the black-footed ferret, habitat loss and disease remain key threats to this highly endangered species.",
+      "diet": "Carnivore",
+      "url": "https://www.worldwildlife.org/species/black-footed-ferret"
+    },
+    {
+      "id": 13,
+      "continentId": 2,
+      "image": "https://image.ibb.co/hCGrCy/redPanda.png",
+      "name": "Red Panda",
+      "fact": "The red panda is slightly larger than a domestic cat with a bear-like body and thick russet fur. The belly and limbs are black, and there are white markings on the side of the head and above its small eyes. Red pandas are very skillful and acrobatic animals that predominantly stay in trees. Almost 50% of the red panda’s habitat is in the Eastern Himalayas. They use their long, bushy tails for balance and to cover themselves in winter, presumably for warmth. Primarily an herbivore, the name panda is said to come from the Nepali word ‘ponya,’ which means bamboo or plant eating animal.",
+      "diet": "Herbivore",
+      "url": "https://www.worldwildlife.org/species/red-panda"
+    },
+    {
+      "id": 14,
+      "continentId": 1,
+      "image": "https://image.ibb.co/bWiJQJ/chimpanzee.png",
+      "name": "Chimpanzee",
+      "fact": "Like us, chimps are highly social animals, care for their offspring for years and can live to be over 50. In fact, chimpanzees are our closest cousins; we share about 98 percent of our genes. In their habitat in the forests of central Africa, chimpanzees spend most of their days in the tree tops. When they do come down to earth, chimps usually travel on all fours, though they can walk on their legs like humans for as far as a mile. They use sticks to fish termites out of mounds and bunches of leaves to sop up drinking water. The red panda is slightly larger than a domestic cat with a bear-like body and thick russet fur. The belly and limbs are black, and there are white markings on the side of the head and above its small eyes. Red pandas are very skillful and acrobatic animals that predominantly stay in trees. Almost 50% of the red panda’s habitat is in the Eastern Himalayas. They use their long, bushy tails for balance and to cover themselves in winter, presumably for warmth. Primarily an herbivore, the name panda is said to come from the Nepali word ‘ponya,’ which means bamboo or plant eating animal.",
+      "diet": "Herbivore",
+      "url": "https://www.worldwildlife.org/species/chimpanzee"
+    },
+    {
+      "id": 15,
+      "continentId": 2,
+      "image": "https://image.ibb.co/iN2bed/snow_Leopard.png",
+      "name": "Snow Leopard",
+      "fact": "The snow leopard’s powerful build allows it to scale great steep slopes with ease. Its hind legs give the snow leopard the ability to leap six times the length of its body. A long tail provides balance and agility and also wraps around the resting snow leopard as protection from the cold. For millennia, this magnificent cat was the king of the mountains. The mountains were rich with their prey such as blue sheep, Argali wild sheep, ibex, marmots, pikas and hares. Snow leopards are found in 12 countries—including China, Bhutan, Nepal, India, Pakistan, Afghanistan, Russia, and Mongolia—but their population is dropping",
+      "diet": "Carnivore",
+      "url": "https://www.worldwildlife.org/species/snow-leopard"
+    },
+    {
+      "id": 16,
+      "continentId": 2,
+      "image": "https://image.ibb.co/mbeZzd/saola.png",
+      "name": "Saola",
+      "fact": "The saola was discovered in May 1992 during a joint survey carried out by the Ministry of Forestry of Vietnam and WWF in north-central Vietnam. The team found a skull with unusual long, straight horns in a hunter's home and knew it was something extraordinary. The find proved to be the first large mammal new to science in more than 50 years and one of the most spectacular zoological discoveries of the 20th century. Saola (pronounced: sow-la) are recognized by two parallel horns with sharp ends, which can reach 20 inches in length and are found on both males and females. Meaning “spindle horns” in Vietnamese, they are a cousin of cattle but resemble an antelope. Saola have striking white markings on the face and large maxillary glands on the muzzle, which could be used to mark territory or attract mates. They are found only in the Annamite Mountains of Vietnam and Laos.",
+      "diet": "Herbivore",
+      "url": "https://www.worldwildlife.org/species/saola"
+    },
+    {
+      "id": 17,
+      "continentId": 2,
+      "image": "https://image.ibb.co/jLTDsy/irrawaddy_Dolphin.png",
+      "name": "Irrawaddy Dolphin",
+      "fact": "Irrawaddy dolphins are found in coastal areas in South and Southeast Asia, and in three rivers: the Ayeyarwady (Myanmar), the Mahakam (Indonesian Borneo) and the Mekong. The Mekong River Irrawaddy dolphins inhabit a 118-mile stretch of the river between Cambodia and Lao PDR and are scarce—just 92 individuals are estimated to still exist. These dolphins have a bulging forehead, short beak, and 12-19 teeth on each side of both jaws.",
+      "diet": "Carnivore",
+      "url": "https://www.worldwildlife.org/species/irrawaddy-dolphin"
+    },
+    {
+      "id": 18,
+      "continentId": 2,
+      "image": "https://image.ibb.co/bJV9Xy/ganges_Dolphin.jpg",
+      "name": "Ganges River Dolphin",
+      "fact": "Dolphins are one of the oldest creatures in the world along with some species of turtles, crocodiles and sharks. The Ganges river dolphin was officially discovered in 1801. Ganges river dolphins once lived in the Ganges-Brahmaputra-Meghna and Karnaphuli-Sangu river systems of Nepal, India, and Bangladesh. But the species is extinct from most of its early distribution ranges. The Ganges river dolphin can only live in freshwater and is essentially blind. They hunt by emitting ultrasonic sounds, which bounces off of fish and other prey, enabling them to “see” an image in their mind. They are frequently found alone or in small groups, and generally a mother and calf travel together. Calves are chocolate brown at birth and then have grey-brown smooth, hairless skin as adults. Females are larger than males and give birth once every two to three years to only one calf.",
+      "diet": "Carnivore",
+      "url": "https://www.worldwildlife.org/species/ganges-river-dolphin"
+    },
+    {
+      "id": 19,
+      "continentId": 1,
+      "image": "https://image.ibb.co/dQ1PXy/hippo.png",
+      "name": "Hippopatamus",
+      "fact": "The hippopotamus, also known as the “river horse,” lives along the rivers and lakes throughout sub-Saharan Africa. Weighing up to 8,000 pounds, the hippo is the heaviest land animal after the elephant. Hippos seek refuge from the heat by living in water during the day, and at night they come ashore to feed on short, soft grasses and fallen fruit. The eyes and ears of a hippopotamus are on top of its head, so it can keep watch for enemies—mainly crocodiles—while lying low in the water. These giants are currently at risk from habitat loss.",
+      "diet": "Herbivore",
+      "url": "https://www.worldwildlife.org/species/hippopotamus"
+    },
+    {
+      "id": 20,
+      "continentId": 1,
+      "image": "https://image.ibb.co/f54s2y/dugong.jpg",
+      "name": "Dugong",
+      "fact": "Dugongs are cousins of manatees and share a similar plump appearance, but have a dolphin fluke-like tail. And unlike manatees, which use freshwater areas, the dugong is strictly a marine mammal. Commonly known as 'sea cows,' dugongs graze peacefully on sea grasses in shallow coastal waters of the Indian and western Pacific Oceans.",
+      "diet": "Herbivore",
+      "url": "https://www.worldwildlife.org/species/dugong"
     }
   ]
 }

@@ -20,7 +20,8 @@ class App extends Component {
         userScore: 0,
         animals: [],
         continents: [],
-        counter: 0
+        counter: 0,
+        // randomNum: 0,
         }
         // uniqueKey: 1
         
@@ -58,6 +59,7 @@ class App extends Component {
             userScore: 0,
             counter: 0
           })
+          this.randomizeHandler()
         }
 
         // Update state to correct view will be rendered
@@ -71,8 +73,13 @@ class App extends Component {
       fetch("http://localhost:8088/animals")
       .then(r => r.json())
       .then(animals => {
+        let randomals = animals
+        for (let i = randomals.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [randomals[i], randomals[j]] = [randomals[j], randomals[i]];
+        }
           this.setState({
-              animals: animals
+              animals: randomals
           })
       })
   }
@@ -87,23 +94,8 @@ class App extends Component {
           })
       })
   }
-  // function to post score at the end of hte game
-  // function to change counter to increment game pages one at a time
-  // gameCounter = function (e){
-    // e.preventDefault
-    // if(this.state.counter < this.state.animals.length-1 ) {
-    //   this.setState({
-    //     counter : this.state.counter+1
-    //   })
-    // } else {
-    //   this.showView("gameScore")
-    // }
-    // debugger
-
-  // }.bind(this)
   // function to handle game play
   gameHandler = function (animalContinent, currentContinent) {
-    // e.preventDefault()
     // event that checks if the continent clicked is
     //  correct one for the current animal
     if(animalContinent === currentContinent) {
@@ -113,28 +105,48 @@ class App extends Component {
         this.setState({
           userScore : this.state.userScore+1
         })
-        if(this.state.counter < this.state.animals.length-1 ) {
+        if(this.state.counter < 9 ) {
           this.setState({
             counter : this.state.counter+1
           })
-        } else {
+        //   this.randomizeHandler()
+        } else if( this.state.counter === 9){
           this.showView("gameScore")
         }
     } else { 
       swal("", "That's incorrect", "warning")
-      if(this.state.counter < this.state.animals.length-1 ) {
+      if(this.state.counter < 9 ) {
         this.setState({
           counter : this.state.counter+1
         })
-      } else {
+      } else if(this.state.counter === 9){
         this.showView("gameScore")
       }
     }
 }.bind(this)
+// function to randomize animal input
+ randomizeHandler = function() {
+    //  e.preventDefault()
+    let randomals = this.state.animals
+    // this code courtesy of Joshua Barton
+    // Goes through array and goes backwards through array and reshuffles array
+    for (let i = randomals.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [randomals[i], randomals[j]] = [randomals[j], randomals[i]];
+    }
+    this.setState({
+        animals : randomals,
+        userScore: 0,
+        counter: 0,
+        currentView: "welcome"
+    })
+    }.bind(this)
+
   // Component that gets all animal and continent info
   componentDidMount(){
         this.getAnimals()
         this.getContinents()
+        this.randomizeHandler()
     }
 
 
@@ -157,9 +169,11 @@ class App extends Component {
                      activeUser={this.state.activeUser} 
                      gameCounter={this.gameCounter}
                      gameHandler={this.gameHandler}
-                     userScore={this.state.userScore}/>
+                     userScore={this.state.userScore}
+                     randomizeHandler={this.randomizeHandler}
+                     randomNum={this.state.randomNum}/>
                 case "gameScore":
-                    return <GameScore score={this.state.userScore} activeUser={this.state.activeUser} counter={this.state.counter} showView={this.showView}/>                     
+                    return <GameScore score={this.state.userScore} activeUser={this.state.activeUser} counter={this.state.counter} showView={this.randomizeHandler}/>                     
                 case "scoreList":
                     return <ScoreList activeUser={this.state.activeUser} />
                 case "welcome":
@@ -176,6 +190,7 @@ class App extends Component {
                 <NavBar viewHandler={this.showView}
                     activeUser={this.state.activeUser}
                     setActiveUser={this.setActiveUser}
+                    randomizeHandler={this.state.randomizeHandler}
                     // profileHandler={this.viewProfile}
                 />
 
