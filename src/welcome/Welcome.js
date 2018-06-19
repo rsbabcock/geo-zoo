@@ -21,14 +21,15 @@ class Welcome extends Component {
                 <Hero style={{ padding: 15}} isColor="primary">
                     <Container>
                         <HeroHeader>
-                            <Title style={{ textAlign : 'center'}}> Welcome to <br/> <img src={words} alt="logo"/></Title>
+                            <Title style={{ textAlign : 'center'}}> Welcome to</Title>
+                            <img src={words} alt="logo"/>
                         </HeroHeader>
                     </Container>
                     <HeroBody>
                         <Container  style={{ textAlign: 'center'}}>
                             <Box>
                             <Notification isColor="primary"> 
-                            <Title isSize={4}>
+                            <Title isSize={5}>
                                 <p>
                                 To play,  click on the correct continent image for the animal. 
                                 </p>
@@ -40,7 +41,7 @@ class Welcome extends Component {
                                 so make sure to read the facts before you guess!
                                 </p>
                                 </Title>
-                            <Title id="haveFun" isSize={1}>
+                            <Title id="haveFun" isSize={3}>
                                 Have fun and good luck!
                                 </Title>
                                 </Notification>

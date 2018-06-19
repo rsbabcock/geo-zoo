@@ -299,6 +299,18 @@
       "finalScore": 9,
       "timeStamp": "06/19/2018, 11:47:06 AM",
       "id": 38
+    },
+    {
+      "userId": "10",
+      "finalScore": 10,
+      "timeStamp": "06/19/2018, 1:58:15 PM",
+      "id": 39
+    },
+    {
+      "userId": "10",
+      "finalScore": 8,
+      "timeStamp": "06/19/2018, 2:00:13 PM",
+      "id": 40
     }
   ],
   "continents": [
@@ -400,7 +412,7 @@
     {
       "id": 9,
       "continentId": 3,
-      "image": "https://image.ibb.co/cgGcno/vaquita_Better.png",
+      "image": "https://image.ibb.co/kbrBCy/vaquita_Better.png",
       "name": "Vaquita",
       "fact": "Vaquita, the world’s most rare marine mammal, is on the edge of extinction. This little porpoise wasn't discovered until 1958 and a little over half a century later, we are on the brink of losing them forever. Vaquita are often caught and drowned in gillnets used by illegal fishing operations in marine protected areas within Mexico's Gulf of California. The population has dropped drastically in the last few years. The vaquita has a large dark ring around its eyes and dark patches on its lips that form a thin line from the mouth to the pectoral fins. Its dorsal surface is dark gray, sides pale gray and ventral surface white with long, light gray markings. Newborn vaquita have darker coloration and a wide gray fringe of color that runs from the head to the dorsal flukes, passing through the dorsal and pectoral fins. They are most often found close to shore in the Gulf's shallow waters, although they quickly swim away if a boat approaches. Dolphins and porpoises delight us with their playful antics and warm our hearts with their friendly faces. Marine species are the most well-known, but there are several species that live in freshwater rivers. All are air-breathing, warm-blooded mammals that nurse their young. The difference between a dolphin and a porpoise has to do with their appearance: dolphins have longer snouts, bigger mouths, more curved dorsal fins, and longer, leaner bodies than porpoises",
       "diet": "Carnivore",
@@ -463,7 +475,7 @@
     {
       "id": 16,
       "continentId": 2,
-      "image": "https://image.ibb.co/itf7kJ/saola.jpg",
+      "image": "https://image.ibb.co/mbeZzd/saola.png",
       "name": "Saola",
       "fact": "The saola was discovered in May 1992 during a joint survey carried out by the Ministry of Forestry of Vietnam and WWF in north-central Vietnam. The team found a skull with unusual long, straight horns in a hunter's home and knew it was something extraordinary. The find proved to be the first large mammal new to science in more than 50 years and one of the most spectacular zoological discoveries of the 20th century. Saola (pronounced: sow-la) are recognized by two parallel horns with sharp ends, which can reach 20 inches in length and are found on both males and females. Meaning “spindle horns” in Vietnamese, they are a cousin of cattle but resemble an antelope. Saola have striking white markings on the face and large maxillary glands on the muzzle, which could be used to mark territory or attract mates. They are found only in the Annamite Mountains of Vietnam and Laos.",
       "diet": "Herbivore",
@@ -500,7 +512,7 @@
       "id": 20,
       "continentId": 1,
       "image": "https://image.ibb.co/f54s2y/dugong.jpg",
-      "name": "Dugongs",
+      "name": "Dugong",
       "fact": "Dugongs are cousins of manatees and share a similar plump appearance, but have a dolphin fluke-like tail. And unlike manatees, which use freshwater areas, the dugong is strictly a marine mammal. Commonly known as 'sea cows,' dugongs graze peacefully on sea grasses in shallow coastal waters of the Indian and western Pacific Oceans.",
       "diet": "Herbivore",
       "url": "https://www.worldwildlife.org/species/dugong"

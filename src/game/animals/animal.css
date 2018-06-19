@@ -15,55 +15,71 @@ font-family: 'Butterfly Kids', cursive; */
 }
 
 .animalContainer {
+    align-self: flex-start;
     margin-top: 3%;
     padding-left: 2%;
-    align-self: flex-start;
-    justify-content: initial;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+
+    /* justify-content: center; */
 }
 
 .animal img {
+    display: block;
     height: 80%;
     width: 80%;
-    /* margin: -2%; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1%;
+    /* margin-left: -1%; */
+    
 }
 
 .contContainer {
+    align-self: flex-end;
+    flex-shrink: 10;
     display: flex;
     flex-flow: column wrap;
     justify-content: space-evenly;
     align-items: center;
     margin-top: 3%;
+    margin-left: 3%;
+    margin-right: 3%;
+    padding: -2%;
 }
 
 
 .continent {
-    height: 60%;
-    width: 65%;
+    text-align: center;
     margin-left: 1%;
-    margin-right: 1%;
     text-align: center;
 } 
 
 .continent img {
-    height: 60%;
-    width: 60%;
+    height: 80%;
+    width: 80%;
 }
 
-.continent p {
+.continent h6 {
     font-family: 'Luckiest Guy', cursive;
     text-align: center;
-    font-size: 1.25em;
+    /* font-size: 1.25em; */
     color: #FF916F;
     text-shadow: 1px 1px #FF3D00;
-    font-kerning: 1px;
-}
+    font-kerning: 1px; 
+    word-wrap: unset;
+} 
 
 .modal-card-head h1 {
     font-family: 'Luckiest Guy', cursive;
-    font-size: 2em;
+    /* font-size: 2em; */
     color: #FF916F;
     text-shadow: 1px 1px #FF3D00;
     font-kerning: 1px;
+    text-align: center;
 }
 
 

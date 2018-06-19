@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import { Box, Button } from 'bloomer'
+import { Button } from 'bloomer'
 import './gamescore.css'
 
 
