@@ -23,11 +23,6 @@ font-family: 'Butterfly Kids', cursive; */
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
-    /* position: sticky;
-    top: 0; */
-    /* height: 70%; */
-
-    /* justify-content: center; */
 }
 
 .animal img {
@@ -58,36 +53,7 @@ font-family: 'Butterfly Kids', cursive; */
     margin-top: 3%;
     margin-left: 3%;
     margin-right: 3%;
-    /* padding: -2%; */
-    /* width: 40%; */
-    /* height: 40%; */
-    /* overflow: scroll; */
 }
-/* contContainer {
-    align-self: flex-end;
-    flex-shrink: 10;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 3%;
-    margin-left: 3%;
-    margin-right: 3%;
-    padding: -2%;
-}
-
-
-.continent {
-    text-align: center;
-    margin-left: 1%;
-    text-align: center;
-} 
-
-.continent img {
-    height: 80%;
-    width: 80%;
-}
- */
 
 .continent {
     text-align: center;
@@ -115,7 +81,6 @@ font-family: 'Butterfly Kids', cursive; */
     font-kerning: 1px; 
     word-wrap: unset;
 } 
-
 .modal-card-head h1 {
     font-family: 'Luckiest Guy', cursive;
     /* font-size: 2em; */
@@ -124,8 +89,6 @@ font-family: 'Butterfly Kids', cursive; */
     font-kerning: 1px;
     text-align: center;
 }
-
-
 .swal-modal {
     /* color: #FF916F; */
     font-family: 'Luckiest Guy', cursive;
@@ -133,7 +96,6 @@ font-family: 'Butterfly Kids', cursive; */
     /* text-shadow: 1px 1px #FF3D00; */
     font-kerning: 1px;
 }
-
 .swal-modal button {
     background-color: #FF916F;
     font-family: 'Luckiest Guy', cursive;
