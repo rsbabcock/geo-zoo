@@ -63,18 +63,41 @@ font-family: 'Butterfly Kids', cursive; */
     /* height: 40%; */
     /* overflow: scroll; */
 }
+/* contContainer {
+    align-self: flex-end;
+    flex-shrink: 10;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 3%;
+    margin-left: 3%;
+    margin-right: 3%;
+    padding: -2%;
+}
 
 
 .continent {
     text-align: center;
     margin-left: 1%;
     text-align: center;
+} 
+
+.continent img {
+    height: 80%;
+    width: 80%;
+}
+ */
+
+.continent {
+    text-align: center;
+    margin-left: 1%;
     /* height: 25%; */
     /* width: 75%; */
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: center; */
     width: 80%;
 } 
 
