@@ -9,6 +9,15 @@ font-family: 'Butterfly Kids', cursive; */
     font-weight: lighter;
 }
 
+.hero-head img {
+    margin-top: -1%;
+    margin-bottom: -1%;
+}
+
+.hero-body {
+    padding: 1%;
+}
+
 .notification h1 {
     font-family: 'Luckiest Guy', cursive;
     font-weight: lighter;

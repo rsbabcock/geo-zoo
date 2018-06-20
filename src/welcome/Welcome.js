@@ -22,7 +22,7 @@ class Welcome extends Component {
                     <Container>
                         <HeroHeader>
                             <Title style={{ textAlign : 'center'}}> Welcome to</Title>
-                            <img src={words} alt="logo"/>
+                            <img src={words} height="60" alt="logo"/>
                         </HeroHeader>
                     </Container>
                     <HeroBody>
