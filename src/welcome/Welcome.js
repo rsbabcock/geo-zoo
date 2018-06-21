@@ -4,7 +4,8 @@ import { Hero, HeroHeader,
     HeroBody, Container, 
     Title, Box, Notification} from 'bloomer'
 import words from "../img/words.png" 
-import './welcome.css'   
+import './welcome.css' 
+import audio from './elephant4.mp3'  
 
 
 class Welcome extends Component {
@@ -13,10 +14,11 @@ class Welcome extends Component {
     // currentView, activeUser, UserScore
     // needs to manage:
     // play game function
-
+   
     render() {
         return (
             <div>
+            <audio ref="audio_tag" src={audio} autoPlay />
                 <Container isFluid style={{ margin: 15}}>
                 <Hero style={{ padding: 15}} isColor="primary">
                     <Container>

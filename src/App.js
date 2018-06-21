@@ -8,6 +8,7 @@ import Game from './game/Game';
 import ScoreList from "./score/ScoreList"
 import GameScore from "./game/GameScore"
 import swal from 'sweetalert';
+import audio from './audio/happykids.mp3'
 
 
 

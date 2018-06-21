@@ -35,6 +35,7 @@ class Animal extends Component {
     render() {
         return (
             <div className="gameContainer">
+                {/* <audio ref="audio_tag" src={audio} autoPlay loop/> */}
                     <div className="animalContainer">
                         <Box>
                         <div className="animal" id={this.props.animals[this.props.counter].continentId} draggable="true">

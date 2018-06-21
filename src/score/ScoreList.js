@@ -3,6 +3,7 @@ import 'bulma/css/bulma.css'
 import Scores from "./Scores"
 import {  Title, Notification, Container } from 'bloomer'
 import './scores.css'
+import audio from './happykids.mp3'
 
 
 
@@ -129,7 +130,7 @@ class ScoreList extends Component {
     render() {
         return (
             <div>
-
+            <audio ref="audio_tag" src={audio} autoPlay />
                 <Container isFluid>
                     <Notification style={{ textAlign: 'center' }} isColor="primary"> <Title> Scores </Title> </Notification>
                     <Scores scores={this.state.scores} key={this.unique++} data={this.state.chartData} options={this.state.chartOptions} />

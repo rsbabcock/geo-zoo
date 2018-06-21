@@ -4,6 +4,7 @@ import 'bulma/css/bulma.css'
 import logo from "../img/Group.png"
 import './login.css'
 import swal from 'sweetalert';
+import audio from './elephant4.mp3'
 
 
 class Login extends Component {
@@ -11,7 +12,7 @@ class Login extends Component {
     // Set initial state
     state = {
         email: "",
-        password: ""
+        password: "",
     }
 
     // Update state whenever an input field is edited
@@ -36,16 +37,16 @@ class Login extends Component {
                     this.props.showView("welcome")
 
                     // User doesn't exist
-                } else { swal("", "Please go sign up!", "warning") }
-
+                } else { swal("", "Please go sign up!", "warning")}
             })
     }.bind(this)
 
     render() {
         return (
-                <div className="loginContainer">
+            <div className="loginContainer">
                     <div className="logoHolder">
-                        <img src={logo} alt="brand"/>
+                        <img src={logo} alt="brand" onClick={this.handleSound}/>
+                        <audio ref="audio_tag" src={audio} autoPlay />
                     </div>
                     <form onSubmit={this.handleLogin}>
                         <Field>
