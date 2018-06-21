@@ -41,13 +41,6 @@ class Login extends Component {
             })
     }.bind(this)
 
-
-    /*
-        TODO:
-            - Add first name field
-            - Add last name field
-            - Add password verification field
-    */
     render() {
         return (
                 <div className="loginContainer">
@@ -77,19 +70,6 @@ class Login extends Component {
                         </Field>
                     </form>
                 </div>
-
-            // <form className="form-signin" onSubmit={this.handleLogin}>
-            //     <h1 className="h3 mb-3 font-weight-normal">Please sign in</h1>
-            //     <label htmlFor="inputEmail" className="sr-only">Email address</label>
-            //     <input onChange={this.handleFieldChange} type="email" id="email" className="form-control" placeholder="Email address" required="" autoFocus="" />
-            //     <label htmlFor="inputPassword" className="sr-only">Password</label>
-            //     <input onChange={this.handleFieldChange} type="password" id="password" className="form-control" placeholder="Password" required="" />
-            //     <div className="checkbox mb-3">
-            //         <input type="checkbox" value="remember-me" /> Remember me
-            //     </div>
-            //     <button className="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-            //     <p className="mt-5 mb-3 text-muted">© 2017-2018</p>
-            // </form>
         )
     }
 }

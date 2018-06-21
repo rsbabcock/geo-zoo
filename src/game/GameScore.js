@@ -4,9 +4,7 @@ import './gamescore.css'
 
 
 export default class GameScore extends Component {
-    // state = {
-    //     userinfo: []
-    // }
+    
     // receives user score and active user 
     postScore = () => {fetch("http://localhost:8088/scores", {
         method: "POST",
@@ -36,10 +34,8 @@ export default class GameScore extends Component {
         <div className="gameScore">
             <div>
                 <div id="score" >
-                    {/* <Box> */}
                         <h1 > Congrats </h1>
                         <h3>You scored {this.props.score} out of {this.props.counter + 1}!</h3>
-                    {/* </Box> */}
                 </div>
             </div>
             <div>

@@ -30,11 +30,15 @@ class ScoreList extends Component {
     }
 
     data = function () {
+        // chart data passed to state based on scores
+        // these variables count up the value of each percentage to get a total for each value
+        // i.e c10 is 100% correct of game
         let c1=0, c2 =0 , c3=0, c4=0, c5=0, c6=0, c7=0, c8=0, c9 = 0, c10=0
         fetch(`http://localhost:8088/scores?userId=${this.props.activeUser}`)
             .then(r => r.json())
             .then(data => {
                data.map(score => {
+                // Counts up the score for each percentage
                     switch (score.finalScore) {
                         case 1:
                              c1++
@@ -69,9 +73,9 @@ class ScoreList extends Component {
                     }
                     
                 })
-                console.log(c1, c2, c3, c4, c5, c6, c7, c8, c9, c10)
-                // console.log(finalScores)
+                               
                 this.setState({
+                    // this is directly from https://github.com/jerairrest/react-chartjs-2
                     chartData: {
                         labels: ['10%',
                             '20%',

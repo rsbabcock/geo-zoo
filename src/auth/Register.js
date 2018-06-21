@@ -70,10 +70,7 @@ export default class Register extends Component {
                 <form onSubmit={this.handleSignUp} >
                 <div>
                     <Field>
-                        {/* <div isSize="1/2"> */}
-                        {/* <Image isSize="128x128" src={logo} /> */}
                         <h1>Please Sign Up!</h1>
-                        {/* </div> */}
                         <Control>
                             <Input style={{marginBottom: 10}} onChange={this.handleFieldChange} isColor='success' placeholder='Email' type="email" id="email" isSize="large"/>
                             <Input style={{marginBottom: 10}} onChange={this.handleFieldChange} isColor='success' placeholder='First Name' type="text" id="firstName" isSize="large"/>
