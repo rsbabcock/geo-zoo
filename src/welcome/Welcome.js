@@ -49,7 +49,11 @@ class Welcome extends Component {
                         </Container>
                     </HeroBody>
                     <Container style={{ textAlign: 'center'}}>
-                            <Button id="play__game" onClick={this.props.showView} isSize="large" isOutlined isColor="light"> Play</Button>
+                            <Button id="play__game" 
+                            onClick={this.props.showView} 
+                            isSize="large" 
+                            isOutlined 
+                            isColor="light"> Play</Button>
                     </Container>
                </Hero>
                </Container>

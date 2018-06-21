@@ -5,10 +5,6 @@ import {Doughnut} from 'react-chartjs-2'
 
 export default class Scores extends Component {
 
-    // timeConverter = function(date)
-    // { date.toDateString()
-    // }.bind(this)
-
     render() {
         return (
             <div className="score">

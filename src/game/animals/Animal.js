@@ -11,8 +11,6 @@ import '@fortawesome/fontawesome'
 class Animal extends Component {
     state = {
         animalActive: false,
-        // isActive: false
-        // continentActive: false,
     }
 
     animalHandler = (e) => {
@@ -35,7 +33,6 @@ class Animal extends Component {
     }
 
     render() {
-        // const continentTitle = this.props.continents.map(c => if(c.id < 3 ){return c} )
         return (
             <div className="gameContainer">
                     <div className="animalContainer">
@@ -45,6 +42,7 @@ class Animal extends Component {
                         </div>
                         <div>
                             <Button isSize="medium" className="fact" id="animalFact" onClick={this.animalHandler} isOutlined> Facts </Button>
+                            {/* Animal Modal Code */}
                             <Modal isActive={this.state.animalActive}>
                                 <ModalBackground />
                                 <ModalCard>
@@ -69,6 +67,7 @@ class Animal extends Component {
                             </Modal>
                         </div>
                         </Box>
+                        {/* progress bar, takes a value and max value, which can be any variable */}
                         <Progress isColor='primary' value={this.props.counter} max={9}/>
                     </div>
                     {/* Beginning of Continents */}
@@ -81,6 +80,7 @@ class Animal extends Component {
                                     onClick={() => this.props.gameHandler(this.props.animals[this.props.counter].continentId, c.id)}
                                 />
                                 <Button isSize="small" className="fact" id={"button__"+ c.id} onClick={() => this.continentHandler( "continent__"+c.id )} isOutlined> Facts </Button>
+                                {/* Continent modal - bitch */}
                                 <Modal id={"continent__"+c.id} key={c.id} value={this.state.value} >
                                     <ModalBackground />
                                     <ModalCard>

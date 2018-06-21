@@ -21,9 +21,8 @@ class App extends Component {
         animals: [],
         continents: [],
         counter: 0,
-        // randomNum: 0,
         }
-        // uniqueKey: 1
+    
         
   // Function to update local storage and set activeUser state
     setActiveUser = (val) => {
@@ -38,7 +37,6 @@ class App extends Component {
     }
   // Argument can be an event (via NavBar) or a string (via Login)
     showView = function (e) {
-      // debugger
         let view = null
 
         // Click event triggered switching view
@@ -56,9 +54,11 @@ class App extends Component {
         }
         if (view === "welcome") {
           this.setState({
+            //   resets score and counter at welcome page
             userScore: 0,
             counter: 0
           })
+        //  calls the randomize function so that the animals will be random
           this.randomizeHandler()
         }
 
@@ -74,6 +74,7 @@ class App extends Component {
       .then(r => r.json())
       .then(animals => {
         let randomals = animals
+        // takes array of animals and randomizes in a shuffle method so that they don't repeat 
         for (let i = randomals.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
             [randomals[i], randomals[j]] = [randomals[j], randomals[i]];
@@ -85,8 +86,7 @@ class App extends Component {
   }
   // function to get all continenet info
   getContinents = () => {
-    // const foundStuff = {}
-      fetch("http://localhost:8088/continents")
+    fetch("http://localhost:8088/continents")
       .then(r => r.json())
       .then(c => {
           this.setState({
@@ -105,11 +105,11 @@ class App extends Component {
         this.setState({
           userScore : this.state.userScore+1
         })
+        // keeps the game play to only 10 questions
         if(this.state.counter < 9 ) {
           this.setState({
             counter : this.state.counter+1
           })
-        //   this.randomizeHandler()
         } else if( this.state.counter === 9){
           this.showView("gameScore")
         }
@@ -126,7 +126,6 @@ class App extends Component {
 }.bind(this)
 // function to randomize animal input
  randomizeHandler = function() {
-    //  e.preventDefault()
     let randomals = this.state.animals
     // this code courtesy of Joshua Barton
     // Goes through array and goes backwards through array and reshuffles array
@@ -163,7 +162,6 @@ class App extends Component {
                     return <Login showView={this.showView} setActiveUser={this.setActiveUser} />
                 case "game":
                     return <Game animals={this.state.animals} 
-                    // animalImg={this.state.animalImg}
                      continents={this.state.continents} 
                      counter={this.state.counter}
                      activeUser={this.state.activeUser} 
