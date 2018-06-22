@@ -8,6 +8,7 @@ import './animal.css';
 import '@fortawesome/fontawesome'
 
 
+
 class Animal extends Component {
     state = {
         animalActive: false,
