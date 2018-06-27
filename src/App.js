@@ -8,7 +8,7 @@ import Game from './game/Game';
 import ScoreList from "./score/ScoreList"
 import GameScore from "./game/GameScore"
 import swal from 'sweetalert';
-import audio from './audio/buzzer.mp3'
+
 
 
 
@@ -120,13 +120,6 @@ class App extends Component {
                 title: "",
                 text: "That's incorrect",
                 icon: "error",
-                // content:{ 
-                //     element: "audio",
-                //     attributes : {
-                //         src : audio,
-                //         type: "audio/mp3",
-                //         autoPlay: true
-                //     }
             })
             if (this.state.counter < 9) {
                 this.setState({
