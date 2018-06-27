@@ -324,6 +324,18 @@
       "finalScore": 7,
       "timeStamp": "06/22/2018, 10:51:13 AM",
       "id": 41
+    },
+    {
+      "userId": "1",
+      "finalScore": 5,
+      "timeStamp": "06/27/2018, 2:17:37 PM",
+      "id": 42
+    },
+    {
+      "userId": "1",
+      "finalScore": 2,
+      "timeStamp": "06/27/2018, 2:18:47 PM",
+      "id": 43
     }
   ],
   "continents": [
@@ -380,7 +392,7 @@
     {
       "id": 4,
       "continentId": 2,
-      "image": "https://image.ibb.co/gevsL8/tiger.png",
+      "image": "https://image.ibb.co/h7qRvT/tiger.png",
       "name": "Sumatran Tiger",
       "fact": "Sumatran tigers are the smallest surviving tiger subspecies and are distinguished by heavy black stripes on their orange coats. The last of Indonesia’s tigers—as few as 400 today—are holding on for survival in the remaining patches of forests on the island of Sumatra. Accelerating deforestation and rampant poaching mean this noble creature could end up like its extinct Javan and Balinese relatives.In Indonesia, anyone caught hunting tigers could face jail time and steep fines. But despite increased efforts in tiger conservation—including strengthening law enforcement and antipoaching capacity—a substantial market remains in Sumatra and the rest of Asia for tiger parts and products. Sumatran tigers are losing their habitat and prey fast, and poaching shows no sign of decline.",
       "diet": "Carnivore",

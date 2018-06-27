@@ -70,6 +70,7 @@ class Animal extends Component {
                         </div>
                         </Box>
                         {/* progress bar, takes a value and max value, which can be any variable */}
+                        <h6> Question {this.props.counter+1} out of 10!</h6>
                         <Progress isColor='primary' value={this.props.counter} max={9}/>
                     </div>
                     {/* Beginning of Continents */}

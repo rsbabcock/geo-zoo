@@ -5,7 +5,7 @@ font-family: 'Butterfly Kids', cursive; */
     flex-flow:  row;
     justify-content: space-evenly;
     align-items: stretch;
-    height: 5%;
+    /* height: 3%; */
     padding-bottom: 1%; 
     padding-left: 1%;
     padding-top: 1%; 
@@ -16,8 +16,8 @@ font-family: 'Butterfly Kids', cursive; */
 
 #nav_welcome {
     margin-left: -8%;
-    height: 10%;
-    width: 10%;
+    height: 5%;
+    width: 5%;
     flex-basis: 5;
     /* margin-top: -2%; */
     /* margin-right: 15%; */
@@ -25,15 +25,15 @@ font-family: 'Butterfly Kids', cursive; */
 
 #nav__scoreList {
     font-size: 2em;
-    margin-top: 2%;   
+    margin-top: 1%;   
 }
 
 #nav__login {
     font-size: 2em;
-    margin-top: 2%;
+    margin-top: 1%;
 }
 
 #nav__logout {
     font-size: 2em;
-    margin-top: 2%;
+    margin-top: 1%;
 }
