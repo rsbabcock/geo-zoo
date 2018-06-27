@@ -12,13 +12,14 @@
     /* flex-wrap: wrap; */
     justify-content: flex-start;
     align-items: center;
+    /* margin-top: 2%; */
 }
 
 .chart {
     flex-grow: 3;
     align-self: baseline;
     text-align: center;
-    /* margin-top:; */
+    margin-top:-7%;
     /* margin-left: -10%; */
 }
 

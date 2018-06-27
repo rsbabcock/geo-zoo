@@ -132,7 +132,7 @@ class ScoreList extends Component {
             <div>
             <audio ref="audio_tag" src={audio} autoPlay />
                 <Container isFluid>
-                    <Notification style={{ textAlign: 'center' }} isColor="primary"> <Title> Scores </Title> </Notification>
+                    <Notification style={{ textAlign: 'center', marginTop: 10 }} isColor="primary"> <Title> Scores </Title> </Notification>
                     <Scores scores={this.state.scores} key={this.unique++} data={this.state.chartData} options={this.state.chartOptions} />
                 </Container>
 
